@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: mullet
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: mullet
+  displayName: Grey Mullet
+  nameID: Ikan Belanak
+  model: {fileID: 919132149155446097, guid: 1d8ca7b1ad0c5ff4eb3cdd169fb83cd0, type: 3}
+  illustration: {fileID: 21300000, guid: 1ebb72a5b2d380648890d870c5031605, type: 3}
+  rarity: 0
+  location: estuary
+  habitats: 288
+  activeFrom: 0
+  activeTo: 0
+  sizeRangeCm: {x: 25, y: 50}
+  fight: 0.4
+  basePrice: 12
+  requiredRodTier: 0
+  chapter: 0
+  description: Grey-striped grazer that cruises the tidal flats.
+  descriptionID: Ikan bergaris abu-abu yang merumput di dataran pasang surut.
+  hintEN: Tidal flats and reeds.
+  hintID: Dataran pasang dan ilalang.

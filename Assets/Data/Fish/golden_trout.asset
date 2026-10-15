@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: golden_trout
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: golden_trout
+  displayName: Golden Trout
+  nameID: Trout Emas
+  model: {fileID: 919132149155446097, guid: cf8d86908d4d8054a970f237a9b1cb32, type: 3}
+  illustration: {fileID: 21300000, guid: 1a234255b0e62e04594084f160470cac, type: 3}
+  rarity: 2
+  location: gorge
+  habitats: 4
+  activeFrom: 10
+  activeTo: 14
+  sizeRangeCm: {x: 20, y: 40}
+  fight: 0.55
+  basePrice: 85
+  requiredRodTier: 0
+  chapter: 0
+  description: A tiny miracle of gold, red and olive found only in high pools.
+  descriptionID: Keajaiban kecil berwarna emas, merah dan zaitun di kolam tinggi.
+  hintEN: Gorge pools at midday.
+  hintID: Kolam ngarai saat tengah hari.

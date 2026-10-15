@@ -1,0 +1,35 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\concept_b9326c_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 3%
+[image-to-3d] IN_PROGRESS 41%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\NPC_Bayu.glb
+saved ArtSource\Meshy\NPC_Bayu\thumb_back.png
+saved ArtSource\Meshy\NPC_Bayu\thumb_front.png
+saved ArtSource\Meshy\NPC_Bayu\thumb_left.png
+saved ArtSource\Meshy\NPC_Bayu\thumb_right.png
+credits: 30
+[rigging] IN_PROGRESS 10%
+[rigging] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\NPC_Bayu_Rigged.fbx
+saved ArtSource\Meshy\NPC_Bayu\NPC_Bayu_Rigged.glb
+saved ArtSource\Meshy\NPC_Bayu\NPC_Bayu_Basic_walking_fbx_url.fbx
+saved ArtSource\Meshy\NPC_Bayu\NPC_Bayu_Basic_running_fbx_url.fbx
+[animate Idle] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@Idle.fbx
+[animate Sit] IN_PROGRESS 10%
+[animate Sit] IN_PROGRESS 95%
+[animate Sit] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@Sit.fbx
+[animate Wave] IN_PROGRESS 10%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@Wave.fbx
+[animate Talk] IN_PROGRESS 10%
+[animate Talk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@Talk.fbx

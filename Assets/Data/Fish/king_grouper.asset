@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: king_grouper
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: king_grouper
+  displayName: Old King Grouper
+  nameID: Raja Kerapu Tua
+  model: {fileID: 919132149155446097, guid: 63ac43bc0b2e6594d8d7d45c2d8c74b4, type: 3}
+  illustration: {fileID: 21300000, guid: e84aa2e40538d0942a8c1ace8c0e4c29, type: 3}
+  rarity: 3
+  location: estuary
+  habitats: 136
+  activeFrom: 17
+  activeTo: 22
+  sizeRangeCm: {x: 120, y: 200}
+  fight: 0.95
+  basePrice: 360
+  requiredRodTier: 3
+  chapter: 4
+  description: Wise and enormous, it has guarded the lighthouse rocks for a hundred
+    years. Grandpa called it 'the King'.
+  descriptionID: Bijak dan raksasa, menjaga batu mercusuar selama seratus tahun.
+    Kakek menyebutnya 'Sang Raja'.
+  hintEN: Below the lighthouse, in the evening.
+  hintID: Di bawah mercusuar, petang hari.

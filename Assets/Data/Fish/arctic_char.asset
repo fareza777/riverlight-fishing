@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: arctic_char
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: arctic_char
+  displayName: Arctic Char
+  nameID: Ikan Char
+  model: {fileID: 919132149155446097, guid: e0cfcd8cccd406943b0c130d3d08de4d, type: 3}
+  illustration: {fileID: 21300000, guid: 8c44941f4aedaaf40909306ed3bb9d78, type: 3}
+  rarity: 0
+  location: gorge
+  habitats: 132
+  activeFrom: 0
+  activeTo: 0
+  sizeRangeCm: {x: 30, y: 60}
+  fight: 0.45
+  basePrice: 22
+  requiredRodTier: 0
+  chapter: 0
+  description: A cold-water jewel with a sunset-orange belly.
+  descriptionID: Permata air dingin dengan perut jingga senja.
+  hintEN: Deep cold pools.
+  hintID: Kolam dalam yang dingin.

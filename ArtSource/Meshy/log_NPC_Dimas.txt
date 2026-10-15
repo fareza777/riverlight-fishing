@@ -1,0 +1,36 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\concept_610ec8_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 6%
+[image-to-3d] IN_PROGRESS 18%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\NPC_Dimas.glb
+saved ArtSource\Meshy\NPC_Dimas\thumb_back.png
+saved ArtSource\Meshy\NPC_Dimas\thumb_front.png
+saved ArtSource\Meshy\NPC_Dimas\thumb_left.png
+saved ArtSource\Meshy\NPC_Dimas\thumb_right.png
+credits: 30
+[rigging] IN_PROGRESS 10%
+[rigging] IN_PROGRESS 31%
+[rigging] IN_PROGRESS 52%
+[rigging] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\NPC_Dimas_Rigged.fbx
+saved ArtSource\Meshy\NPC_Dimas\NPC_Dimas_Rigged.glb
+saved ArtSource\Meshy\NPC_Dimas\NPC_Dimas_Basic_walking_fbx_url.fbx
+saved ArtSource\Meshy\NPC_Dimas\NPC_Dimas_Basic_running_fbx_url.fbx
+[animate Idle] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@Idle.fbx
+[animate Walk] IN_PROGRESS 10%
+[animate Walk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@Walk.fbx
+[animate Wave] IN_PROGRESS 10%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@Wave.fbx
+[animate Talk] IN_PROGRESS 10%
+[animate Talk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@Talk.fbx

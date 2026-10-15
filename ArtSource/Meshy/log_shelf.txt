@@ -1,0 +1,18 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Shelf\concept_bf5e8d_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 12%
+[image-to-3d] IN_PROGRESS 41%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 50%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Shelf\Prop_Shelf.glb
+saved ArtSource\Meshy\Prop_Shelf\thumb_back.png
+saved ArtSource\Meshy\Prop_Shelf\thumb_front.png
+saved ArtSource\Meshy\Prop_Shelf\thumb_left.png
+saved ArtSource\Meshy\Prop_Shelf\thumb_right.png
+credits: 30

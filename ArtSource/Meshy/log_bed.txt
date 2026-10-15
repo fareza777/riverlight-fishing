@@ -1,0 +1,20 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Bed\concept_6c770e_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 9%
+[image-to-3d] IN_PROGRESS 21%
+[image-to-3d] IN_PROGRESS 33%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 50%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Bed\Prop_Bed.glb
+saved ArtSource\Meshy\Prop_Bed\thumb_back.png
+saved ArtSource\Meshy\Prop_Bed\thumb_front.png
+saved ArtSource\Meshy\Prop_Bed\thumb_left.png
+saved ArtSource\Meshy\Prop_Bed\thumb_right.png
+credits: 30

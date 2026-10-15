@@ -1,0 +1,227 @@
+[rigging] IN_PROGRESS 10%
+[rigging] IN_PROGRESS 95%
+[rigging] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\FisherF_Rigged.fbx
+saved ArtSource\Meshy\FisherF\FisherF_Rigged.glb
+saved ArtSource\Meshy\FisherF\FisherF_Basic_walking_fbx_url.fbx
+saved ArtSource\Meshy\FisherF\FisherF_Basic_running_fbx_url.fbx
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)
+Traceback (most recent call last):
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 205, in main
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library}[a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 153, in cmd_animate
+    body: dict = {"rig_task_id": task_of(a.name, "rig"), "post_process": {"operation_type": "change_fps", "fps": 30}}
+                                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 88, in task_of
+    tid = load_tasks().get(name, {}).get(step)
+          ~~~~~~~~~~^^
+  File "D:\CozyFishing\Tools\meshy_pipeline.py", line 77, in load_tasks
+    return json.loads(TASKS_FILE.read_text()) if TASKS_FILE.exists() else {}
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 2 (char 509)

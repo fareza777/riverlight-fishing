@@ -1,0 +1,16 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Chair\concept_c3c802_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 6%
+[image-to-3d] IN_PROGRESS 18%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Chair\Prop_Chair.glb
+saved ArtSource\Meshy\Prop_Chair\thumb_back.png
+saved ArtSource\Meshy\Prop_Chair\thumb_front.png
+saved ArtSource\Meshy\Prop_Chair\thumb_left.png
+saved ArtSource\Meshy\Prop_Chair\thumb_right.png
+credits: 30

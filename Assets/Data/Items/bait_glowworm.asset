@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d75d45482d6534eaacb154a37bc260, type: 3}
+  m_Name: bait_glowworm
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.ItemDef
+  id: bait_glowworm
+  type: 1
+  nameEN: Glowworms (x5)
+  nameID: Ulat Cahaya (x5)
+  descEN: They shine in dark water. Rare fish can't resist.
+  descID: Bercahaya di air gelap. Ikan langka tak bisa menolak.
+  price: 60
+  tier: 0
+  safeBandBonus: 0
+  reelBonus: 0
+  rareBonus: 1
+  capacity: 0
+  icon: {fileID: 21300000, guid: 9d9397697c43e4a45a34f30d76d033ed, type: 3}

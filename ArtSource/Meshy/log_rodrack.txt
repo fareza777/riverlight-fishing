@@ -1,0 +1,17 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_RodRack\concept_120ebc_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 6%
+[image-to-3d] IN_PROGRESS 21%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_RodRack\Prop_RodRack.glb
+saved ArtSource\Meshy\Prop_RodRack\thumb_back.png
+saved ArtSource\Meshy\Prop_RodRack\thumb_front.png
+saved ArtSource\Meshy\Prop_RodRack\thumb_left.png
+saved ArtSource\Meshy\Prop_RodRack\thumb_right.png
+credits: 30

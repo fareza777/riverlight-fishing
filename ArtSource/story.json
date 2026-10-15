@@ -1,0 +1,277 @@
+{
+  "style": "warm storybook gouache illustration, soft painterly brushwork, gentle golden light, cozy and nostalgic, rich but soft colours, Indonesian countryside river valley with pine forests and rice-green hills, no text, no letters, no watermark",
+  "grandpa": "an elderly Indonesian fisherman with short grey hair, a kind wrinkled face and grey mustache, wearing a faded blue shirt and a woven bamboo caping hat",
+  "child": "a small child in a yellow raincoat, seen from behind",
+  "cutscenes": [
+    {
+      "id": "intro",
+      "memory": false,
+      "titleEN": "Grandpa's Letter",
+      "titleID": "Surat Kakek",
+      "slides": [
+        {
+          "art": "an old bus stopping on a misty mountain road at dawn above a green river valley, a lone young traveller with a backpack stepping off",
+          "en": "The bus left me at the edge of the valley, just as the mist was lifting off the river.",
+          "id": "Bus menurunkanku di tepi lembah, tepat saat kabut mulai terangkat dari sungai."
+        },
+        {
+          "art": "a small wooden riverside cabin with a mossy roof and a little dock, a rowboat tied to it, morning light, pines around",
+          "en": "Grandpa Theo's cabin was exactly as I remembered. The rowboat was still tied to the old dock.",
+          "id": "Pondok Kakek Theo masih persis seperti yang kuingat. Perahu dayungnya masih tertambat di dermaga tua."
+        },
+        {
+          "art": "close-up of a handwritten letter and a worn leather fishing journal on a wooden table beside a window, warm lamp light",
+          "en": "On the table, a letter. \"If you are reading this, the river is yours now. Take good care of it.\"",
+          "id": "Di atas meja, sepucuk surat. \"Kalau kamu membaca ini, sungai ini sekarang milikmu. Jagalah baik-baik.\""
+        },
+        {
+          "art": "an open leather fishing journal with painted sketches of five mysterious legendary fish, half-finished pages, pressed flowers",
+          "en": "\"My journal holds five legends of Riverlight. I never finished their pages. Finish them for me.\"",
+          "id": "\"Jurnalku menyimpan lima ikan legenda Riverlight. Halaman mereka belum pernah selesai. Selesaikan untukku.\""
+        },
+        {
+          "art": "a young person standing on the wooden dock at sunrise looking out over a calm shining river, rowboat waiting, birds",
+          "en": "\"Start small. Catch your first fish. The river will teach you the rest.\"",
+          "id": "\"Mulailah dari yang kecil. Tangkap ikan pertamamu. Sungai akan mengajarkan sisanya.\""
+        }
+      ]
+    },
+    {
+      "id": "memory_1",
+      "memory": true,
+      "titleEN": "Memory I — The Golden Hook",
+      "titleID": "Kenangan I — Kail Emas",
+      "slides": [
+        {
+          "art": "GRANDPA sitting on a mossy rock by a sparkling waterfall pool at noon, patiently tying a hook for CHILD beside him",
+          "en": "You were six. You wanted the golden carp so badly that you cried when it would not bite.",
+          "id": "Kamu baru enam tahun. Kamu ingin sekali ikan mas emas itu sampai menangis saat ia tak mau makan umpan."
+        },
+        {
+          "art": "two hands, an old one and a small one, tying a fishing knot together, shimmering water and golden light behind",
+          "en": "I told you: patience is the real bait. We tied the hook together, knot by knot.",
+          "id": "Kukatakan padamu: kesabaran adalah umpan yang sebenarnya. Kita mengikat kail bersama, simpul demi simpul."
+        },
+        {
+          "art": "a large glowing golden carp rising in a clear waterfall pool under noon sun, sun rays through the water",
+          "en": "And when the sun stood high, she rose for us. You never forgot that light. Neither did I.",
+          "id": "Dan saat matahari tepat di atas, ia muncul untuk kita. Kamu tak pernah melupakan cahaya itu. Aku juga tidak."
+        }
+      ]
+    },
+    {
+      "id": "memory_2",
+      "memory": true,
+      "titleEN": "Memory II — Lanterns on the Lake",
+      "titleID": "Kenangan II — Lentera di Danau",
+      "slides": [
+        {
+          "art": "a lake at night covered with floating paper lanterns, weeping willows on the shore, a young couple in a rowboat",
+          "en": "Willow Lake, the night of the lantern festival. That is where I met your grandmother, Rose.",
+          "id": "Danau Willow, malam festival lentera. Di sanalah aku bertemu nenekmu, Rose."
+        },
+        {
+          "art": "a young Indonesian woman in a simple floral dress smiling and releasing a paper lantern onto dark water from a rowboat",
+          "en": "She laughed at my crooked lantern. I said a koi would carry it to the moon. It sank instead.",
+          "id": "Ia menertawakan lenteraku yang miring. Kubilang seekor koi akan membawanya ke bulan. Lentera itu malah tenggelam."
+        },
+        {
+          "art": "a glowing koi fish with lantern-like light beneath dark water among lily pads, reflections of lanterns",
+          "en": "But a koi rose, glowing like a lantern. Rose said it was a blessing. We were married that spring.",
+          "id": "Tapi seekor koi muncul, bercahaya seperti lentera. Rose bilang itu berkah. Musim semi itu kami menikah."
+        }
+      ]
+    },
+    {
+      "id": "memory_3",
+      "memory": true,
+      "titleEN": "Memory III — The Iron River",
+      "titleID": "Kenangan III — Sungai Besi",
+      "slides": [
+        {
+          "art": "a young strong Indonesian fisherman in a rowboat in a dramatic rocky gorge with rapids and tall pines, struggling with a bent rod",
+          "en": "When I was young and proud, I fought the ironscale sturgeon of Pinefall Gorge for a whole afternoon.",
+          "id": "Saat aku masih muda dan sombong, aku melawan sturgeon sisik besi di Ngarai Pinefall sepanjang sore."
+        },
+        {
+          "art": "a snapped wooden fishing rod floating in fast green water among boulders, mist from a waterfall",
+          "en": "I pulled too hard. The rod snapped, and the line with it. I was furious with the river.",
+          "id": "Aku menarik terlalu keras. Joranku patah, dan senarnya juga. Aku marah sekali pada sungai."
+        },
+        {
+          "art": "GRANDPA years later teaching CHILD to let the line out gently on a calm evening river, soft light",
+          "en": "It took me years to learn: strength is knowing when to give line. Pull with the river, never against it.",
+          "id": "Butuh bertahun-tahun untuk belajar: kekuatan adalah tahu kapan harus mengulur. Tarik bersama sungai, jangan melawannya."
+        }
+      ]
+    },
+    {
+      "id": "memory_4",
+      "memory": true,
+      "titleEN": "Memory IV — The Lighthouse",
+      "titleID": "Kenangan IV — Mercusuar",
+      "slides": [
+        {
+          "art": "a small rowboat in a stormy estuary at night with big waves, rain, and a distant lighthouse beam cutting through the dark",
+          "en": "One night at Saltreed, a storm caught me far from shore. I could not see my own hands.",
+          "id": "Suatu malam di Saltreed, badai menangkapku jauh dari pantai. Aku bahkan tak bisa melihat tanganku sendiri."
+        },
+        {
+          "art": "an old lighthouse on rocks with a warm beam, an old keeper with a lantern on the balcony in the rain",
+          "en": "Then the lighthouse turned toward me. My old friend Ben kept it burning all night, just for me.",
+          "id": "Lalu cahaya mercusuar berputar ke arahku. Sahabatku Ben menjaganya tetap menyala sepanjang malam, hanya untukku."
+        },
+        {
+          "art": "a huge old grouper fish resting among rocks near a lighthouse in calm morning water, seagulls",
+          "en": "At dawn, the old king grouper surfaced beside my boat, as if to say: go home. Always find your way home.",
+          "id": "Saat fajar, raja kerapu tua muncul di samping perahuku, seolah berkata: pulanglah. Selalu temukan jalan pulang."
+        }
+      ]
+    },
+    {
+      "id": "memory_5",
+      "memory": true,
+      "titleEN": "Memory V — The Moon Eel",
+      "titleID": "Kenangan V — Belut Bulan",
+      "slides": [
+        {
+          "art": "GRANDPA and CHILD sitting together at the end of a wooden dock at night under a huge full moon, feet over the water",
+          "en": "Our last summer together. We sat on the dock and waited for the moon eel until you fell asleep on my arm.",
+          "id": "Musim panas terakhir kita. Kita duduk di dermaga menunggu belut bulan sampai kamu tertidur di lenganku."
+        },
+        {
+          "art": "a long glowing blue eel swimming under a moonlit river surface, trailing soft blue light, fireflies above",
+          "en": "She came, trailing blue light under the water. I did not wake you. I wanted you to find her yourself, one day.",
+          "id": "Ia datang, membawa cahaya biru di bawah air. Aku tak membangunkanmu. Aku ingin kamu menemukannya sendiri, suatu hari nanti."
+        },
+        {
+          "art": "an old weathered hand writing in a leather journal by lamplight, the moon visible through the cabin window",
+          "en": "That night I wrote the last line in the journal: one day the river will need you. And you will be ready.",
+          "id": "Malam itu kutulis baris terakhir di jurnal: suatu hari sungai akan membutuhkanmu. Dan kamu akan siap."
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "memory": false,
+      "titleEN": "The Keeper of Riverlight",
+      "titleID": "Penjaga Riverlight",
+      "slides": [
+        {
+          "art": "a completed leather fishing journal lying open with five beautifully painted legendary fish, a golden ribbon, morning light",
+          "en": "Five legends, five pages. Grandpa's journal was finally complete.",
+          "id": "Lima legenda, lima halaman. Jurnal Kakek akhirnya lengkap."
+        },
+        {
+          "art": "a young fisher placing an old bamboo caping hat on their head on the dock at sunrise, back view, river glowing",
+          "en": "I found his old hat on the hook by the door. It fit better than I expected.",
+          "id": "Kutemukan topi lamanya tergantung di dekat pintu. Ternyata pas sekali di kepalaku."
+        },
+        {
+          "art": "villagers waving from a small market stall by a riverside dock, children with fishing rods, warm afternoon",
+          "en": "The village calls me the new keeper of the river now. I like the sound of it.",
+          "id": "Orang-orang desa kini memanggilku penjaga sungai yang baru. Aku suka mendengarnya."
+        },
+        {
+          "art": "a rowboat drifting on a golden river at sunset toward a distant waterfall, a faint smiling figure of an old man in the clouds",
+          "en": "Sometimes, when the water is still, I feel him beside me in the boat. Patient. Smiling.",
+          "id": "Kadang, saat air sedang tenang, aku merasakan ia duduk di sampingku di perahu. Sabar. Tersenyum."
+        },
+        {
+          "art": "a panoramic view of the whole river valley at dusk with a lake, a gorge with a waterfall, an estuary with a lighthouse, lights in the cabin windows",
+          "en": "The river is mine now. And there are always more fish to find.",
+          "id": "Sungai ini milikku sekarang. Dan selalu ada ikan lain yang menunggu untuk ditemukan."
+        }
+      ]
+    }
+  ],
+  "extra_art": [
+    {
+      "out": "Assets/Art/UI/Title/title_bg.png",
+      "size": "9:16",
+      "keep_bg": true,
+      "art": "a breathtaking view of a calm turquoise river winding through a lush valley at golden hour, a little wooden cabin and dock, a rowboat, pine forests, a waterfall far away, fireflies, plenty of empty sky at the top"
+    },
+    {
+      "out": "Assets/Art/UI/Title/logo_mark.png",
+      "size": "1:1",
+      "keep_bg": false,
+      "plain": true,
+      "art": "a simple elegant emblem of a leaping golden fish over a crescent of river water with a small sun, flat vector game logo icon, warm gold, teal and cream colours, centered, no text"
+    },
+    {
+      "out": "Assets/Art/UI/Locations/river.png",
+      "size": "3:2",
+      "keep_bg": true,
+      "art": "a postcard view of a gentle river with a wooden cabin, dock and rowboat, pines and a distant waterfall, morning light"
+    },
+    {
+      "out": "Assets/Art/UI/Locations/lake.png",
+      "size": "3:2",
+      "keep_bg": true,
+      "art": "a postcard view of a round mirror-like lake with weeping willows, lily pads, a small island and a wooden pier, soft evening light"
+    },
+    {
+      "out": "Assets/Art/UI/Locations/gorge.png",
+      "size": "3:2",
+      "keep_bg": true,
+      "art": "a postcard view of a dramatic pine gorge with tall stone cliffs, white rapids and a tall waterfall into a deep green pool"
+    },
+    {
+      "out": "Assets/Art/UI/Locations/estuary.png",
+      "size": "3:2",
+      "keep_bg": true,
+      "art": "a postcard view of a sunny estuary with reed marshes, sand flats, fishing boats and a red and white lighthouse on rocks"
+    }
+  ],
+  "icons": [
+    {
+      "id": "rod_willow",
+      "art": "a simple thin willow wood fishing rod with a small reel"
+    },
+    {
+      "id": "rod_ash",
+      "art": "a sturdy light ash wood fishing rod with a brass reel"
+    },
+    {
+      "id": "rod_oak",
+      "art": "a thick dark oak fishing rod with a strong iron reel and cork grip"
+    },
+    {
+      "id": "rod_sea",
+      "art": "a heavy blue sea fishing rod with a big chrome reel"
+    },
+    {
+      "id": "rod_grandpa",
+      "art": "an old heirloom bamboo fishing rod wrapped with red thread and a golden reel, glowing faintly"
+    },
+    {
+      "id": "bait_worms",
+      "art": "a small tin can full of wriggling pink earthworms"
+    },
+    {
+      "id": "bait_glowworm",
+      "art": "a small glass jar of softly glowing green-blue grubs"
+    },
+    {
+      "id": "bait_shrimp",
+      "art": "a small woven basket of fresh pink shrimp"
+    },
+    {
+      "id": "creel_small",
+      "art": "a small woven wicker fishing creel basket with a leather strap"
+    },
+    {
+      "id": "creel_medium",
+      "art": "a medium woven wicker fishing creel with a wooden lid"
+    },
+    {
+      "id": "creel_large",
+      "art": "a large sturdy wicker fishing creel with brass buckles"
+    },
+    {
+      "id": "creel_grand",
+      "art": "a grand ornate wicker fishing chest with brass corners and a carved fish on the lid"
+    }
+  ]
+}

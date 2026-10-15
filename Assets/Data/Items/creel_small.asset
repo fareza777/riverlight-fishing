@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d75d45482d6534eaacb154a37bc260, type: 3}
+  m_Name: creel_small
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.ItemDef
+  id: creel_small
+  type: 2
+  nameEN: Small Creel
+  nameID: Keranjang Kecil
+  descEN: Holds 8 fish.
+  descID: Muat 8 ikan.
+  price: 0
+  tier: 0
+  safeBandBonus: 0
+  reelBonus: 0
+  rareBonus: 0
+  capacity: 8
+  icon: {fileID: 21300000, guid: a0d648d887f92d54bb1b16390ddd1bec, type: 3}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a000c681f0ae34b92917932566a8ed, type: 3}
+  m_Name: lake
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.LocationDef
+  id: lake
+  sceneName: Lake
+  nameEN: Willow Lake
+  nameID: Danau Willow
+  descEN: A mirror-still lake ringed by willows, lilies and a little island.
+  descID: Danau setenang cermin, dikelilingi dedalu, teratai, dan sebuah pulau kecil.
+  unlockChapter: 2
+  postcard: {fileID: 21300000, guid: 35722c51ae2c8644f999db40a9167fae, type: 3}

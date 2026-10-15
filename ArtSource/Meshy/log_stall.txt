@@ -1,0 +1,21 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_MarketStall\concept_c0b1e4_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 9%
+[image-to-3d] IN_PROGRESS 21%
+[image-to-3d] IN_PROGRESS 36%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 50%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_MarketStall\Prop_MarketStall.glb
+saved ArtSource\Meshy\Prop_MarketStall\thumb_back.png
+saved ArtSource\Meshy\Prop_MarketStall\thumb_front.png
+saved ArtSource\Meshy\Prop_MarketStall\thumb_left.png
+saved ArtSource\Meshy\Prop_MarketStall\thumb_right.png
+credits: 30
+saved ArtSource\Meshy\Prop_MarketStall\Prop_MarketStall.fbx
+saved ArtSource\Meshy\Prop_MarketStall\Prop_MarketStall_BaseColor.png

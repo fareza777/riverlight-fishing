@@ -1,0 +1,15 @@
+{
+ "FisherM": {
+  "image": "01a1376d-53ba-771b-85b4-2ddde770384e",
+  "to3d_pending": "01a1376d-c5f7-7257-a244-a3630ed30079",
+  "to3d": "01a1376d-c5f7-7257-a244-a3630ed30079",
+  "rig": "01a13770-0f1a-7427-928c-8be0444e8793",
+  "anim_Idle": "01a13770-57d2-7325-82f5-aefa4abf6ae3"
+ },
+ "FisherF": {
+  "image": "01a1376d-53bd-70f6-afa7-1d9b0d5907c8",
+  "to3d_pending": "01a1376d-c5f7-7597-9953-f2d1fcdf1316",
+  "to3d": "01a1376d-c5f7-7597-9953-f2d1fcdf1316",
+  "rig": "01a13770-0f19-76d4-88dd-fa5ad266059e"
+ }
+}

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef0f7fe7916fa34a9c3a156e85e1724, type: 3}
+  m_Name: intro
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Story.CutsceneDef
+  id: intro
+  titleEN: Grandpa's Letter
+  titleID: Surat Kakek
+  memory: 0
+  music: {fileID: 8300000, guid: fb37fdd1a1e1df44ebee44096af12b59, type: 3}
+  slides:
+  - image: {fileID: 21300000, guid: 775cf3c3705d29246886d9dbd2baac98, type: 3}
+    textEN: The bus left me at the edge of the valley, just as the mist was lifting
+      off the river.
+    textID: Bus menurunkanku di tepi lembah, tepat saat kabut mulai terangkat dari
+      sungai.
+    voice: {fileID: 8300000, guid: c1531daf14bb7164fbb835601e2588c5, type: 3}
+    voiceID: {fileID: 8300000, guid: 0ae8674aeb8d0d44fb93468ebdd5cf89, type: 3}
+    voiceM: {fileID: 8300000, guid: c5e33db741da151498bf1b9d5486a303, type: 3}
+    voiceMID: {fileID: 8300000, guid: 6c07ad7a55304e348ba0a552d1ffacb7, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0, y: 0}
+    panTo: {x: 0.02, y: -0.02}
+  - image: {fileID: 21300000, guid: 48dd240968114224ca49afb82cf6e097, type: 3}
+    textEN: Grandpa Theo's cabin was exactly as I remembered. The rowboat was still
+      tied to the old dock.
+    textID: Pondok Kakek Theo masih persis seperti yang kuingat. Perahu dayungnya
+      masih tertambat di dermaga tua.
+    voice: {fileID: 8300000, guid: 85c9df5d9a6c2074c8d8441882829d55, type: 3}
+    voiceID: {fileID: 8300000, guid: db744fd4f1ac8fa49b1488d27cf37ae5, type: 3}
+    voiceM: {fileID: 8300000, guid: aca4883602d78e24ca4eb7fc07120b70, type: 3}
+    voiceMID: {fileID: 8300000, guid: dbd249f86be78c34fabca2725014b2d2, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: -0.02, y: 0.01}
+    panTo: {x: 0.02, y: 0}
+  - image: {fileID: 21300000, guid: b0765ca467c3c404b97ce9b14937e680, type: 3}
+    textEN: On the table, a letter. "If you are reading this, the river is yours
+      now. Take good care of it."
+    textID: Di atas meja, sepucuk surat. "Kalau kamu membaca ini, sungai ini sekarang
+      milikmu. Jagalah baik-baik."
+    voice: {fileID: 8300000, guid: 8483ec8d7d5dc434babe61553fb8b30f, type: 3}
+    voiceID: {fileID: 8300000, guid: 5a222e88cdfc3b64c8d8e02577d74392, type: 3}
+    voiceM: {fileID: 8300000, guid: a7a84894b88ecaf4f884f822bc15c3d6, type: 3}
+    voiceMID: {fileID: 8300000, guid: cb7c00d63ca7a4040a5fc591c41ec4c0, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0.02, y: -0.01}
+    panTo: {x: -0.01, y: 0.02}
+  - image: {fileID: 21300000, guid: bf467652b4a311043ab2979e1509010b, type: 3}
+    textEN: '"My journal holds five legends of Riverlight. I never finished their
+      pages. Finish them for me."'
+    textID: '"Jurnalku menyimpan lima ikan legenda Riverlight. Halaman mereka belum
+      pernah selesai. Selesaikan untukku."'
+    voice: {fileID: 8300000, guid: ca79ebb8136154245994b51a8afcf376, type: 3}
+    voiceID: {fileID: 8300000, guid: a2515dca9337bfd4eb930a2747118b99, type: 3}
+    voiceM: {fileID: 0}
+    voiceMID: {fileID: 0}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0, y: 0}
+    panTo: {x: 0.02, y: -0.02}
+  - image: {fileID: 21300000, guid: db3ffefe6983eaf459dc3c5ddf476519, type: 3}
+    textEN: '"Start small. Catch your first fish. The river will teach you the rest."'
+    textID: '"Mulailah dari yang kecil. Tangkap ikan pertamamu. Sungai akan mengajarkan
+      sisanya."'
+    voice: {fileID: 8300000, guid: da6d7403e70b6cb43a5b3da495f95fe5, type: 3}
+    voiceID: {fileID: 8300000, guid: 0e87c857dd3c2c4428f4616a3b6a69c3, type: 3}
+    voiceM: {fileID: 0}
+    voiceMID: {fileID: 0}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: -0.02, y: 0.01}
+    panTo: {x: 0.02, y: 0}

@@ -1,0 +1,19 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_MapBoard\concept_e15f99_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 9%
+[image-to-3d] IN_PROGRESS 23%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_MapBoard\Prop_MapBoard.glb
+saved ArtSource\Meshy\Prop_MapBoard\thumb_back.png
+saved ArtSource\Meshy\Prop_MapBoard\thumb_front.png
+saved ArtSource\Meshy\Prop_MapBoard\thumb_left.png
+saved ArtSource\Meshy\Prop_MapBoard\thumb_right.png
+credits: 30
+saved ArtSource\Meshy\Prop_MapBoard\Prop_MapBoard.fbx
+saved ArtSource\Meshy\Prop_MapBoard\Prop_MapBoard_BaseColor.png

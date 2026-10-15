@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef0f7fe7916fa34a9c3a156e85e1724, type: 3}
+  m_Name: ending
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Story.CutsceneDef
+  id: ending
+  titleEN: The Keeper of Riverlight
+  titleID: Penjaga Riverlight
+  memory: 0
+  music: {fileID: 8300000, guid: fb37fdd1a1e1df44ebee44096af12b59, type: 3}
+  slides:
+  - image: {fileID: 21300000, guid: be5f9f17594f96342957276ec6b4d7fa, type: 3}
+    textEN: Five legends, five pages. Grandpa's journal was finally complete.
+    textID: Lima legenda, lima halaman. Jurnal Kakek akhirnya lengkap.
+    voice: {fileID: 8300000, guid: 7c51d29dd99564f449302c8116227568, type: 3}
+    voiceID: {fileID: 8300000, guid: d36dca7e511b3334d94b3d78e2b52376, type: 3}
+    voiceM: {fileID: 8300000, guid: 249ed674ede9de14bac8cff7527f5a5b, type: 3}
+    voiceMID: {fileID: 8300000, guid: c924c4788df0f154f938cc9617a11597, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0, y: 0}
+    panTo: {x: 0.02, y: -0.02}
+  - image: {fileID: 21300000, guid: a5bb59b36cfaec64aa29afd0994bb554, type: 3}
+    textEN: I found his old hat on the hook by the door. It fit better than I expected.
+    textID: Kutemukan topi lamanya tergantung di dekat pintu. Ternyata pas sekali
+      di kepalaku.
+    voice: {fileID: 8300000, guid: 9e0c0f159c47a4045926a604278520bb, type: 3}
+    voiceID: {fileID: 8300000, guid: ed9835943f2efaf4bbde695647f3e2c8, type: 3}
+    voiceM: {fileID: 8300000, guid: 81bde671db97a9e44a9d24c56e89483c, type: 3}
+    voiceMID: {fileID: 8300000, guid: b5c44f585de60624fb79ba73c0ffa752, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: -0.02, y: 0.01}
+    panTo: {x: 0.02, y: 0}
+  - image: {fileID: 21300000, guid: 4753e126b9129fb4bb581558466faac8, type: 3}
+    textEN: The village calls me the new keeper of the river now. I like the sound
+      of it.
+    textID: Orang-orang desa kini memanggilku penjaga sungai yang baru. Aku suka
+      mendengarnya.
+    voice: {fileID: 8300000, guid: 0eefe67076d2cdd4e8ab7eb4ab904dd9, type: 3}
+    voiceID: {fileID: 8300000, guid: d3aced02983666a4bb906d6d0a3f38d3, type: 3}
+    voiceM: {fileID: 8300000, guid: cc1fd9ccdb2fa1546aa1aa9077a59f6f, type: 3}
+    voiceMID: {fileID: 8300000, guid: a30ba351ab725754384e65e62fdc5175, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0.02, y: -0.01}
+    panTo: {x: -0.01, y: 0.02}
+  - image: {fileID: 21300000, guid: 426b886701e6a2a4fae78cd371da7ca4, type: 3}
+    textEN: Sometimes, when the water is still, I feel him beside me in the boat.
+      Patient. Smiling.
+    textID: Kadang, saat air sedang tenang, aku merasakan ia duduk di sampingku di
+      perahu. Sabar. Tersenyum.
+    voice: {fileID: 8300000, guid: a438e5c6f94205e49be5958483ffe85f, type: 3}
+    voiceID: {fileID: 8300000, guid: 9fad48f6d3f32d44a9e221be6940f4c9, type: 3}
+    voiceM: {fileID: 8300000, guid: 8f8f4c3c74fa26040a197dfddec99ca0, type: 3}
+    voiceMID: {fileID: 8300000, guid: c13ab71438653334d883d4e800d6da42, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: 0, y: 0}
+    panTo: {x: 0.02, y: -0.02}
+  - image: {fileID: 21300000, guid: 81dc810160c8a0341bc6ce8c468d95b3, type: 3}
+    textEN: The river is mine now. And there are always more fish to find.
+    textID: Sungai ini milikku sekarang. Dan selalu ada ikan lain yang menunggu untuk
+      ditemukan.
+    voice: {fileID: 8300000, guid: cd83f90f1839ca446952ae8feb2cfc8c, type: 3}
+    voiceID: {fileID: 8300000, guid: 392711f23bf582947a0cf814c38b9a83, type: 3}
+    voiceM: {fileID: 8300000, guid: ec8106723c2419c4186ffb42c938ed67, type: 3}
+    voiceMID: {fileID: 8300000, guid: c0bc5531bc66953449d99c533dbfc942, type: 3}
+    seconds: 5.5
+    zoomFrom: 1.04
+    zoomTo: 1.14
+    panFrom: {x: -0.02, y: 0.01}
+    panTo: {x: 0.02, y: 0}

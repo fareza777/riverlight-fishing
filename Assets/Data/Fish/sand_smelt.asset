@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: sand_smelt
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: sand_smelt
+  displayName: Sand Smelt
+  nameID: Ikan Teri Pasir
+  model: {fileID: 919132149155446097, guid: 72320cc799e6e3c43b27aec0a9105b40, type: 3}
+  illustration: {fileID: 21300000, guid: 473ff4a7521647e4f82f37c478acad4a, type: 3}
+  rarity: 0
+  location: estuary
+  habitats: 40
+  activeFrom: 0
+  activeTo: 0
+  sizeRangeCm: {x: 10, y: 18}
+  fight: 0.15
+  basePrice: 5
+  requiredRodTier: 0
+  chapter: 0
+  description: A see-through little fish with a silver racing stripe.
+  descriptionID: Ikan kecil tembus pandang dengan garis perak.
+  hintEN: Reeds and dock, any time.
+  hintID: Ilalang dan dermaga, kapan saja.

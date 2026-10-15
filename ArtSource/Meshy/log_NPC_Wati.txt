@@ -1,0 +1,34 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\concept_dc7cb5_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 15%
+[image-to-3d] IN_PROGRESS 41%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\NPC_Wati.glb
+saved ArtSource\Meshy\NPC_Wati\thumb_back.png
+saved ArtSource\Meshy\NPC_Wati\thumb_front.png
+saved ArtSource\Meshy\NPC_Wati\thumb_left.png
+saved ArtSource\Meshy\NPC_Wati\thumb_right.png
+credits: 30
+[rigging] IN_PROGRESS 0%
+[rigging] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\NPC_Wati_Rigged.fbx
+saved ArtSource\Meshy\NPC_Wati\NPC_Wati_Rigged.glb
+saved ArtSource\Meshy\NPC_Wati\NPC_Wati_Basic_walking_fbx_url.fbx
+saved ArtSource\Meshy\NPC_Wati\NPC_Wati_Basic_running_fbx_url.fbx
+[animate Idle] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@Idle.fbx
+[animate Walk] IN_PROGRESS 10%
+[animate Walk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@Walk.fbx
+[animate Wave] IN_PROGRESS 10%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@Wave.fbx
+[animate Talk] IN_PROGRESS 10%
+[animate Talk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@Talk.fbx

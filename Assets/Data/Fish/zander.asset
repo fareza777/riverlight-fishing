@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: zander
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: zander
+  displayName: Zander
+  nameID: Ikan Zander
+  model: {fileID: 919132149155446097, guid: 32869f6210598c142950b3a63bf644b8, type: 3}
+  illustration: {fileID: 21300000, guid: 29fa051adb720034eb2b914a634e9300, type: 3}
+  rarity: 2
+  location: river
+  habitats: 5
+  activeFrom: 19
+  activeTo: 5
+  sizeRangeCm: {x: 45, y: 80}
+  fight: 0.75
+  basePrice: 70
+  requiredRodTier: 0
+  chapter: 0
+  description: Glassy-eyed night stalker with fangs like needles.
+  descriptionID: Pemburu malam bermata kaca dengan taring setajam jarum.
+  hintEN: Deep water after dark.
+  hintID: Air dalam setelah gelap.

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: steelhead
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: steelhead
+  displayName: Steelhead
+  nameID: Ikan Steelhead
+  model: {fileID: 919132149155446097, guid: f312da3866513ac43ad55dc7743db750, type: 3}
+  illustration: {fileID: 21300000, guid: 5bcccf506ba1039479db6c8f68e85cf2, type: 3}
+  rarity: 1
+  location: gorge
+  habitats: 64
+  activeFrom: 5
+  activeTo: 10
+  sizeRangeCm: {x: 50, y: 90}
+  fight: 0.8
+  basePrice: 55
+  requiredRodTier: 0
+  chapter: 0
+  description: A sea-run rainbow, gleaming steel-blue, that leaps waterfalls.
+  descriptionID: Pelangi yang pergi ke laut, biru baja berkilau, melompati air terjun.
+  hintEN: Rapids at dawn.
+  hintID: Arus deras saat fajar.

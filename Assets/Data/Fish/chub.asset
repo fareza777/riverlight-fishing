@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: chub
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: chub
+  displayName: Chub
+  nameID: Ikan Chub
+  model: {fileID: 919132149155446097, guid: 6a0c70fdd14daa74681bb12e2249ec15, type: 3}
+  illustration: {fileID: 21300000, guid: d799268d4055ea349af5c34163a196ae, type: 3}
+  rarity: 0
+  location: gorge
+  habitats: 68
+  activeFrom: 0
+  activeTo: 0
+  sizeRangeCm: {x: 25, y: 50}
+  fight: 0.4
+  basePrice: 14
+  requiredRodTier: 0
+  chapter: 0
+  description: A bold, big-mouthed fish that eats almost anything.
+  descriptionID: Ikan berani bermulut besar yang memakan hampir apa saja.
+  hintEN: Pools and rapids.
+  hintID: Kolam dan arus deras.

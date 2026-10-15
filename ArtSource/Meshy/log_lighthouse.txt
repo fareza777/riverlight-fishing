@@ -1,0 +1,17 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Lighthouse\concept_53d072_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 9%
+[image-to-3d] IN_PROGRESS 43%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Lighthouse\Prop_Lighthouse.glb
+saved ArtSource\Meshy\Prop_Lighthouse\thumb_back.png
+saved ArtSource\Meshy\Prop_Lighthouse\thumb_front.png
+saved ArtSource\Meshy\Prop_Lighthouse\thumb_left.png
+saved ArtSource\Meshy\Prop_Lighthouse\thumb_right.png
+credits: 30
+saved ArtSource\Meshy\Prop_Lighthouse\Prop_Lighthouse.fbx
+saved ArtSource\Meshy\Prop_Lighthouse\Prop_Lighthouse_BaseColor.png

@@ -1,0 +1,61 @@
+# --- Unity generated (rebuilt by the editor) ---
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.csproj
+*.sln
+*.slnx
+*.unityproj
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-buildid.txt
+*_BurstDebugInformation_DoNotShip/
+
+# Generated at build time by the test framework
+/Assets/Resources/PerformanceTestRun*.json
+/Assets/Resources/PerformanceTestRun*.json.meta
+
+# --- Editors / local tooling ---
+.vs/
+.vscode/
+.idea/
+.utmp/
+.mcp.json
+.DS_Store
+Thumbs.db
+
+# --- Signing and secrets: never commit (API keys live in user environment variables) ---
+*.keystore
+*.jks
+*.p12
+.env
+*.env
+
+# --- Large sources that can be regenerated or re-downloaded ---
+# Meshy originals: the project uses the copies under Assets/Art (re-download: Tools/meshy_pipeline.py fetch)
+ArtSource/Meshy/**/*.glb
+ArtSource/Meshy/**/*.fbx
+ArtSource/Meshy/*.glb
+# Uncompressed music masters (the game ships the OGG versions in Assets/Resources/Audio/Music)
+ArtSource/AudioMaster/
+ArtSource/Blender/*.blend1
+# Dev screenshots (keep only the overview)
+Docs/Progress/*
+!Docs/Progress/riverlight_v1_overview.png

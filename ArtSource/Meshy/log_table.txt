@@ -1,0 +1,18 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Table\concept_22a396_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 6%
+[image-to-3d] IN_PROGRESS 18%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_Table\Prop_Table.glb
+saved ArtSource\Meshy\Prop_Table\thumb_back.png
+saved ArtSource\Meshy\Prop_Table\thumb_front.png
+saved ArtSource\Meshy\Prop_Table\thumb_left.png
+saved ArtSource\Meshy\Prop_Table\thumb_right.png
+credits: 30

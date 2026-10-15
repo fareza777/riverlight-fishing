@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: lantern_koi
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: lantern_koi
+  displayName: Lantern Koi
+  nameID: Koi Lentera
+  model: {fileID: 919132149155446097, guid: b214b9f156245bd4b9050141198dd8af, type: 3}
+  illustration: {fileID: 21300000, guid: 8420b5290985ca94cab8626efab2861b, type: 3}
+  rarity: 3
+  location: lake
+  habitats: 48
+  activeFrom: 20
+  activeTo: 4
+  sizeRangeCm: {x: 50, y: 80}
+  fight: 0.65
+  basePrice: 260
+  requiredRodTier: 1
+  chapter: 2
+  description: A white-and-scarlet koi that glows like a paper lantern. Grandma released
+    it on the night of the festival.
+  descriptionID: Koi putih-merah yang bercahaya seperti lentera kertas. Nenek melepaskannya
+    di malam festival.
+  hintEN: Willow Lake at night.
+  hintID: Danau Willow di malam hari.

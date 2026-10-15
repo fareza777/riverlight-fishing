@@ -1,0 +1,33 @@
+[animate Idle] IN_PROGRESS 10%
+[animate Walk] IN_PROGRESS 10%
+[animate Run] IN_PROGRESS 10%
+[animate Cast] IN_PROGRESS 10%
+[animate SitIdle] IN_PROGRESS 10%
+[animate Pull] IN_PROGRESS 10%
+[animate OpenDoor] IN_PROGRESS 10%
+[animate StandToSit] IN_PROGRESS 10%
+[animate Cheer] IN_PROGRESS 10%
+[animate Wave] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+[animate Run] SUCCEEDED 100%
+[animate SitIdle] IN_PROGRESS 95%
+[animate OpenDoor] IN_PROGRESS 95%
+[animate Walk] SUCCEEDED 100%
+[animate Cast] SUCCEEDED 100%
+[animate Pull] SUCCEEDED 100%
+[animate StandToSit] SUCCEEDED 100%
+[animate Cheer] IN_PROGRESS 95%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Run.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Wave.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Walk.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Idle.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@StandToSit.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Pull.fbx
+[animate SitIdle] SUCCEEDED 100%
+[animate OpenDoor] SUCCEEDED 100%
+[animate Cheer] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Cast.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@Cheer.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@SitIdle.fbx
+saved ArtSource\Meshy\FisherF\Animations\FisherF@OpenDoor.fbx

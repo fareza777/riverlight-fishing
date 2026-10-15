@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d75d45482d6534eaacb154a37bc260, type: 3}
+  m_Name: rod_ash
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.ItemDef
+  id: rod_ash
+  type: 0
+  nameEN: Ash Rod
+  nameID: Joran Abu
+  descEN: Springy ash wood. A wider safe zone when reeling.
+  descID: Kayu abu yang lentur. Zona aman lebih lebar saat menggulung.
+  price: 200
+  tier: 1
+  safeBandBonus: 0.05
+  reelBonus: 0.1
+  rareBonus: 0
+  capacity: 0
+  icon: {fileID: 21300000, guid: d896aa6288ee8f446a9f0d054350c67f, type: 3}

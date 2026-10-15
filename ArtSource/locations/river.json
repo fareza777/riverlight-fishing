@@ -1,0 +1,897 @@
+{
+ "location": "river",
+ "items": [
+  {
+   "asset": "Cabin",
+   "x": -16.0,
+   "y": -6.0,
+   "z": 1.35,
+   "rot": 90,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Dock",
+   "x": -9.6,
+   "y": -6.0,
+   "z": 0.0,
+   "rot": -90,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": -1.5,
+   "y": 10,
+   "z": -1.263,
+   "rot": 20,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 1.2,
+   "y": 11.6,
+   "z": -2.103,
+   "rot": 0,
+   "scale": 1.1,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": 5.5,
+   "y": -31,
+   "z": 1.068,
+   "rot": 60,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Tall",
+   "x": 6.8,
+   "y": 38.4,
+   "z": -0.908,
+   "rot": 15,
+   "scale": 1.2,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": -6.5,
+   "y": 36.5,
+   "z": -0.645,
+   "rot": 140,
+   "scale": 1.2,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": 10.5,
+   "y": 33,
+   "z": -0.939,
+   "rot": 80,
+   "scale": 1.1,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -3.5,
+   "y": 24.5,
+   "z": -1.126,
+   "rot": 0,
+   "scale": 1.3,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -9.5,
+   "y": -38,
+   "z": -0.436,
+   "rot": 30,
+   "scale": 0.9,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": 15,
+   "y": -16,
+   "z": 1.314,
+   "rot": 10,
+   "scale": 0.9,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -21,
+   "y": 14,
+   "z": 1.024,
+   "rot": 200,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -8.2,
+   "y": -9.5,
+   "z": -1.054,
+   "rot": 0,
+   "scale": 0.8,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 8.8,
+   "y": 2,
+   "z": -0.599,
+   "rot": 90,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -24.124,
+   "y": 12.356,
+   "z": 1.192,
+   "rot": 172.48,
+   "scale": 0.947,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 21.07,
+   "y": 24.401,
+   "z": 1.461,
+   "rot": 181.83,
+   "scale": 0.956,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -35.771,
+   "y": -20.153,
+   "z": 1.649,
+   "rot": 24.94,
+   "scale": 1.207,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -19.278,
+   "y": -34.265,
+   "z": 1.204,
+   "rot": 359.12,
+   "scale": 1.182,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 27.003,
+   "y": 4.821,
+   "z": 1.774,
+   "rot": 118.41,
+   "scale": 1.074,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -27.662,
+   "y": 39.1,
+   "z": 6.248,
+   "rot": 55.73,
+   "scale": 1.218,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -22.543,
+   "y": -54.212,
+   "z": 1.703,
+   "rot": 84.55,
+   "scale": 1.201,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -20.984,
+   "y": 40.814,
+   "z": 7.095,
+   "rot": 271.73,
+   "scale": 1.193,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -27.182,
+   "y": -9.415,
+   "z": 1.255,
+   "rot": 72.39,
+   "scale": 1.265,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 27.904,
+   "y": -16.221,
+   "z": 1.484,
+   "rot": 162.48,
+   "scale": 1.024,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 35.629,
+   "y": -18.567,
+   "z": 1.439,
+   "rot": 33.57,
+   "scale": 1.173,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 35.483,
+   "y": -7.407,
+   "z": 1.717,
+   "rot": 198.16,
+   "scale": 1.187,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -20.014,
+   "y": 4.108,
+   "z": 1.624,
+   "rot": 224.14,
+   "scale": 0.931,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -23.753,
+   "y": -22.483,
+   "z": 1.216,
+   "rot": 124.78,
+   "scale": 1.119,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 22.586,
+   "y": 21.256,
+   "z": 1.448,
+   "rot": 246.01,
+   "scale": 1.154,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 28.706,
+   "y": 39.745,
+   "z": 6.694,
+   "rot": 356.08,
+   "scale": 1.283,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -18.201,
+   "y": 31.367,
+   "z": 4.615,
+   "rot": 24.96,
+   "scale": 1.212,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 19.722,
+   "y": -8.716,
+   "z": 1.11,
+   "rot": 18.78,
+   "scale": 0.966,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -31.0,
+   "y": -23.516,
+   "z": 1.41,
+   "rot": 354.04,
+   "scale": 1.186,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 33.039,
+   "y": -4.386,
+   "z": 1.635,
+   "rot": 10.19,
+   "scale": 0.945,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 25.153,
+   "y": -26.586,
+   "z": 1.587,
+   "rot": 99.35,
+   "scale": 1.196,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -35.263,
+   "y": 11.9,
+   "z": 1.827,
+   "rot": 8.46,
+   "scale": 1.117,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 33.027,
+   "y": 34.372,
+   "z": 6.532,
+   "rot": 34.14,
+   "scale": 0.892,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -34.177,
+   "y": -12.421,
+   "z": 1.327,
+   "rot": 312.24,
+   "scale": 1.145,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -26.89,
+   "y": -3.057,
+   "z": 1.372,
+   "rot": 177.79,
+   "scale": 0.949,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -24.042,
+   "y": -39.238,
+   "z": 1.416,
+   "rot": 255.59,
+   "scale": 1.098,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -32.675,
+   "y": 14.509,
+   "z": 1.662,
+   "rot": 278.73,
+   "scale": 1.206,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -31.429,
+   "y": 19.92,
+   "z": 1.481,
+   "rot": 256.14,
+   "scale": 0.964,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 14.165,
+   "y": -26.011,
+   "z": 1.567,
+   "rot": 139.99,
+   "scale": 0.989,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 28.854,
+   "y": -27.907,
+   "z": 1.55,
+   "rot": 197.76,
+   "scale": 1.277,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -28.903,
+   "y": 3.32,
+   "z": 1.635,
+   "rot": 264.45,
+   "scale": 1.285,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -13.669,
+   "y": 13.344,
+   "z": 1.557,
+   "rot": 201.84,
+   "scale": 0.879,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 22.658,
+   "y": 41.638,
+   "z": 6.303,
+   "rot": 114.52,
+   "scale": 1.297,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -28.252,
+   "y": -50.237,
+   "z": 1.645,
+   "rot": 293.16,
+   "scale": 1.192,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -34.576,
+   "y": 7.754,
+   "z": 1.815,
+   "rot": 186.27,
+   "scale": 1.025,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -18.212,
+   "y": 13.826,
+   "z": 1.289,
+   "rot": 260.55,
+   "scale": 1.055,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 28.115,
+   "y": 21.511,
+   "z": 1.365,
+   "rot": 273.07,
+   "scale": 1.151,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 25.841,
+   "y": 13.301,
+   "z": 1.691,
+   "rot": 88.31,
+   "scale": 1.263,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 35.223,
+   "y": -57.349,
+   "z": 1.368,
+   "rot": 112.22,
+   "scale": 1.026,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -30.275,
+   "y": -27.135,
+   "z": 1.508,
+   "rot": 267.25,
+   "scale": 1.058,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 14.684,
+   "y": -37.007,
+   "z": 1.56,
+   "rot": 230.97,
+   "scale": 1.157,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -17.217,
+   "y": 39.026,
+   "z": 7.34,
+   "rot": 91.53,
+   "scale": 1.23,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -16.026,
+   "y": -19.342,
+   "z": 1.41,
+   "rot": 157.28,
+   "scale": 1.128,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -16.387,
+   "y": -38.777,
+   "z": 0.997,
+   "rot": 291.76,
+   "scale": 1.271,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -18.704,
+   "y": -57.225,
+   "z": 1.636,
+   "rot": 34.03,
+   "scale": 0.989,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -22.495,
+   "y": -16.897,
+   "z": 1.176,
+   "rot": 81.04,
+   "scale": 1.211,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 24.732,
+   "y": 36.366,
+   "z": 6.877,
+   "rot": 6.34,
+   "scale": 1.112,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -30.208,
+   "y": 33.767,
+   "z": 5.903,
+   "rot": 273.34,
+   "scale": 0.935,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -31.706,
+   "y": 25.151,
+   "z": 1.483,
+   "rot": 223.3,
+   "scale": 1.062,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 21.608,
+   "y": -23.524,
+   "z": 1.442,
+   "rot": 127.13,
+   "scale": 0.984,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -22.336,
+   "y": -30.474,
+   "z": 1.534,
+   "rot": 13.37,
+   "scale": 1.073,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -24.611,
+   "y": -47.381,
+   "z": 1.581,
+   "rot": 193.88,
+   "scale": 1.034,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 23.564,
+   "y": -36.201,
+   "z": 1.592,
+   "rot": 126.82,
+   "scale": 1.09,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 9.232,
+   "y": -40.242,
+   "z": 1.401,
+   "rot": 58.32,
+   "scale": 1.233,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 22.085,
+   "y": 34.449,
+   "z": 6.896,
+   "rot": 78.23,
+   "scale": 1.2,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 28.999,
+   "y": -3.608,
+   "z": 1.602,
+   "rot": 349.26,
+   "scale": 1.026,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 31.812,
+   "y": 37.551,
+   "z": 6.674,
+   "rot": 4.05,
+   "scale": 1.008,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 27.482,
+   "y": -36.903,
+   "z": 1.459,
+   "rot": 199.75,
+   "scale": 1.199,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 17.277,
+   "y": 32.044,
+   "z": 5.383,
+   "rot": 29.81,
+   "scale": 1.033,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -23.165,
+   "y": -2.936,
+   "z": 1.442,
+   "rot": 130.4,
+   "scale": 0.909,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -18.717,
+   "y": -14.726,
+   "z": 1.448,
+   "rot": 270.5,
+   "scale": 1.143,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 23.249,
+   "y": 1.817,
+   "z": 1.511,
+   "rot": 265.16,
+   "scale": 1.179,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -7.66,
+   "y": -57.618,
+   "z": 1.309,
+   "rot": 207.52,
+   "scale": 1.299,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -32.043,
+   "y": -20.217,
+   "z": 1.335,
+   "rot": 179.94,
+   "scale": 1.058,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 26.3,
+   "y": 18.632,
+   "z": 1.499,
+   "rot": 90.14,
+   "scale": 1.202,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -21.687,
+   "y": 28.465,
+   "z": 1.414,
+   "rot": 27.8,
+   "scale": 0.989,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 23.843,
+   "y": -30.986,
+   "z": 1.678,
+   "rot": 106.49,
+   "scale": 0.948,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 10.747,
+   "y": -20.445,
+   "z": 1.579,
+   "rot": 50.77,
+   "scale": 0.876,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 14.137,
+   "y": -15.806,
+   "z": 1.502,
+   "rot": 317.0,
+   "scale": 1.145,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 20.837,
+   "y": -55.973,
+   "z": 1.438,
+   "rot": 163.78,
+   "scale": 0.95,
+   "size": 0.0
+  },
+  {
+   "asset": "Prop_MarketStall",
+   "x": -13.5,
+   "y": -10.5,
+   "z": 0,
+   "rot": 0,
+   "scale": 1,
+   "size": 3.0
+  },
+  {
+   "asset": "Prop_MapBoard",
+   "x": -12.4,
+   "y": -1.6,
+   "z": 0,
+   "rot": 0,
+   "scale": 1,
+   "size": 2.2
+  },
+  {
+   "asset": "Prop_Willow",
+   "x": -7.5,
+   "y": -17.5,
+   "z": 0,
+   "rot": 40,
+   "scale": 1,
+   "size": 7.0
+  },
+  {
+   "asset": "Prop_Willow",
+   "x": -6.5,
+   "y": 12.5,
+   "z": 0,
+   "rot": 200,
+   "scale": 1,
+   "size": 6.5
+  }
+ ],
+ "spawn": {
+  "x": -11.6,
+  "y": -5.4,
+  "z": 0
+ },
+ "spots": [
+  {
+   "name": "Quiet Bend",
+   "nameID": "Tikungan Tenang",
+   "habitat": "River",
+   "x": 0.5,
+   "y": 14
+  },
+  {
+   "name": "Sandbar Shallows",
+   "nameID": "Dangkalan Pasir",
+   "habitat": "Shallows",
+   "x": -3,
+   "y": -18
+  },
+  {
+   "name": "Old Dock",
+   "nameID": "Dermaga Tua",
+   "habitat": "Dock|River",
+   "x": -1.5,
+   "y": -2.5
+  },
+  {
+   "name": "Waterfall Pool",
+   "nameID": "Kolam Air Terjun",
+   "habitat": "Pool",
+   "x": 2.5,
+   "y": 29
+  },
+  {
+   "name": "Lower Reach",
+   "nameID": "Hilir Sungai",
+   "habitat": "River",
+   "x": -1.5,
+   "y": -40
+  }
+ ],
+ "schools": [
+  {
+   "fish": "silver_bream",
+   "x": 1,
+   "y": 12,
+   "count": 8,
+   "radius": 5,
+   "depth": 0.6
+  },
+  {
+   "fish": "brook_trout",
+   "x": -3.5,
+   "y": -20,
+   "count": 5,
+   "radius": 4,
+   "depth": 0.35
+  },
+  {
+   "fish": "perch",
+   "x": -1.5,
+   "y": -4,
+   "count": 6,
+   "radius": 3.5,
+   "depth": 0.6
+  },
+  {
+   "fish": "golden_carp",
+   "x": 2,
+   "y": 30,
+   "count": 2,
+   "radius": 5.5,
+   "depth": 1.1
+  },
+  {
+   "fish": "roach",
+   "x": -2,
+   "y": -38,
+   "count": 7,
+   "radius": 5,
+   "depth": 0.7
+  },
+  {
+   "fish": "pike",
+   "x": -4,
+   "y": 2,
+   "count": 2,
+   "radius": 6,
+   "depth": 0.9
+  },
+  {
+   "fish": "dace",
+   "x": 0,
+   "y": 20,
+   "count": 6,
+   "radius": 4,
+   "depth": 0.5
+  }
+ ]
+}

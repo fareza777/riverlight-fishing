@@ -1,0 +1,17 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_RockingChair\concept_c1dccc_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 15%
+[image-to-3d] IN_PROGRESS 43%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 67%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_RockingChair\Prop_RockingChair.glb
+saved ArtSource\Meshy\Prop_RockingChair\thumb_back.png
+saved ArtSource\Meshy\Prop_RockingChair\thumb_front.png
+saved ArtSource\Meshy\Prop_RockingChair\thumb_left.png
+saved ArtSource\Meshy\Prop_RockingChair\thumb_right.png
+credits: 30

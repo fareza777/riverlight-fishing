@@ -1,0 +1,36 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\concept_b519f4_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 12%
+[image-to-3d] IN_PROGRESS 24%
+[image-to-3d] IN_PROGRESS 39%
+[image-to-3d] IN_PROGRESS 45%
+[image-to-3d] IN_PROGRESS 52%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\NPC_Joko.glb
+saved ArtSource\Meshy\NPC_Joko\thumb_back.png
+saved ArtSource\Meshy\NPC_Joko\thumb_front.png
+saved ArtSource\Meshy\NPC_Joko\thumb_left.png
+saved ArtSource\Meshy\NPC_Joko\thumb_right.png
+credits: 30
+[rigging] IN_PROGRESS 10%
+[rigging] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\NPC_Joko_Rigged.fbx
+saved ArtSource\Meshy\NPC_Joko\NPC_Joko_Rigged.glb
+saved ArtSource\Meshy\NPC_Joko\NPC_Joko_Basic_walking_fbx_url.fbx
+saved ArtSource\Meshy\NPC_Joko\NPC_Joko_Basic_running_fbx_url.fbx
+[animate Idle] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@Idle.fbx
+[animate Sit] IN_PROGRESS 10%
+[animate Sit] IN_PROGRESS 95%
+[animate Sit] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@Sit.fbx
+[animate Wave] IN_PROGRESS 10%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@Wave.fbx
+[animate Talk] IN_PROGRESS 10%
+[animate Talk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@Talk.fbx

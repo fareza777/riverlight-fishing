@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: paddlefish
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: paddlefish
+  displayName: Paddlefish
+  nameID: Ikan Dayung
+  model: {fileID: 919132149155446097, guid: 652df9cea5c555f45afb1c79e3e0562b, type: 3}
+  illustration: {fileID: 21300000, guid: d078a37c797add3489b6cb2305d8b531, type: 3}
+  rarity: 2
+  location: lake
+  habitats: 128
+  activeFrom: 18
+  activeTo: 6
+  sizeRangeCm: {x: 90, y: 150}
+  fight: 0.8
+  basePrice: 100
+  requiredRodTier: 0
+  chapter: 0
+  description: An ancient fish with a nose shaped like a canoe paddle.
+  descriptionID: Ikan purba dengan moncong berbentuk dayung kano.
+  hintEN: Deep water at night.
+  hintID: Air dalam di malam hari.

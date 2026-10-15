@@ -1,0 +1,16 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_FishTrophy\concept_edc1d8_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 3%
+[image-to-3d] IN_PROGRESS 18%
+[image-to-3d] IN_PROGRESS 59%
+[image-to-3d] IN_PROGRESS 74%
+[image-to-3d] IN_PROGRESS 84%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Prop_FishTrophy\Prop_FishTrophy.glb
+saved ArtSource\Meshy\Prop_FishTrophy\thumb_back.png
+saved ArtSource\Meshy\Prop_FishTrophy\thumb_front.png
+saved ArtSource\Meshy\Prop_FishTrophy\thumb_left.png
+saved ArtSource\Meshy\Prop_FishTrophy\thumb_right.png
+credits: 30

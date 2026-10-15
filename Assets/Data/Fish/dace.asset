@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: dace
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: dace
+  displayName: Dace
+  nameID: Ikan Dace
+  model: {fileID: 919132149155446097, guid: 75497bf6fb30e6c41b1394b22a33d395, type: 3}
+  illustration: {fileID: 21300000, guid: cf6e81d8a914f37439100867f6a2a395, type: 3}
+  rarity: 0
+  location: river
+  habitats: 1
+  activeFrom: 6
+  activeTo: 18
+  sizeRangeCm: {x: 12, y: 25}
+  fight: 0.3
+  basePrice: 10
+  requiredRodTier: 0
+  chapter: 0
+  description: A slim, fast silver dart of the current.
+  descriptionID: Ikan ramping keperakan yang melesat di arus.
+  hintEN: Open river, daytime.
+  hintID: Sungai terbuka, siang hari.

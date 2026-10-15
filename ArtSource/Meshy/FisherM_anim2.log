@@ -1,0 +1,17 @@
+[animate Cheer] IN_PROGRESS 10%
+[animate SitIdle] IN_PROGRESS 10%
+[animate OpenDoor] IN_PROGRESS 10%
+[animate Walk] IN_PROGRESS 10%
+[animate Wave] IN_PROGRESS 10%
+[animate Cheer] IN_PROGRESS 95%
+[animate Walk] SUCCEEDED 100%
+[animate OpenDoor] SUCCEEDED 100%
+[animate SitIdle] IN_PROGRESS 95%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@OpenDoor.fbx
+saved ArtSource\Meshy\FisherM\Animations\FisherM@Wave.fbx
+saved ArtSource\Meshy\FisherM\Animations\FisherM@Walk.fbx
+[animate SitIdle] SUCCEEDED 100%
+[animate Cheer] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@SitIdle.fbx
+saved ArtSource\Meshy\FisherM\Animations\FisherM@Cheer.fbx

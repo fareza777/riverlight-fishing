@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: crappie
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: crappie
+  displayName: Crappie
+  nameID: Ikan Crappie
+  model: {fileID: 919132149155446097, guid: 2e42fe05c18832c42ac256c80a6df693, type: 3}
+  illustration: {fileID: 21300000, guid: 981d7464f508c894983861de814fae97, type: 3}
+  rarity: 0
+  location: lake
+  habitats: 48
+  activeFrom: 0
+  activeTo: 0
+  sizeRangeCm: {x: 15, y: 30}
+  fight: 0.3
+  basePrice: 12
+  requiredRodTier: 0
+  chapter: 0
+  description: Speckled like a starry night, schools around sunken branches.
+  descriptionID: Berbintik seperti malam berbintang, bergerombol di dahan tenggelam.
+  hintEN: Open lake and reeds.
+  hintID: Danau terbuka dan rumpun ilalang.

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd4af0d8d8ee74a90f2f373bf0c0c5, type: 3}
+  m_Name: moon_eel
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Fishing.FishSpecies
+  id: moon_eel
+  displayName: Moon Eel
+  nameID: Belut Bulan
+  model: {fileID: 919132149155446097, guid: a95580e24c888ad48960b8b5d9ce2618, type: 3}
+  illustration: {fileID: 21300000, guid: 6e836a0aa63e0b04cbd10a23b65e8c66, type: 3}
+  rarity: 3
+  location: river
+  habitats: 5
+  activeFrom: 21
+  activeTo: 4.5
+  sizeRangeCm: {x: 60, y: 110}
+  fight: 0.9
+  basePrice: 400
+  requiredRodTier: 4
+  chapter: 5
+  description: Only seen at night, trailing faint blue light. The last page of Grandpa's
+    journal.
+  descriptionID: Hanya terlihat di malam hari, meninggalkan cahaya biru samar. Halaman
+    terakhir jurnal kakek.
+  hintEN: "Riverlight at night \u2014 the final legend."
+  hintID: "Riverlight di malam hari \u2014 legenda terakhir."

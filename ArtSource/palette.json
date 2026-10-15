@@ -1,0 +1,5224 @@
+{
+ "items": [
+  {
+   "name": "Fish_BrookTrout_Accent",
+   "color": [
+    0.9451,
+    0.8902,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_BrookTrout_Back",
+   "color": [
+    0.3059,
+    0.3569,
+    0.2157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_BrookTrout_Belly",
+   "color": [
+    0.9137,
+    0.6431,
+    0.3961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_BrookTrout_Body",
+   "color": [
+    0.4863,
+    0.5412,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_BrookTrout_Fin",
+   "color": [
+    0.8471,
+    0.4667,
+    0.3098
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_GoldenCarp_Accent",
+   "color": [
+    0.9608,
+    0.7451,
+    0.3451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_GoldenCarp_Back",
+   "color": [
+    0.7765,
+    0.4353,
+    0.1451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_GoldenCarp_Belly",
+   "color": [
+    0.9686,
+    0.8627,
+    0.5725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_GoldenCarp_Body",
+   "color": [
+    0.9216,
+    0.6431,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_GoldenCarp_Fin",
+   "color": [
+    0.949,
+    0.7216,
+    0.3608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_MoonEel_Accent",
+   "color": [
+    0.6235,
+    0.8902,
+    1.0
+   ],
+   "hasEmission": true,
+   "emission": [
+    0.6235,
+    0.8902,
+    1.0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_MoonEel_Back",
+   "color": [
+    0.1686,
+    0.1725,
+    0.3216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_MoonEel_Belly",
+   "color": [
+    0.549,
+    0.5608,
+    0.7608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_MoonEel_Body",
+   "color": [
+    0.2706,
+    0.2745,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_MoonEel_Fin",
+   "color": [
+    0.3686,
+    0.3725,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Perch_Accent",
+   "color": [
+    0.3451,
+    0.3765,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Perch_Back",
+   "color": [
+    0.3686,
+    0.4196,
+    0.2039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Perch_Belly",
+   "color": [
+    0.9373,
+    0.9059,
+    0.7451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Perch_Body",
+   "color": [
+    0.7608,
+    0.7176,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Perch_Fin",
+   "color": [
+    0.8784,
+    0.4157,
+    0.2353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Pike_Accent",
+   "color": [
+    0.8627,
+    0.851,
+    0.6196
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Pike_Back",
+   "color": [
+    0.2431,
+    0.3333,
+    0.2118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Pike_Belly",
+   "color": [
+    0.902,
+    0.8902,
+    0.7765
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Pike_Body",
+   "color": [
+    0.4314,
+    0.549,
+    0.3098
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_Pike_Fin",
+   "color": [
+    0.6039,
+    0.5451,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_SilverBream_Accent",
+   "color": [
+    0.651,
+    0.7137,
+    0.7529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_SilverBream_Back",
+   "color": [
+    0.4902,
+    0.5765,
+    0.6353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_SilverBream_Belly",
+   "color": [
+    0.9333,
+    0.949,
+    0.9529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_SilverBream_Body",
+   "color": [
+    0.7216,
+    0.7765,
+    0.8118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_SilverBream_Fin",
+   "color": [
+    0.7882,
+    0.5176,
+    0.4314
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_arctic_char_Accent",
+   "color": [
+    0.9412,
+    0.7137,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_arctic_char_Back",
+   "color": [
+    0.2431,
+    0.2902,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_arctic_char_Belly",
+   "color": [
+    0.9333,
+    0.4784,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_arctic_char_Body",
+   "color": [
+    0.4863,
+    0.5412,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_arctic_char_Fin",
+   "color": [
+    0.8941,
+    0.3922,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barbel_Accent",
+   "color": [
+    0.5569,
+    0.4549,
+    0.2667
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barbel_Back",
+   "color": [
+    0.4314,
+    0.3529,
+    0.1961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barbel_Belly",
+   "color": [
+    0.9098,
+    0.851,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barbel_Body",
+   "color": [
+    0.6627,
+    0.5451,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barbel_Fin",
+   "color": [
+    0.7255,
+    0.3922,
+    0.2471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barracuda_Accent",
+   "color": [
+    0.1804,
+    0.2275,
+    0.2588
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barracuda_Back",
+   "color": [
+    0.3686,
+    0.4314,
+    0.4706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barracuda_Belly",
+   "color": [
+    0.9569,
+    0.9647,
+    0.9647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barracuda_Body",
+   "color": [
+    0.7608,
+    0.8,
+    0.8157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_barracuda_Fin",
+   "color": [
+    0.549,
+    0.6039,
+    0.6353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_bluegill_Accent",
+   "color": [
+    0.1804,
+    0.2902,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_bluegill_Back",
+   "color": [
+    0.3098,
+    0.3922,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_bluegill_Belly",
+   "color": [
+    0.9059,
+    0.6431,
+    0.3451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_bluegill_Body",
+   "color": [
+    0.4941,
+    0.6039,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_bluegill_Fin",
+   "color": [
+    0.4314,
+    0.5176,
+    0.3765
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brook_trout_Accent",
+   "color": [
+    0.9451,
+    0.8902,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brook_trout_Back",
+   "color": [
+    0.3059,
+    0.3569,
+    0.2157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brook_trout_Belly",
+   "color": [
+    0.9137,
+    0.6431,
+    0.3961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brook_trout_Body",
+   "color": [
+    0.4863,
+    0.5412,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brook_trout_Fin",
+   "color": [
+    0.8471,
+    0.4667,
+    0.3098
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brown_trout_Accent",
+   "color": [
+    0.7608,
+    0.2196,
+    0.1804
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brown_trout_Back",
+   "color": [
+    0.4314,
+    0.3294,
+    0.1961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brown_trout_Belly",
+   "color": [
+    0.9412,
+    0.8706,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brown_trout_Body",
+   "color": [
+    0.7059,
+    0.5412,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_brown_trout_Fin",
+   "color": [
+    0.651,
+    0.4706,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_catfish_Accent",
+   "color": [
+    0.2275,
+    0.2667,
+    0.298
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_catfish_Back",
+   "color": [
+    0.2824,
+    0.3294,
+    0.3686
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_catfish_Belly",
+   "color": [
+    0.8941,
+    0.902,
+    0.8863
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_catfish_Body",
+   "color": [
+    0.4863,
+    0.549,
+    0.5961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_catfish_Fin",
+   "color": [
+    0.3686,
+    0.4157,
+    0.4549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_chub_Accent",
+   "color": [
+    0.549,
+    0.5098,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_chub_Back",
+   "color": [
+    0.3686,
+    0.3529,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_chub_Belly",
+   "color": [
+    0.9255,
+    0.902,
+    0.8235
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_chub_Body",
+   "color": [
+    0.7059,
+    0.6588,
+    0.5333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_chub_Fin",
+   "color": [
+    0.8235,
+    0.4078,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_crappie_Accent",
+   "color": [
+    0.1804,
+    0.1961,
+    0.1725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_crappie_Back",
+   "color": [
+    0.2941,
+    0.3216,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_crappie_Belly",
+   "color": [
+    0.9333,
+    0.9412,
+    0.902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_crappie_Body",
+   "color": [
+    0.7843,
+    0.8,
+    0.7529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_crappie_Fin",
+   "color": [
+    0.549,
+    0.5725,
+    0.5176
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_cutthroat_Accent",
+   "color": [
+    0.1255,
+    0.1255,
+    0.0941
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_cutthroat_Back",
+   "color": [
+    0.3686,
+    0.4157,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_cutthroat_Belly",
+   "color": [
+    0.9412,
+    0.8863,
+    0.7373
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_cutthroat_Body",
+   "color": [
+    0.7216,
+    0.6588,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_cutthroat_Fin",
+   "color": [
+    0.6588,
+    0.5569,
+    0.3529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_dace_Accent",
+   "color": [
+    0.7529,
+    0.7882,
+    0.8
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_dace_Back",
+   "color": [
+    0.4902,
+    0.5412,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_dace_Belly",
+   "color": [
+    0.9647,
+    0.9647,
+    0.949
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_dace_Body",
+   "color": [
+    0.8235,
+    0.851,
+    0.8627
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_dace_Fin",
+   "color": [
+    0.8471,
+    0.8118,
+    0.6118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_flounder_Accent",
+   "color": [
+    0.8471,
+    0.4549,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_flounder_Back",
+   "color": [
+    0.4784,
+    0.4,
+    0.2667
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_flounder_Belly",
+   "color": [
+    0.949,
+    0.9255,
+    0.8627
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_flounder_Body",
+   "color": [
+    0.6275,
+    0.5412,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_flounder_Fin",
+   "color": [
+    0.5804,
+    0.502,
+    0.3608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gilthead_Accent",
+   "color": [
+    0.9098,
+    0.7529,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gilthead_Back",
+   "color": [
+    0.4157,
+    0.4627,
+    0.502
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gilthead_Belly",
+   "color": [
+    0.949,
+    0.949,
+    0.9333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gilthead_Body",
+   "color": [
+    0.7216,
+    0.7529,
+    0.7686
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gilthead_Fin",
+   "color": [
+    0.6039,
+    0.6353,
+    0.6588
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_carp_Accent",
+   "color": [
+    0.9608,
+    0.7451,
+    0.3451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_carp_Back",
+   "color": [
+    0.7765,
+    0.4353,
+    0.1451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_carp_Belly",
+   "color": [
+    0.9686,
+    0.8627,
+    0.5725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_carp_Body",
+   "color": [
+    0.9216,
+    0.6431,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_carp_Fin",
+   "color": [
+    0.949,
+    0.7216,
+    0.3608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_shiner_Accent",
+   "color": [
+    0.9412,
+    0.8471,
+    0.502
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_shiner_Back",
+   "color": [
+    0.6118,
+    0.5412,
+    0.2667
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_shiner_Belly",
+   "color": [
+    0.9686,
+    0.9294,
+    0.7686
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_shiner_Body",
+   "color": [
+    0.8863,
+    0.7804,
+    0.4235
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_shiner_Fin",
+   "color": [
+    0.9098,
+    0.8314,
+    0.6039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_trout_Accent",
+   "color": [
+    0.8235,
+    0.1882,
+    0.1647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_trout_Back",
+   "color": [
+    0.4784,
+    0.5412,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_trout_Belly",
+   "color": [
+    0.9412,
+    0.4157,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_trout_Body",
+   "color": [
+    0.9098,
+    0.7216,
+    0.251
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_golden_trout_Fin",
+   "color": [
+    0.9412,
+    0.6275,
+    0.251
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_grayling_Accent",
+   "color": [
+    0.2902,
+    0.2902,
+    0.3686
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_grayling_Back",
+   "color": [
+    0.3686,
+    0.3686,
+    0.4706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_grayling_Belly",
+   "color": [
+    0.9255,
+    0.9176,
+    0.9412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_grayling_Body",
+   "color": [
+    0.6627,
+    0.6588,
+    0.7216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_grayling_Fin",
+   "color": [
+    0.6039,
+    0.2902,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gudgeon_Accent",
+   "color": [
+    0.3686,
+    0.3216,
+    0.251
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gudgeon_Back",
+   "color": [
+    0.4784,
+    0.4039,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gudgeon_Belly",
+   "color": [
+    0.9333,
+    0.8902,
+    0.8
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gudgeon_Body",
+   "color": [
+    0.7098,
+    0.6196,
+    0.4627
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_gudgeon_Fin",
+   "color": [
+    0.6588,
+    0.5725,
+    0.4471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_ironscale_sturgeon_Accent",
+   "color": [
+    0.7216,
+    0.7059,
+    0.6588
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_ironscale_sturgeon_Back",
+   "color": [
+    0.2431,
+    0.2588,
+    0.2745
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_ironscale_sturgeon_Belly",
+   "color": [
+    0.8392,
+    0.8235,
+    0.7765
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_ironscale_sturgeon_Body",
+   "color": [
+    0.4314,
+    0.4549,
+    0.4706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_ironscale_sturgeon_Fin",
+   "color": [
+    0.3529,
+    0.3686,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_king_grouper_Accent",
+   "color": [
+    0.2431,
+    0.1804,
+    0.1255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_king_grouper_Back",
+   "color": [
+    0.3529,
+    0.2667,
+    0.1882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_king_grouper_Belly",
+   "color": [
+    0.8471,
+    0.7686,
+    0.6039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_king_grouper_Body",
+   "color": [
+    0.6039,
+    0.4784,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_king_grouper_Fin",
+   "color": [
+    0.4784,
+    0.3529,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lake_trout_Accent",
+   "color": [
+    0.902,
+    0.8784,
+    0.7843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lake_trout_Back",
+   "color": [
+    0.2431,
+    0.2824,
+    0.251
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lake_trout_Belly",
+   "color": [
+    0.902,
+    0.8941,
+    0.8549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lake_trout_Body",
+   "color": [
+    0.4314,
+    0.4784,
+    0.4314
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lake_trout_Fin",
+   "color": [
+    0.5412,
+    0.4157,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lantern_koi_Accent",
+   "color": [
+    1.0,
+    0.7529,
+    0.4157
+   ],
+   "hasEmission": true,
+   "emission": [
+    1.0,
+    0.7529,
+    0.4157
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lantern_koi_Back",
+   "color": [
+    0.8235,
+    0.2824,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lantern_koi_Belly",
+   "color": [
+    1.0,
+    0.9725,
+    0.9333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lantern_koi_Body",
+   "color": [
+    0.9569,
+    0.9333,
+    0.902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_lantern_koi_Fin",
+   "color": [
+    0.9686,
+    0.8863,
+    0.7843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_largemouth_bass_Accent",
+   "color": [
+    0.1804,
+    0.2588,
+    0.1412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_largemouth_bass_Back",
+   "color": [
+    0.2706,
+    0.3765,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_largemouth_bass_Belly",
+   "color": [
+    0.9255,
+    0.9216,
+    0.8392
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_largemouth_bass_Body",
+   "color": [
+    0.4863,
+    0.6039,
+    0.3373
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_largemouth_bass_Fin",
+   "color": [
+    0.4314,
+    0.5412,
+    0.3137
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mackerel_Accent",
+   "color": [
+    0.1176,
+    0.1647,
+    0.1882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mackerel_Back",
+   "color": [
+    0.1804,
+    0.3529,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mackerel_Belly",
+   "color": [
+    0.9412,
+    0.949,
+    0.9412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mackerel_Body",
+   "color": [
+    0.3686,
+    0.6039,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mackerel_Fin",
+   "color": [
+    0.4314,
+    0.5412,
+    0.5647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_moon_eel_Accent",
+   "color": [
+    0.6235,
+    0.8902,
+    1.0
+   ],
+   "hasEmission": true,
+   "emission": [
+    0.6235,
+    0.8902,
+    1.0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_moon_eel_Back",
+   "color": [
+    0.1686,
+    0.1725,
+    0.3216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_moon_eel_Belly",
+   "color": [
+    0.549,
+    0.5608,
+    0.7608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_moon_eel_Body",
+   "color": [
+    0.2706,
+    0.2745,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_moon_eel_Fin",
+   "color": [
+    0.3686,
+    0.3725,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mullet_Accent",
+   "color": [
+    0.3529,
+    0.3843,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mullet_Back",
+   "color": [
+    0.3686,
+    0.4078,
+    0.4471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mullet_Belly",
+   "color": [
+    0.9333,
+    0.9412,
+    0.9412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mullet_Body",
+   "color": [
+    0.7059,
+    0.7294,
+    0.7529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_mullet_Fin",
+   "color": [
+    0.549,
+    0.5804,
+    0.6118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_muskie_Accent",
+   "color": [
+    0.2431,
+    0.2902,
+    0.1725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_muskie_Back",
+   "color": [
+    0.3333,
+    0.3765,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_muskie_Belly",
+   "color": [
+    0.9255,
+    0.9176,
+    0.8392
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_muskie_Body",
+   "color": [
+    0.6039,
+    0.651,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_muskie_Fin",
+   "color": [
+    0.6902,
+    0.4784,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_opah_Accent",
+   "color": [
+    0.9569,
+    0.9333,
+    0.9333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_opah_Back",
+   "color": [
+    0.4784,
+    0.2431,
+    0.3216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_opah_Belly",
+   "color": [
+    0.9098,
+    0.6275,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_opah_Body",
+   "color": [
+    0.7843,
+    0.4157,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_opah_Fin",
+   "color": [
+    0.8392,
+    0.1804,
+    0.1804
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_paddlefish_Accent",
+   "color": [
+    0.6039,
+    0.6588,
+    0.7137
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_paddlefish_Back",
+   "color": [
+    0.2902,
+    0.3373,
+    0.4078
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_paddlefish_Belly",
+   "color": [
+    0.8863,
+    0.902,
+    0.9176
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_paddlefish_Body",
+   "color": [
+    0.4941,
+    0.5569,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_paddlefish_Fin",
+   "color": [
+    0.3686,
+    0.4157,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_perch_Accent",
+   "color": [
+    0.3451,
+    0.3765,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_perch_Back",
+   "color": [
+    0.3686,
+    0.4196,
+    0.2039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_perch_Belly",
+   "color": [
+    0.9373,
+    0.9059,
+    0.7451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_perch_Body",
+   "color": [
+    0.7608,
+    0.7176,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_perch_Fin",
+   "color": [
+    0.8784,
+    0.4157,
+    0.2353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pike_Accent",
+   "color": [
+    0.8627,
+    0.851,
+    0.6196
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pike_Back",
+   "color": [
+    0.2431,
+    0.3333,
+    0.2118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pike_Belly",
+   "color": [
+    0.902,
+    0.8902,
+    0.7765
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pike_Body",
+   "color": [
+    0.4314,
+    0.549,
+    0.3098
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pike_Fin",
+   "color": [
+    0.6039,
+    0.5451,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pufferfish_Accent",
+   "color": [
+    0.4314,
+    0.3216,
+    0.1961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pufferfish_Back",
+   "color": [
+    0.6039,
+    0.4941,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pufferfish_Belly",
+   "color": [
+    0.9647,
+    0.9333,
+    0.8392
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pufferfish_Body",
+   "color": [
+    0.8863,
+    0.8,
+    0.5412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pufferfish_Fin",
+   "color": [
+    0.7843,
+    0.6588,
+    0.4078
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pumpkinseed_Accent",
+   "color": [
+    0.2431,
+    0.7137,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pumpkinseed_Back",
+   "color": [
+    0.3686,
+    0.4784,
+    0.3529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pumpkinseed_Belly",
+   "color": [
+    0.949,
+    0.7686,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pumpkinseed_Body",
+   "color": [
+    0.8471,
+    0.6039,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_pumpkinseed_Fin",
+   "color": [
+    0.6039,
+    0.6275,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rainbow_trout_Accent",
+   "color": [
+    0.8784,
+    0.4784,
+    0.5569
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rainbow_trout_Back",
+   "color": [
+    0.3686,
+    0.4784,
+    0.3373
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rainbow_trout_Belly",
+   "color": [
+    0.949,
+    0.9333,
+    0.902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rainbow_trout_Body",
+   "color": [
+    0.749,
+    0.7765,
+    0.7059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rainbow_trout_Fin",
+   "color": [
+    0.7216,
+    0.6588,
+    0.5961
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_red_snapper_Accent",
+   "color": [
+    0.9098,
+    0.5412,
+    0.4784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_red_snapper_Back",
+   "color": [
+    0.6275,
+    0.1804,
+    0.1647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_red_snapper_Belly",
+   "color": [
+    0.9569,
+    0.7216,
+    0.6588
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_red_snapper_Body",
+   "color": [
+    0.8471,
+    0.3373,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_red_snapper_Fin",
+   "color": [
+    0.7843,
+    0.2431,
+    0.2118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_roach_Accent",
+   "color": [
+    0.7216,
+    0.7686,
+    0.8
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_roach_Back",
+   "color": [
+    0.4353,
+    0.498,
+    0.5843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_roach_Belly",
+   "color": [
+    0.949,
+    0.949,
+    0.9333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_roach_Body",
+   "color": [
+    0.7882,
+    0.8235,
+    0.8471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_roach_Fin",
+   "color": [
+    0.851,
+    0.3765,
+    0.2471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rudd_Accent",
+   "color": [
+    0.7882,
+    0.6471,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rudd_Back",
+   "color": [
+    0.5569,
+    0.4784,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rudd_Belly",
+   "color": [
+    0.9569,
+    0.9059,
+    0.7216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rudd_Body",
+   "color": [
+    0.8392,
+    0.6941,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_rudd_Fin",
+   "color": [
+    0.8235,
+    0.1922,
+    0.1647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sand_smelt_Accent",
+   "color": [
+    0.949,
+    0.9647,
+    0.9725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sand_smelt_Back",
+   "color": [
+    0.6039,
+    0.7059,
+    0.6667
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sand_smelt_Belly",
+   "color": [
+    0.9647,
+    0.9725,
+    0.9647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sand_smelt_Body",
+   "color": [
+    0.8471,
+    0.8863,
+    0.8706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sand_smelt_Fin",
+   "color": [
+    0.8863,
+    0.9098,
+    0.8941
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sculpin_Accent",
+   "color": [
+    0.2902,
+    0.2588,
+    0.2039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sculpin_Back",
+   "color": [
+    0.3529,
+    0.3137,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sculpin_Belly",
+   "color": [
+    0.8471,
+    0.8,
+    0.698
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sculpin_Body",
+   "color": [
+    0.5569,
+    0.502,
+    0.4078
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sculpin_Fin",
+   "color": [
+    0.4784,
+    0.4314,
+    0.3451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sea_bass_Accent",
+   "color": [
+    0.2275,
+    0.251,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sea_bass_Back",
+   "color": [
+    0.3373,
+    0.3765,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sea_bass_Belly",
+   "color": [
+    0.9569,
+    0.9569,
+    0.949
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sea_bass_Body",
+   "color": [
+    0.7608,
+    0.7843,
+    0.8
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_sea_bass_Fin",
+   "color": [
+    0.6039,
+    0.6275,
+    0.651
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_silver_bream_Accent",
+   "color": [
+    0.651,
+    0.7137,
+    0.7529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_silver_bream_Back",
+   "color": [
+    0.4902,
+    0.5765,
+    0.6353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_silver_bream_Belly",
+   "color": [
+    0.9333,
+    0.949,
+    0.9529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_silver_bream_Body",
+   "color": [
+    0.7216,
+    0.7765,
+    0.8118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_silver_bream_Fin",
+   "color": [
+    0.7882,
+    0.5176,
+    0.4314
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_steelhead_Accent",
+   "color": [
+    0.8863,
+    0.6275,
+    0.6588
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_steelhead_Back",
+   "color": [
+    0.3059,
+    0.4157,
+    0.502
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_steelhead_Belly",
+   "color": [
+    0.949,
+    0.9569,
+    0.9569
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_steelhead_Body",
+   "color": [
+    0.7137,
+    0.7686,
+    0.8
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_steelhead_Fin",
+   "color": [
+    0.6039,
+    0.6588,
+    0.6902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_stone_loach_Accent",
+   "color": [
+    0.3686,
+    0.3059,
+    0.1882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_stone_loach_Back",
+   "color": [
+    0.4314,
+    0.3686,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_stone_loach_Belly",
+   "color": [
+    0.9098,
+    0.8627,
+    0.7216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_stone_loach_Body",
+   "color": [
+    0.7059,
+    0.6118,
+    0.4078
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_stone_loach_Fin",
+   "color": [
+    0.6275,
+    0.549,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_taimen_Accent",
+   "color": [
+    0.1804,
+    0.1647,
+    0.1333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_taimen_Back",
+   "color": [
+    0.3059,
+    0.3059,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_taimen_Belly",
+   "color": [
+    0.902,
+    0.8627,
+    0.7686
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_taimen_Body",
+   "color": [
+    0.5569,
+    0.5412,
+    0.4157
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_taimen_Fin",
+   "color": [
+    0.7608,
+    0.2824,
+    0.1804
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tarpon_Accent",
+   "color": [
+    0.8863,
+    0.9098,
+    0.9255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tarpon_Back",
+   "color": [
+    0.2431,
+    0.3529,
+    0.4471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tarpon_Belly",
+   "color": [
+    0.9647,
+    0.9725,
+    0.9725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tarpon_Body",
+   "color": [
+    0.8471,
+    0.8706,
+    0.8863
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tarpon_Fin",
+   "color": [
+    0.6039,
+    0.651,
+    0.6824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tench_Accent",
+   "color": [
+    0.4784,
+    0.5412,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tench_Back",
+   "color": [
+    0.2431,
+    0.2902,
+    0.1333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tench_Belly",
+   "color": [
+    0.7255,
+    0.7137,
+    0.4471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tench_Body",
+   "color": [
+    0.4196,
+    0.4784,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_tench_Fin",
+   "color": [
+    0.2275,
+    0.2588,
+    0.1333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_yellow_perch_Accent",
+   "color": [
+    0.3059,
+    0.2902,
+    0.1333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_yellow_perch_Back",
+   "color": [
+    0.4314,
+    0.4157,
+    0.1725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_yellow_perch_Belly",
+   "color": [
+    0.9647,
+    0.9216,
+    0.749
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_yellow_perch_Body",
+   "color": [
+    0.8863,
+    0.7608,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_yellow_perch_Fin",
+   "color": [
+    0.9098,
+    0.4784,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_zander_Accent",
+   "color": [
+    0.3686,
+    0.4,
+    0.3373
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_zander_Back",
+   "color": [
+    0.298,
+    0.3451,
+    0.2824
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_zander_Belly",
+   "color": [
+    0.8941,
+    0.902,
+    0.8549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_zander_Body",
+   "color": [
+    0.5569,
+    0.6039,
+    0.5255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Fish_zander_Fin",
+   "color": [
+    0.6118,
+    0.5961,
+    0.4706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Pal_Bark",
+   "color": [
+    0.3569,
+    0.2431,
+    0.1725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Blush",
+   "color": [
+    0.9137,
+    0.5647,
+    0.4863
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_Cliff",
+   "color": [
+    0.4941,
+    0.502,
+    0.4745
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_Cream",
+   "color": [
+    0.9412,
+    0.8941,
+    0.7882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Denim",
+   "color": [
+    0.298,
+    0.4157,
+    0.549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Dirt",
+   "color": [
+    0.6039,
+    0.4784,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_Glow",
+   "color": [
+    1.0,
+    0.8235,
+    0.4784
+   ],
+   "hasEmission": true,
+   "emission": [
+    1.0,
+    0.7608,
+    0.3529
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Pal_Glow.001",
+   "color": [
+    1.0,
+    0.8235,
+    0.4784
+   ],
+   "hasEmission": true,
+   "emission": [
+    1.0,
+    0.7608,
+    0.3529
+   ],
+   "smooth": 0.5
+  },
+  {
+   "name": "Pal_Grass",
+   "color": [
+    0.5255,
+    0.6824,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_GrassDark",
+   "color": [
+    0.4627,
+    0.6275,
+    0.3137
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_GrassLight",
+   "color": [
+    0.5804,
+    0.7216,
+    0.3608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_Hair",
+   "color": [
+    0.4784,
+    0.3059,
+    0.2
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Ink",
+   "color": [
+    0.1686,
+    0.1412,
+    0.1255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_Metal",
+   "color": [
+    0.2392,
+    0.251,
+    0.2745
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Metal.001",
+   "color": [
+    0.2392,
+    0.251,
+    0.2745
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Moss",
+   "color": [
+    0.498,
+    0.6275,
+    0.298
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Pine",
+   "color": [
+    0.1804,
+    0.3608,
+    0.2706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_PineLight",
+   "color": [
+    0.3098,
+    0.5176,
+    0.3373
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Plaid",
+   "color": [
+    0.7098,
+    0.2824,
+    0.2353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Red",
+   "color": [
+    0.7765,
+    0.3529,
+    0.2471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Riverbed",
+   "color": [
+    0.5569,
+    0.5176,
+    0.4
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_Rock",
+   "color": [
+    0.5569,
+    0.5725,
+    0.5412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_RockDark",
+   "color": [
+    0.3843,
+    0.4039,
+    0.3725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Roof",
+   "color": [
+    0.651,
+    0.2941,
+    0.2314
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_RoofDark",
+   "color": [
+    0.549,
+    0.2392,
+    0.1882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Rope",
+   "color": [
+    0.8235,
+    0.7333,
+    0.549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Rope.001",
+   "color": [
+    0.8235,
+    0.7333,
+    0.549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Sand",
+   "color": [
+    0.851,
+    0.7647,
+    0.5725
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.1
+  },
+  {
+   "name": "Pal_Skin",
+   "color": [
+    0.9098,
+    0.7059,
+    0.5412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Straw",
+   "color": [
+    0.902,
+    0.7451,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_StrawDark",
+   "color": [
+    0.7255,
+    0.5451,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_StrawMid",
+   "color": [
+    0.851,
+    0.6824,
+    0.3333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Teal",
+   "color": [
+    0.2471,
+    0.5608,
+    0.5255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Teal.001",
+   "color": [
+    0.2471,
+    0.5608,
+    0.5255
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_TealDark",
+   "color": [
+    0.1725,
+    0.4118,
+    0.3882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_TealDark.001",
+   "color": [
+    0.1725,
+    0.4118,
+    0.3882
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Wall",
+   "color": [
+    0.8627,
+    0.7725,
+    0.6118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WallDark",
+   "color": [
+    0.7765,
+    0.6745,
+    0.502
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodDark",
+   "color": [
+    0.4314,
+    0.2706,
+    0.1647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodDark.001",
+   "color": [
+    0.4314,
+    0.2706,
+    0.1647
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodLight",
+   "color": [
+    0.8196,
+    0.6039,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodLight.001",
+   "color": [
+    0.8196,
+    0.6039,
+    0.3843
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodMid",
+   "color": [
+    0.6588,
+    0.4235,
+    0.2471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_WoodMid.001",
+   "color": [
+    0.6588,
+    0.4235,
+    0.2471
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Cattail",
+   "color": [
+    0.4157,
+    0.2902,
+    0.1804
+   ],
+   "hasEmission": false,
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_LilyFlower",
+   "color": [
+    0.949,
+    0.7765,
+    0.8392
+   ],
+   "hasEmission": false,
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_LilyPad",
+   "color": [
+    0.3059,
+    0.5412,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Reed",
+   "color": [
+    0.4941,
+    0.6039,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_ReedDry",
+   "color": [
+    0.7059,
+    0.6392,
+    0.3686
+   ],
+   "hasEmission": false,
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "smooth": 0.15
+  },
+  {
+   "name": "Pal_Antler",
+   "color": [
+    0.8471,
+    0.7804,
+    0.6392
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyBlue",
+   "color": [
+    0.4353,
+    0.7176,
+    0.9098
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyBlueEdge",
+   "color": [
+    0.1216,
+    0.2078,
+    0.3137
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyOrange",
+   "color": [
+    0.949,
+    0.6,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyOrangeEdge",
+   "color": [
+    0.2902,
+    0.1804,
+    0.1216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyYellow",
+   "color": [
+    0.9647,
+    0.8353,
+    0.3608
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_ButterflyYellowEdge",
+   "color": [
+    0.3529,
+    0.2902,
+    0.1216
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_CatFur",
+   "color": [
+    0.851,
+    0.6039,
+    0.3569
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_CatStripe",
+   "color": [
+    0.6902,
+    0.4314,
+    0.2275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DeerCoat",
+   "color": [
+    0.651,
+    0.4118,
+    0.2431
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DeerDark",
+   "color": [
+    0.3569,
+    0.2275,
+    0.1412
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DuckBill",
+   "color": [
+    0.9098,
+    0.7216,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DuckBody",
+   "color": [
+    0.549,
+    0.5176,
+    0.4706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DuckChest",
+   "color": [
+    0.4784,
+    0.2902,
+    0.2039
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_DuckHead",
+   "color": [
+    0.1804,
+    0.4196,
+    0.2784
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_GullBeak",
+   "color": [
+    0.9137,
+    0.7098,
+    0.2353
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_GullBelly",
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_GullBody",
+   "color": [
+    0.9451,
+    0.9451,
+    0.9333
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_GullWing",
+   "color": [
+    0.6039,
+    0.6353,
+    0.6667
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_HeronBeak",
+   "color": [
+    0.851,
+    0.6431,
+    0.2549
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_HeronDark",
+   "color": [
+    0.2431,
+    0.2745,
+    0.3137
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_HeronGrey",
+   "color": [
+    0.6039,
+    0.6392,
+    0.6706
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_HeronLight",
+   "color": [
+    0.8902,
+    0.902,
+    0.8941
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_RabbitFur",
+   "color": [
+    0.7059,
+    0.5765,
+    0.451
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_RabbitInner",
+   "color": [
+    0.9059,
+    0.651,
+    0.6275
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_SongbirdBeak",
+   "color": [
+    0.9098,
+    0.7216,
+    0.2902
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_SongbirdBelly",
+   "color": [
+    0.9137,
+    0.5725,
+    0.3529
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_SongbirdBody",
+   "color": [
+    0.5412,
+    0.4157,
+    0.3059
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  },
+  {
+   "name": "Pal_SongbirdWing",
+   "color": [
+    0.3686,
+    0.2745,
+    0.2118
+   ],
+   "hasEmission": false,
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "smooth": 0.2
+  }
+ ]
+}

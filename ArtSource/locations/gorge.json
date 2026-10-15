@@ -1,0 +1,998 @@
+{
+ "location": "gorge",
+ "items": [
+  {
+   "asset": "Dock",
+   "x": -8.6,
+   "y": -24.0,
+   "z": 0.0,
+   "rot": -90,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Prop_Boathouse",
+   "x": -10.5,
+   "y": -38.5,
+   "z": 1.397,
+   "rot": 180,
+   "scale": 1.0,
+   "size": 4.6
+  },
+  {
+   "asset": "Prop_MarketStall",
+   "x": -11.8,
+   "y": -20.0,
+   "z": 1.018,
+   "rot": 70,
+   "scale": 1.0,
+   "size": 3.0
+  },
+  {
+   "asset": "Prop_MapBoard",
+   "x": -14.0,
+   "y": -27.0,
+   "z": 1.298,
+   "rot": 120,
+   "scale": 1.0,
+   "size": 2.2
+  },
+  {
+   "asset": "Waterfall",
+   "x": -1.0,
+   "y": 34.5,
+   "z": 5.6,
+   "rot": 0,
+   "scale": 1.0,
+   "size": 5.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -19.524,
+   "y": -38.266,
+   "z": 6.197,
+   "rot": 348.05,
+   "scale": 1.196,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 16.007,
+   "y": 25.514,
+   "z": 6.563,
+   "rot": 333.56,
+   "scale": 1.126,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -0.444,
+   "y": 33.636,
+   "z": 2.045,
+   "rot": 254.94,
+   "scale": 0.892,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -14.214,
+   "y": 23.297,
+   "z": 7.167,
+   "rot": 187.64,
+   "scale": 0.979,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -35.773,
+   "y": -1.989,
+   "z": 5.943,
+   "rot": 33.43,
+   "scale": 1.136,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -10.152,
+   "y": 9.99,
+   "z": 6.708,
+   "rot": 118.01,
+   "scale": 1.015,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 10.328,
+   "y": -30.681,
+   "z": 6.333,
+   "rot": 109.84,
+   "scale": 1.049,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 33.177,
+   "y": 4.614,
+   "z": 6.831,
+   "rot": 29.28,
+   "scale": 1.133,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 21.099,
+   "y": 14.369,
+   "z": 5.776,
+   "rot": 333.01,
+   "scale": 0.94,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -32.602,
+   "y": 3.764,
+   "z": 5.176,
+   "rot": 220.41,
+   "scale": 0.913,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 34.077,
+   "y": 9.264,
+   "z": 6.563,
+   "rot": 128.66,
+   "scale": 1.113,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 30.13,
+   "y": -26.074,
+   "z": 6.147,
+   "rot": 49.58,
+   "scale": 1.047,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 14.034,
+   "y": 4.509,
+   "z": 6.495,
+   "rot": 254.62,
+   "scale": 1.009,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -24.611,
+   "y": -24.304,
+   "z": 6.664,
+   "rot": 82.01,
+   "scale": 1.297,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 13.104,
+   "y": -21.907,
+   "z": 6.851,
+   "rot": 321.17,
+   "scale": 1.154,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -17.361,
+   "y": -6.976,
+   "z": 6.535,
+   "rot": 21.03,
+   "scale": 0.851,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 9.497,
+   "y": 0.347,
+   "z": 7.147,
+   "rot": 253.52,
+   "scale": 1.009,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -3.714,
+   "y": -42.872,
+   "z": 1.749,
+   "rot": 54.33,
+   "scale": 1.0,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 17.595,
+   "y": -24.065,
+   "z": 6.316,
+   "rot": 276.55,
+   "scale": 1.132,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 14.123,
+   "y": -34.978,
+   "z": 5.814,
+   "rot": 280.76,
+   "scale": 0.961,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 29.473,
+   "y": 25.453,
+   "z": 6.733,
+   "rot": 345.16,
+   "scale": 1.271,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 26.824,
+   "y": 32.496,
+   "z": 5.918,
+   "rot": 99.55,
+   "scale": 0.985,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 32.392,
+   "y": -32.736,
+   "z": 6.848,
+   "rot": 173.77,
+   "scale": 0.964,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -22.375,
+   "y": -32.008,
+   "z": 6.783,
+   "rot": 274.25,
+   "scale": 1.182,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 18.727,
+   "y": -17.941,
+   "z": 6.624,
+   "rot": 199.46,
+   "scale": 1.117,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -26.457,
+   "y": -6.857,
+   "z": 5.591,
+   "rot": 27.61,
+   "scale": 0.883,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 11.393,
+   "y": 21.149,
+   "z": 6.553,
+   "rot": 326.45,
+   "scale": 0.994,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -2.617,
+   "y": 39.926,
+   "z": 5.5,
+   "rot": 81.55,
+   "scale": 0.908,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 23.751,
+   "y": 31.272,
+   "z": 6.16,
+   "rot": 325.2,
+   "scale": 1.002,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -18.594,
+   "y": 18.54,
+   "z": 6.469,
+   "rot": 225.19,
+   "scale": 0.889,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 12.219,
+   "y": -45.324,
+   "z": 5.847,
+   "rot": 113.36,
+   "scale": 0.88,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -11.039,
+   "y": 18.164,
+   "z": 6.669,
+   "rot": 120.43,
+   "scale": 0.999,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -21.644,
+   "y": -22.404,
+   "z": 6.502,
+   "rot": 225.05,
+   "scale": 1.097,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 24.203,
+   "y": -10.694,
+   "z": 7.027,
+   "rot": 100.86,
+   "scale": 0.89,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 32.8,
+   "y": -11.772,
+   "z": 5.702,
+   "rot": 261.77,
+   "scale": 0.935,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 13.473,
+   "y": -2.759,
+   "z": 7.222,
+   "rot": 86.07,
+   "scale": 1.2,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -15.222,
+   "y": 28.206,
+   "z": 7.715,
+   "rot": 30.24,
+   "scale": 0.963,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 24.41,
+   "y": 18.344,
+   "z": 6.695,
+   "rot": 175.08,
+   "scale": 0.957,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -27.589,
+   "y": 37.039,
+   "z": 6.83,
+   "rot": 137.85,
+   "scale": 1.073,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 12.296,
+   "y": -40.085,
+   "z": 5.558,
+   "rot": 192.18,
+   "scale": 0.934,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 33.849,
+   "y": 26.26,
+   "z": 6.253,
+   "rot": 316.07,
+   "scale": 1.204,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -30.908,
+   "y": 36.485,
+   "z": 7.007,
+   "rot": 357.74,
+   "scale": 0.951,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 4.963,
+   "y": -3.819,
+   "z": 6.622,
+   "rot": 213.68,
+   "scale": 0.853,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 8.79,
+   "y": -18.579,
+   "z": 7.101,
+   "rot": 336.53,
+   "scale": 1.219,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 34.105,
+   "y": -0.994,
+   "z": 6.928,
+   "rot": 116.68,
+   "scale": 1.261,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -29.11,
+   "y": -41.676,
+   "z": 7.367,
+   "rot": 137.94,
+   "scale": 1.238,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 33.499,
+   "y": -28.331,
+   "z": 6.638,
+   "rot": 127.05,
+   "scale": 1.022,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -26.34,
+   "y": 21.375,
+   "z": 6.32,
+   "rot": 276.41,
+   "scale": 1.034,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 23.234,
+   "y": 39.319,
+   "z": 6.905,
+   "rot": 156.66,
+   "scale": 1.257,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 34.203,
+   "y": 20.613,
+   "z": 6.799,
+   "rot": 53.5,
+   "scale": 0.852,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -35.667,
+   "y": -6.804,
+   "z": 5.892,
+   "rot": 76.49,
+   "scale": 1.138,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 33.021,
+   "y": 37.236,
+   "z": 7.301,
+   "rot": 108.46,
+   "scale": 1.248,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 15.492,
+   "y": 41.646,
+   "z": 7.875,
+   "rot": 351.6,
+   "scale": 1.001,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -16.859,
+   "y": -14.01,
+   "z": 1.316,
+   "rot": 331.87,
+   "scale": 1.035,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -26.954,
+   "y": -31.785,
+   "z": 7.7,
+   "rot": 132.03,
+   "scale": 1.067,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 18.96,
+   "y": -13.971,
+   "z": 7.148,
+   "rot": 171.96,
+   "scale": 1.084,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 12.023,
+   "y": 25.617,
+   "z": 6.591,
+   "rot": 5.57,
+   "scale": 1.173,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 9.776,
+   "y": 18.13,
+   "z": 4.928,
+   "rot": 92.8,
+   "scale": 1.168,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 19.709,
+   "y": 32.678,
+   "z": 6.327,
+   "rot": 105.31,
+   "scale": 1.103,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": -32.843,
+   "y": -34.709,
+   "z": 8.061,
+   "rot": 64.94,
+   "scale": 1.271,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 19.044,
+   "y": -28.51,
+   "z": 5.892,
+   "rot": 236.53,
+   "scale": 1.011,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": 5.294,
+   "y": 38.249,
+   "z": 7.86,
+   "rot": 65.12,
+   "scale": 1.108,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -11.496,
+   "y": 33.872,
+   "z": 5.786,
+   "rot": 316.76,
+   "scale": 1.201,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": 31.275,
+   "y": -41.969,
+   "z": 6.423,
+   "rot": 288.53,
+   "scale": 1.262,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -33.951,
+   "y": -11.52,
+   "z": 6.033,
+   "rot": 249.87,
+   "scale": 1.178,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 9.679,
+   "y": 10.269,
+   "z": 2.668,
+   "rot": 315.53,
+   "scale": 1.201,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -35.401,
+   "y": 25.153,
+   "z": 7.134,
+   "rot": 149.78,
+   "scale": 0.97,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Medium",
+   "x": -16.647,
+   "y": 5.293,
+   "z": 6.987,
+   "rot": 272.19,
+   "scale": 0.888,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Small",
+   "x": 7.691,
+   "y": -21.982,
+   "z": 6.881,
+   "rot": 341.96,
+   "scale": 0.971,
+   "size": 0.0
+  },
+  {
+   "asset": "Pine_Tall",
+   "x": -32.768,
+   "y": -21.759,
+   "z": 7.016,
+   "rot": 33.11,
+   "scale": 1.108,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -24.722,
+   "y": 33.628,
+   "z": 2.694,
+   "rot": 16.14,
+   "scale": 0.835,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Tall",
+   "x": -7.828,
+   "y": -10.982,
+   "z": -0.945,
+   "rot": 214.2,
+   "scale": 0.988,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 9.769,
+   "y": 24.638,
+   "z": 2.664,
+   "rot": 349.01,
+   "scale": 1.274,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -11.546,
+   "y": -11.22,
+   "z": 2.65,
+   "rot": 147.47,
+   "scale": 1.164,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -11.113,
+   "y": -10.142,
+   "z": 2.021,
+   "rot": 192.07,
+   "scale": 0.95,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -6.146,
+   "y": -6.784,
+   "z": -0.674,
+   "rot": 199.92,
+   "scale": 0.913,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 8.546,
+   "y": 21.79,
+   "z": 0.671,
+   "rot": 200.22,
+   "scale": 0.845,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -3.956,
+   "y": 3.745,
+   "z": -1.226,
+   "rot": 225.68,
+   "scale": 1.121,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -6.214,
+   "y": -33.613,
+   "z": 0.009,
+   "rot": 276.47,
+   "scale": 1.157,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -13.319,
+   "y": -14.335,
+   "z": 1.056,
+   "rot": 123.47,
+   "scale": 1.088,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -4.579,
+   "y": 3.174,
+   "z": -0.926,
+   "rot": 332.06,
+   "scale": 0.981,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -17.423,
+   "y": -15.694,
+   "z": 1.2,
+   "rot": 186.51,
+   "scale": 1.237,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 9.274,
+   "y": 13.295,
+   "z": 0.952,
+   "rot": 85.71,
+   "scale": 1.208,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": -6.703,
+   "y": -0.945,
+   "z": -0.358,
+   "rot": 194.94,
+   "scale": 1.283,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 8.899,
+   "y": 29.653,
+   "z": 1.713,
+   "rot": 327.9,
+   "scale": 0.905,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": 5.898,
+   "y": 3.994,
+   "z": -0.459,
+   "rot": 293.43,
+   "scale": 1.091,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Tall",
+   "x": 1.28,
+   "y": -18.626,
+   "z": 2.478,
+   "rot": 94.79,
+   "scale": 1.171,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -11.03,
+   "y": 24.084,
+   "z": 0.799,
+   "rot": 133.37,
+   "scale": 0.719,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 3.462,
+   "y": 0.098,
+   "z": -0.473,
+   "rot": 67.24,
+   "scale": 1.244,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": 5.662,
+   "y": -28.592,
+   "z": 1.025,
+   "rot": 201.58,
+   "scale": 1.129,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": 7.684,
+   "y": -44.095,
+   "z": 2.045,
+   "rot": 300.75,
+   "scale": 1.041,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Large",
+   "x": -4.858,
+   "y": 13.987,
+   "z": -0.038,
+   "rot": 346.94,
+   "scale": 0.772,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Small",
+   "x": -0.188,
+   "y": -10.245,
+   "z": 1.746,
+   "rot": 116.62,
+   "scale": 0.769,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -8.022,
+   "y": -10.903,
+   "z": -0.849,
+   "rot": 42.34,
+   "scale": 0.805,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": -3.458,
+   "y": -0.94,
+   "z": -0.76,
+   "rot": 258.06,
+   "scale": 1.181,
+   "size": 0.0
+  },
+  {
+   "asset": "Rock_Medium",
+   "x": 7.303,
+   "y": -45.242,
+   "z": 1.625,
+   "rot": 143.3,
+   "scale": 1.038,
+   "size": 0.0
+  }
+ ],
+ "spawn": {
+  "x": -11.5,
+  "y": -30.0,
+  "z": 1.3127214193344117
+ },
+ "spots": [
+  {
+   "name": "Lower Run",
+   "nameID": "Arus Bawah",
+   "habitat": "Rapids|Pool",
+   "x": -3,
+   "y": -33
+  },
+  {
+   "name": "Rapids",
+   "nameID": "Jeram",
+   "habitat": "Rapids|Shallows",
+   "x": -2.71,
+   "y": 0.83
+  },
+  {
+   "name": "Stone Shallows",
+   "nameID": "Dangkal Batu",
+   "habitat": "Shallows",
+   "x": -3.83,
+   "y": -13.29
+  },
+  {
+   "name": "Gorge Pool",
+   "nameID": "Kolam Ngarai",
+   "habitat": "Pool",
+   "x": -4,
+   "y": 20
+  },
+  {
+   "name": "Deep Hole",
+   "nameID": "Lubang Dalam",
+   "habitat": "Deep|Pool",
+   "x": -3,
+   "y": 28
+  }
+ ],
+ "schools": [
+  {
+   "fish": "grayling",
+   "x": -4.5,
+   "y": -10.33,
+   "count": 6,
+   "radius": 3.5,
+   "depth": 0.4
+  },
+  {
+   "fish": "brown_trout",
+   "x": -3,
+   "y": -32,
+   "count": 5,
+   "radius": 4,
+   "depth": 0.6
+  },
+  {
+   "fish": "arctic_char",
+   "x": -4,
+   "y": 22,
+   "count": 5,
+   "radius": 5,
+   "depth": 1.0
+  },
+  {
+   "fish": "chub",
+   "x": 0,
+   "y": 8,
+   "count": 6,
+   "radius": 4,
+   "depth": 0.6
+  },
+  {
+   "fish": "ironscale_sturgeon",
+   "x": -3,
+   "y": 28,
+   "count": 1,
+   "radius": 4,
+   "depth": 1.6
+  }
+ ]
+}
