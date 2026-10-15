@@ -17,7 +17,7 @@ namespace CozyFishing.EditorTools
             public BoatController Controller;
             public RowingAnimator Rowing;
             public FishingController Fishing;
-            public Transform Seat, RodRoot;
+            public Transform Seat, RodRoot, RodTip;
         }
 
         public static Result Build(Transform dock, List<Light> lanterns)
@@ -90,7 +90,7 @@ namespace CozyFishing.EditorTools
             Set(fishing, "stowedRod", stowed.gameObject);
             Set(fishing, "bobber", bobber);
             Set(fishing, "line", lr);
-            return new Result { Root = boatRoot, Controller = controller, Rowing = rowing, Fishing = fishing, Seat = seat, RodRoot = rodRoot };
+            return new Result { Root = boatRoot, Controller = controller, Rowing = rowing, Fishing = fishing, Seat = seat, RodRoot = rodRoot, RodTip = rodTip };
         }
 
         static (Transform pivot, Transform tip) BuildRod(Transform parent)
@@ -107,7 +107,7 @@ namespace CozyFishing.EditorTools
             return (pivot, tip);
         }
 
-        static Transform BuildBobber()
+        public static Transform BuildBobber()
         {
             var root = new GameObject("Bobber").transform;
             Part(root, PrimitiveType.Sphere, new Vector3(0f, 0.04f, 0f), new Vector3(0.14f, 0.1f, 0.14f), Palette("Pal_Red"));

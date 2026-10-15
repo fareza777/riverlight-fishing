@@ -1,0 +1,17 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_Clock\concept_92eea9_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 7%
+[image-to-3d] IN_PROGRESS 71%
+[image-to-3d] IN_PROGRESS 95%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_Clock\Decor_Clock.glb
+saved ArtSource\Meshy\Decor_Clock\thumb_back.png
+saved ArtSource\Meshy\Decor_Clock\thumb_front.png
+saved ArtSource\Meshy\Decor_Clock\thumb_left.png
+saved ArtSource\Meshy\Decor_Clock\thumb_right.png
+credits: 15
+saved ArtSource\Meshy\Decor_Clock\Decor_Clock.fbx
+saved ArtSource\Meshy\Decor_Clock\Decor_Clock_BaseColor.png

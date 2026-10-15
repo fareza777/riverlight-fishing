@@ -209,11 +209,24 @@ namespace CozyFishing.UI
             var content = UIKit.ScrollList(page, "Gear", 14f, out var scroll);
             UIKit.Anchor((RectTransform)scroll.transform, Vector2.zero, Vector2.one, Vector2.zero, new Vector2(0, -480));
             Header(content, Loc.T("gear"));
-            foreach (var item in db.items.Where(i => i.type != ItemType.Bait && gs.Owns(i.id)))
+            foreach (var item in db.items.Where(i => (i.type == ItemType.Rod || i.type == ItemType.Creel) && gs.Owns(i.id)))
             {
                 bool equipped = item.id == d.rod || item.id == d.creelItem;
                 ItemRow(content, item, equipped ? Loc.T("equipped") : Loc.T("equip"), equipped ? null : () => { gs.Equip(item); Switch(Tab.Bag); });
             }
+            // Outfits: tap to wear, tap the worn one again for the default clothes.
+            var outfits = db.items.Where(i => i.type == ItemType.Outfit && i.forCharacter == d.character && gs.Owns(i.id)).ToList();
+            if (outfits.Count > 0)
+            {
+                Header(content, Loc.T("outfits"));
+                foreach (var item in outfits)
+                {
+                    bool worn = item.id == d.outfit;
+                    ItemRow(content, item, worn ? Loc.T("take_off") : Loc.T("wear"), () => { gs.Equip(item); Switch(Tab.Bag); });
+                }
+            }
+            int decor = db.items.Count(i => i.type == ItemType.Decor && gs.Owns(i.id));
+            if (decor > 0) Row(content, $"{Loc.T("decor")}: <b>{decor}</b> {Loc.T("decor_in_cabin")}", 30);
             var bait = gs.ActiveBait;
             Row(content, $"{Loc.T("bait")}: <b>{(bait != null ? bait.Name + " ×" + d.baitCount : Loc.T("none"))}</b>", 30);
             Header(content, Loc.T("creel_contents", d.creel.Count, gs.CreelCapacity));

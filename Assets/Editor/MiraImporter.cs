@@ -14,7 +14,9 @@ namespace CozyFishing.EditorTools
         public const string ModelPath = Dst + "/NPC_Mira.fbx";
         public const string ControllerPath = Dst + "/NPC_Mira.controller";
 
-        public static bool Import()
+        public static bool Import() => NpcImporter.Import("NPC_Mira");
+
+        static bool ImportLegacy()
         {
             if (!File.Exists($"{Src}/NPC_Mira_Rigged.fbx")) { Debug.LogWarning("[Mira] rig missing"); return false; }
             Directory.CreateDirectory($"{Dst}/Animations");

@@ -1,0 +1,9 @@
+[animate Run] IN_PROGRESS 0%
+[animate Run] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@Run.fbx
+[animate HappyJump] IN_PROGRESS 10%
+[animate HappyJump] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@HappyJump.fbx
+[animate JumpingJacks] IN_PROGRESS 10%
+[animate JumpingJacks] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Dimas\Animations\NPC_Dimas@JumpingJacks.fbx

@@ -21,13 +21,14 @@ namespace CozyFishing.EditorTools
             string dst = $"Assets/Art/Characters/{name}";
             if (!File.Exists($"{src}/{name}_Rigged.fbx")) { Debug.LogWarning($"[NPC] {name}: rig missing"); return false; }
             Directory.CreateDirectory($"{dst}/Animations");
-            if (!File.Exists(ModelPath(name)))
+            if (!File.Exists(ModelPath(name))) File.Copy($"{src}/{name}_Rigged.fbx", ModelPath(name), true);
+            // New clips from later animation packs are picked up on every import.
+            foreach (var f in Directory.GetFiles($"{src}/Animations", "*.fbx"))
             {
-                File.Copy($"{src}/{name}_Rigged.fbx", ModelPath(name), true);
-                foreach (var f in Directory.GetFiles($"{src}/Animations", "*.fbx"))
-                    File.Copy(f, $"{dst}/Animations/{Path.GetFileName(f)}", true);
-                AssetDatabase.Refresh();
+                string to = $"{dst}/Animations/{Path.GetFileName(f)}";
+                if (!File.Exists(to)) File.Copy(f, to, true);
             }
+            AssetDatabase.Refresh();
             var model = (ModelImporter)AssetImporter.GetAtPath(ModelPath(name));
             model.animationType = ModelImporterAnimationType.Generic;
             model.avatarSetup = ModelImporterAvatarSetup.CreateFromThisModel;
@@ -67,7 +68,8 @@ namespace CozyFishing.EditorTools
             }
 
             var idle = Clip("Idle", true);
-            var walk = Clip("Walk", true);
+            // Leo runs everywhere.
+            var walk = name == "NPC_Dimas" && File.Exists($"{dst}/Animations/{name}@Run.fbx") ? Clip("Run", true) : Clip("Walk", true);
             var sit = Clip("Sit", true);
             var wave = Clip("Wave", false);
             var talk = Clip("Talk", true);
@@ -101,8 +103,31 @@ namespace CozyFishing.EditorTools
                 Link(rest, sTalk, 0.25f, ("Talking", true));
                 Link(sTalk, rest, 0.3f, ("Talking", false));
             }
+            // Extra one-shot clips (animation pack): each is a trigger of the same name, played from the rest state.
+            foreach (var path in Directory.GetFiles($"{dst}/Animations", $"{name}@*.fbx"))
+            {
+                string clipName = Path.GetFileNameWithoutExtension(path).Split('@')[1];
+                if (clipName is "Idle" or "Walk" or "Run" or "Sit" or "Wave" or "Talk") continue;
+                var clip = Clip(clipName, false);
+                if (clip == null) continue;
+                ac.AddParameter(clipName, AnimatorControllerParameterType.Trigger);
+                var state = sm.AddState(clipName);
+                state.motion = clip;
+                var t = rest.AddTransition(state);
+                t.hasExitTime = false; t.duration = 0.2f;
+                t.AddCondition(AnimatorConditionMode.If, 0, clipName);
+                var back = state.AddTransition(rest);
+                back.hasExitTime = true; back.exitTime = 0.92f; back.duration = 0.3f;
+            }
             AssetDatabase.SaveAssets();
             return true;
+        }
+
+        /// <summary>The extra trigger names of an imported NPC (for NpcVillager).</summary>
+        public static string[] Extras(string name)
+        {
+            var ac = AssetDatabase.LoadAssetAtPath<AnimatorController>(ControllerPath(name));
+            return ac == null ? new string[0] : ac.parameters.Where(p => p.type == AnimatorControllerParameterType.Trigger && p.name != "Wave").Select(p => p.name).ToArray();
         }
 
         static void Link(AnimatorState from, AnimatorState to, float duration, (string param, bool value) cond)

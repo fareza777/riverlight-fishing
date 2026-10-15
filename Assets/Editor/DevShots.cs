@@ -77,6 +77,36 @@ namespace CozyFishing.EditorTools
             Debug.Log("[DevShots] life shots done");
         }
 
+        [MenuItem("CozyFishing/Dev/Render Expansion Shots")]
+        public static void RenderExpansion()
+        {
+            Directory.CreateDirectory(OutDir);
+            EditorSceneManager.OpenScene("Assets/Scenes/River.unity");
+            var sun = GameObject.Find("Sun").GetComponent<Light>();
+            sun.transform.rotation = Quaternion.Euler(48f, -35f, 0f);
+            sun.intensity = 1.6f;
+            RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Trilight;
+            RenderSettings.ambientSkyColor = new Color(0.62f, 0.7f, 0.78f);
+            RenderSettings.ambientEquatorColor = new Color(0.55f, 0.58f, 0.5f);
+            RenderSettings.ambientGroundColor = new Color(0.3f, 0.28f, 0.22f);
+            // The cabin with every decoration shown.
+            var interior = GameObject.Find("CabinInterior").transform;
+            foreach (Transform piece in interior.Find("CabinDecor")) piece.gameObject.SetActive(true);
+            Shot("Exp", "cabin_a", interior.TransformPoint(new Vector3(0.3f, 6.5f, -4.6f)), interior.TransformPoint(new Vector3(0f, 0.4f, 0.2f)), 50f);
+            Shot("Exp", "cabin_b", interior.TransformPoint(new Vector3(-1.8f, 2.2f, -1.6f)), interior.TransformPoint(new Vector3(1.0f, 0.9f, 0.6f)), 55f);
+            // Felix's wagon.
+            var visit = GameObject.Find("Merchant Visit");
+            if (visit != null)
+            {
+                var cart = visit.transform.Find("Prop_MerchantCart");
+                Vector3 c = cart.position;
+                Shot("Exp", "merchant", c + cart.forward * 5f + Vector3.up * 2.4f + cart.right * 1.5f, c + Vector3.up * 0.9f, 45f);
+            }
+            var dock = GameObject.Find("DockFishing");
+            if (dock != null) Shot("Exp", "dockfishing", dock.transform.position - dock.transform.forward * 4f + Vector3.up * 3f, dock.transform.position + dock.transform.forward * 3f, 50f);
+            Debug.Log("[DevShots] expansion shots done");
+        }
+
         static void Shot(string scene, string tag, Vector3 pos, Vector3 look, float fov)
         {
             var go = new GameObject("ShotCam");

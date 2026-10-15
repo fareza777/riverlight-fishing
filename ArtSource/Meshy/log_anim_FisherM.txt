@@ -1,0 +1,10 @@
+[animate HappyJump] IN_PROGRESS 10%
+[animate HappyJump] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@HappyJump.fbx
+[animate LookAround] IN_PROGRESS 10%
+[animate LookAround] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@LookAround.fbx
+[animate Idle3] IN_PROGRESS 10%
+[animate Idle3] IN_PROGRESS 95%
+[animate Idle3] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@Idle3.fbx

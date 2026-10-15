@@ -80,8 +80,10 @@ namespace CozyFishing.EditorTools
         public static void BuildEverything()
         {
             ConfigurePipeline();
+            CharacterImporter.ImportAll();
             ContentBuilder.Build();
             MiraImporter.Import();
+            foreach (var npc in new[] { "NPC_Bayu", "NPC_Joko", "NPC_Wati", "NPC_Dimas", "NPC_Felix" }) NpcImporter.Import(npc);
             foreach (var id in Looks.Keys) Build(id);
             TitleSceneBuilder.Build();
             EditorBuildSettings.scenes = new[] { "Title", "River", "Lake", "Gorge", "Estuary" }
@@ -196,8 +198,8 @@ namespace CozyFishing.EditorTools
             var walker = player.AddComponent<PlayerController>();
             Set(walker, "cameraTransform", camGo.transform);
             var interactor = player.AddComponent<PlayerInteractor>();
-            var arka = Hero(player.transform, "FisherM", "Kai");
-            var laras = Hero(player.transform, "FisherF", "Lena");
+            var arka = Hero(player.transform, "FisherM", "Kai", ("outfit_kai_raincoat", "Raincoat"), ("outfit_kai_summer", "Summer"));
+            var laras = Hero(player.transform, "FisherF", "Lena", ("outfit_lena_raincoat", "Raincoat"), ("outfit_lena_summer", "Summer"));
             laras.gameObject.SetActive(false);
             var rodHolder = boat.RodRoot.gameObject.AddComponent<RodHolder>();
             Set(rodHolder, "character", arka.GetComponent<Animator>());
@@ -254,6 +256,9 @@ namespace CozyFishing.EditorTools
                 SetFloat(school, "areaRadius", s.radius);
                 SetFloat(school, "depth", s.depth);
             }
+
+            // The dock fishing stand needs the spots to exist (it fishes the one in front of the dock).
+            BuildDockFishing(dockT, boat, modes, rig, tod);
 
             // --- animals and villagers -------------------------------------------------------------------------
             AmbientBuilder.Build(id, look.extent, dockT, cabinT, schools.Cast<Transform>().ToArray());
@@ -497,6 +502,7 @@ namespace CozyFishing.EditorTools
             BuildPorchSafety(cabinT);
             var interior = InteriorBuilder.Build(level, null);
             lanterns.AddRange(interior.Lamps);
+            DecorBuilder.Build(interior.Root, lanterns);
             var porchArrive = new GameObject("PorchArrive").transform;
             porchArrive.SetParent(cabinT, false);
             porchArrive.localPosition = new Vector3(0.6f, 0.47f, -2.25f);
@@ -521,6 +527,40 @@ namespace CozyFishing.EditorTools
             if (bedT != null) Set(bedT.gameObject.AddComponent<Bed>(), "timeOfDay", tod);
             var journal = interior.Root.Find("Journal");
             if (journal != null) journal.gameObject.AddComponent<JournalBook>();
+        }
+
+        /// <summary>
+        /// "Fish here" at the end of the dock: a second fishing controller (no boat) that shares the hero's rod and casts
+        /// straight out over the water, with its own float and line.
+        /// </summary>
+        static void BuildDockFishing(Transform dock, BoatRig.Result boat, PlayerModes modes, CameraRig rig, TimeOfDay tod)
+        {
+            var stand = new GameObject("DockFishing").transform;
+            // Left of centre and short of the end: the crates stand on the right, the lamp post at the far left corner.
+            stand.SetPositionAndRotation(dock.TransformPoint(new Vector3(-0.35f, 0.6f, 5.0f)), dock.rotation);
+            stand.gameObject.AddComponent<Creel>();
+            var f = stand.gameObject.AddComponent<FishingController>();
+            Set(f, "creel", stand.GetComponent<Creel>());
+            Set(f, "rodPivot", boat.RodRoot);
+            Set(f, "rodTip", boat.RodTip);
+            Set(f, "bobber", BoatRig.BuildBobber());
+            var lineGo = new GameObject("DockFishingLine", typeof(LineRenderer));
+            lineGo.transform.SetParent(stand, false);
+            var lr = lineGo.GetComponent<LineRenderer>();
+            lr.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>($"{Mats}/FishingLine.mat");
+            lr.widthMultiplier = 0.012f;
+            lr.shadowCastingMode = ShadowCastingMode.Off;
+            lr.enabled = false;
+            Set(f, "line", lr);
+            Set(f, "cameraRig", rig);
+            Set(f, "timeOfDay", tod);
+            SetBool(f, "castAhead", true);
+            f.enabled = false;
+            var spot = Object.FindObjectsByType<FishingSpot>(FindObjectsSortMode.None)
+                .OrderBy(s => (s.transform.position - (stand.position + stand.forward * 6f)).sqrMagnitude).FirstOrDefault();
+            var point = stand.gameObject.AddComponent<ShoreFishingPoint>();
+            point.EditorSetup(stand, f, spot, modes);
+            SetFloat(point, "radius", 1.8f);
         }
 
         /// <summary>An invisible solid box (keeps the player on decks and porches).</summary>
@@ -561,7 +601,7 @@ namespace CozyFishing.EditorTools
             Blocker(root, new Vector3(1.48f, 0.5f, front - 0.5f), new Vector3(0.08f, 1.2f, 1.0f));
         }
 
-        static PlayerAvatar Hero(Transform player, string character, string name)
+        static PlayerAvatar Hero(Transform player, string character, string name, params (string id, string outfit)[] outfits)
         {
             var model = Spawn(CharacterImporter.ModelPath(character), player);
             model.name = name;
@@ -571,6 +611,23 @@ namespace CozyFishing.EditorTools
             anim.cullingMode = AnimatorCullingMode.AlwaysAnimate;
             var avatar = model.AddComponent<PlayerAvatar>();
             model.AddComponent<RowerBody>();
+            // Outfits: Meshy retextures on the hero's own UVs, swapped at runtime.
+            var ids = new List<string>(); var textures = new List<Texture2D>();
+            foreach (var (id, outfit) in outfits)
+            {
+                string src = $"ArtSource/Meshy/{character}/Outfits/{character}_{outfit}_BaseColor.png";
+                string dst = $"Assets/Art/Characters/{character}/Outfits/{character}_{outfit}.png";
+                if (!File.Exists(src)) continue;
+                if (!File.Exists(dst))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(dst));
+                    File.Copy(src, dst);
+                    AssetDatabase.ImportAsset(dst);
+                }
+                ids.Add(id);
+                textures.Add(AssetDatabase.LoadAssetAtPath<Texture2D>(dst));
+            }
+            model.AddComponent<OutfitSwitcher>().EditorSetup(model.GetComponentsInChildren<SkinnedMeshRenderer>(), ids.ToArray(), textures.ToArray());
             return avatar;
         }
 

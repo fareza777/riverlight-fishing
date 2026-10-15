@@ -37,6 +37,13 @@ namespace CozyFishing.World
             transform.rotation = Quaternion.RotateTowards(transform.rotation, want, turnSpeed * Time.deltaTime);
         }
 
+        /// <summary>Mira cheers when an order is delivered.</summary>
+        public void Cheer()
+        {
+            foreach (var p in animator.parameters)
+                if (p.name == "Cheer") { animator.SetTrigger("Cheer"); return; }
+        }
+
 #if UNITY_EDITOR
         public void EditorSetup(Animator a) => animator = a;
 #endif

@@ -109,6 +109,8 @@ namespace CozyFishing.Core
             {
                 case ItemType.Rod: Data.owned.Add(item.id); Data.rod = item.id; break;
                 case ItemType.Creel: Data.owned.Add(item.id); Data.creelItem = item.id; break;
+                case ItemType.Decor: Data.owned.Add(item.id); break;
+                case ItemType.Outfit: Data.owned.Add(item.id); Data.outfit = item.id; break;
                 case ItemType.Bait:
                     if (Data.bait != item.id) { Data.bait = item.id; Data.baitCount = 0; }
                     Data.baitCount += 5;
@@ -124,6 +126,8 @@ namespace CozyFishing.Core
             if (item == null || !Owns(item.id)) return;
             if (item.type == ItemType.Rod) Data.rod = item.id;
             if (item.type == ItemType.Creel) Data.creelItem = item.id;
+            if (item.type == ItemType.Outfit) Data.outfit = Data.outfit == item.id ? "" : item.id;   // tap again for default clothes
+            Save();
             Changed?.Invoke();
         }
 

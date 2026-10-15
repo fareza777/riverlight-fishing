@@ -302,9 +302,25 @@ namespace CozyFishing.UI
         }
 
 
+        /// <summary>Switch the meters, catch card and hints to another fishing controller (boat or dock).</summary>
+        public void SetFishing(FishingController f)
+        {
+            if (f == fishing) return;
+            if (fishing != null)
+            {
+                fishing.Caught -= OnCaught; fishing.Lost -= OnLost; fishing.CreelFull -= OnCreelFull; fishing.StateChanged -= OnState;
+            }
+            fishing = f;
+            if (fishing != null)
+            {
+                fishing.Caught += OnCaught; fishing.Lost += OnLost; fishing.CreelFull += OnCreelFull; fishing.StateChanged += OnState;
+            }
+        }
+
         string HintFor(FishingController f)
         {
-            if (modes != null && !modes.InBoat) return Loc.T("walk_hint");
+            if (modes != null && !modes.InBoat && !modes.OnShore) return Loc.T("walk_hint");
+            if (modes != null && modes.OnShore && f != null && f.State == FishingState.Rowing) return Loc.T("shore_hint");
             if (f == null) return "";
             return f.State switch
             {

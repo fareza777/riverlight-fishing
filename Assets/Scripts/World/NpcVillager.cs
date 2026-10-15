@@ -25,6 +25,9 @@ namespace CozyFishing.World
         [SerializeField] Transform rod, rodTip, bobber;
         [SerializeField] LineRenderer line;
         [SerializeField] Vector3 bobberRest;
+        [Tooltip("One-shot animation triggers (animation pack) played now and then.")]
+        [SerializeField] string[] extras = new string[0];
+        float extraTimer = 20f;
 
         int next, lineIndex;
         float pause, talkTimer, waveCooldown, jigTimer, catchTimer, catchAnim;
@@ -72,7 +75,14 @@ namespace CozyFishing.World
                 if (talkTimer <= 0f) animator.SetBool(TalkingId, false);
             }
 
-            if (Sitter) { UpdateFishing(dt); return; }
+            if (Sitter)
+            {
+                UpdateFishing(dt);
+                // Now and then a sitter dozes off for a moment.
+                extraTimer -= dt;
+                if (extraTimer <= 0f) { Play("SitDoze"); extraTimer = Random.Range(40f, 80f); }
+                return;
+            }
 
             // Walkers stop and turn to the player while they are close.
             if (near || talkTimer > 0f)
@@ -94,6 +104,8 @@ namespace CozyFishing.World
             {
                 next = (next + 1) % waypoints.Length;
                 pause = Random.Range(1.5f, 5f);
+                // Sometimes a little moment at the waypoint: a happy jump, a look around, a cheer.
+                if (extras.Length > 0 && Random.value < 0.45f) { animator.SetTrigger(extras[Random.Range(0, extras.Length)]); pause += 2f; }
                 return;
             }
             animator.SetBool(WalkingId, true);
@@ -110,7 +122,7 @@ namespace CozyFishing.World
             jigTimer += dt;
             catchTimer -= dt;
             float lift = 0f;
-            if (catchTimer <= 0f) { catchAnim = 2.2f; catchTimer = Random.Range(30f, 60f); }
+            if (catchTimer <= 0f) { catchAnim = 2.2f; catchTimer = Random.Range(30f, 60f); Play(Random.value < 0.6f ? "SitCheer" : "SitClap"); }
             if (catchAnim > 0f)
             {
                 catchAnim -= dt;
@@ -139,11 +151,19 @@ namespace CozyFishing.World
             }
         }
 
+        void Play(string trigger)
+        {
+            foreach (var e in extras)
+                if (e == trigger) { animator.SetTrigger(trigger); return; }
+        }
+
 #if UNITY_EDITOR
         public void EditorSetup(string id, string name, Animator a, Vector3[] path)
         {
             npcId = id; displayName = name; animator = a; waypoints = path;
         }
+
+        public void EditorSetupExtras(string[] triggers, float speed) { extras = triggers; walkSpeed = speed; }
 
         public void EditorSetupFishing(Transform rodRoot, Transform tip, Transform floatT, LineRenderer lr, Vector3 rest)
         {

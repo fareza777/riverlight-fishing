@@ -1,0 +1,16 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_ShipBottle\concept_61d2fc_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 40%
+[image-to-3d] IN_PROGRESS 95%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_ShipBottle\Decor_ShipBottle.glb
+saved ArtSource\Meshy\Decor_ShipBottle\thumb_back.png
+saved ArtSource\Meshy\Decor_ShipBottle\thumb_front.png
+saved ArtSource\Meshy\Decor_ShipBottle\thumb_left.png
+saved ArtSource\Meshy\Decor_ShipBottle\thumb_right.png
+credits: 15
+saved ArtSource\Meshy\Decor_ShipBottle\Decor_ShipBottle.fbx
+saved ArtSource\Meshy\Decor_ShipBottle\Decor_ShipBottle_BaseColor.png

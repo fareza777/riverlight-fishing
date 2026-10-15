@@ -105,6 +105,9 @@ namespace CozyFishing.EditorTools
         }
 
         // ------------------------------------------------------------------ items
+        /// <summary>Only Felix, the traveling merchant, sells these.</summary>
+        static readonly HashSet<string> MerchantStock = new() { "bait_golden", "decor_gramophone", "decor_shipbottle", "outfit_kai_summer", "outfit_lena_summer" };
+
         static List<ItemDef> BuildItems()
         {
             var defs = new (string id, ItemType type, string en, string idn, string dEN, string dID, int price, int tier, float band, float reel, float rare, int cap)[]
@@ -121,6 +124,19 @@ namespace CozyFishing.EditorTools
                 ("creel_medium", ItemType.Creel, "Medium Creel", "Keranjang Sedang", "Holds 12 fish.", "Muat 12 ikan.", 300, 0, 0f, 0f, 0f, 12),
                 ("creel_large", ItemType.Creel, "Large Creel", "Keranjang Besar", "Holds 16 fish.", "Muat 16 ikan.", 900, 0, 0f, 0f, 0f, 16),
                 ("creel_grand", ItemType.Creel, "Grand Creel", "Keranjang Agung", "Holds 24 fish.", "Muat 24 ikan.", 2000, 0, 0f, 0f, 0f, 24),
+                ("bait_golden", ItemType.Bait, "Golden Lure (x5)", "Umpan Emas (x5)", "Felix's secret lure. Rare and legendary fish can't resist it.", "Umpan rahasia Felix. Ikan langka dan legendaris tak bisa menolaknya.", 300, 0, 0f, 0f, 2.5f, 0),
+                ("decor_rug", ItemType.Decor, "Braided Rug", "Karpet Anyaman", "A warm round rug for the cabin floor.", "Karpet bundar hangat untuk lantai pondok.", 80, 0, 0f, 0f, 0f, 0),
+                ("decor_fern", ItemType.Decor, "Potted Fern", "Pakis dalam Pot", "A little green life by the door.", "Sedikit hijau di dekat pintu.", 60, 0, 0f, 0f, 0f, 0),
+                ("decor_lamp", ItemType.Decor, "Ship Lantern", "Lentera Kapal", "A brass lantern over the table.", "Lentera kuningan di atas meja.", 120, 0, 0f, 0f, 0f, 0),
+                ("decor_painting", ItemType.Decor, "River Painting", "Lukisan Sungai", "The river at sunset, framed for the wall.", "Sungai saat senja, dibingkai untuk dinding.", 150, 0, 0f, 0f, 0f, 0),
+                ("decor_clock", ItemType.Decor, "Grandfather Clock", "Jam Kakek", "Tick, tock. Just like Grandpa's old one.", "Tik, tok. Persis seperti jam lama Kakek.", 350, 0, 0f, 0f, 0f, 0),
+                ("decor_aquarium", ItemType.Decor, "Little Aquarium", "Akuarium Kecil", "Two tiny friends to watch on rainy days.", "Dua teman kecil untuk ditonton saat hujan.", 400, 0, 0f, 0f, 0f, 0),
+                ("decor_gramophone", ItemType.Decor, "Gramophone", "Gramofon", "Old songs for quiet evenings.", "Lagu-lagu lama untuk malam yang tenang.", 300, 0, 0f, 0f, 0f, 0),
+                ("decor_shipbottle", ItemType.Decor, "Ship in a Bottle", "Kapal dalam Botol", "A tiny ship from far-away seas.", "Kapal mungil dari laut yang jauh.", 500, 0, 0f, 0f, 0f, 0),
+                ("outfit_kai_raincoat", ItemType.Outfit, "Yellow Raincoat", "Jas Hujan Kuning", "Stay dry on stormy days.", "Tetap kering saat badai.", 250, 0, 0f, 0f, 0f, 0),
+                ("outfit_kai_summer", ItemType.Outfit, "Summer Linen", "Linen Musim Panas", "Light clothes for sunny afternoons.", "Pakaian ringan untuk siang yang cerah.", 300, 0, 0f, 0f, 0f, 0),
+                ("outfit_lena_raincoat", ItemType.Outfit, "Coral Raincoat", "Jas Hujan Koral", "Stay dry on stormy days.", "Tetap kering saat badai.", 250, 0, 0f, 0f, 0f, 0),
+                ("outfit_lena_summer", ItemType.Outfit, "Sailor Summer", "Gaya Pelaut Musim Panas", "Light clothes for sunny afternoons.", "Pakaian ringan untuk siang yang cerah.", 300, 0, 0f, 0f, 0f, 0),
             };
             var list = new List<ItemDef>();
             foreach (var d in defs)
@@ -129,6 +145,8 @@ namespace CozyFishing.EditorTools
                 it.id = d.id; it.type = d.type; it.nameEN = d.en; it.nameID = d.idn; it.descEN = d.dEN; it.descID = d.dID;
                 it.price = d.price; it.tier = d.tier; it.safeBandBonus = d.band; it.reelBonus = d.reel; it.rareBonus = d.rare; it.capacity = d.cap;
                 it.icon = SceneKit.Sprite($"Assets/Art/UI/Items/{d.id}.png", 256);
+                it.forCharacter = d.id.StartsWith("outfit_kai") ? "FisherM" : d.id.StartsWith("outfit_lena") ? "FisherF" : "";
+                it.merchantOnly = MerchantStock.Contains(d.id);
                 EditorUtility.SetDirty(it);
                 list.Add(it);
             }

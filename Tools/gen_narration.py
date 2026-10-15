@@ -39,6 +39,7 @@ VOICES = {  # role: (ElevenLabs voice name on fal, ElevenLabs voice id, Deepgram
     "joko": ("Chris", "iP95p4xoKVk53GoZ742B", "aura-2-apollo-en"),
     "wati": ("Matilda", "XrExE9yKIg1WjnnlVkGX", "aura-2-athena-en"),
     "dimas": ("Liam", "TX3LPaxmHKxFdv7VOQHJ", "aura-2-arcas-en"),
+    "felix": ("Charlie", "IKne3meq5aSn9XLyUdCD", "aura-2-apollo-en"),
 }
 PLAYER_SLIDES = {("intro", 0), ("intro", 1), ("intro", 2)} | {("ending", i) for i in range(5)}
 LINE_ROLES = {
@@ -46,6 +47,7 @@ LINE_ROLES = {
     **{f"ready_{i}": "grandpa" for i in range(1, 6)},
     **{f"mira_{i}": "mira" for i in range(4)}, "mira_order": "mira", "mira_thanks": "mira",
     **{f"{npc}_{i}": npc for npc in ("bayu", "joko", "wati", "dimas") for i in range(3)},
+    **{f"felix_{i}": "felix" for i in range(3)}, "felix_arrive": "felix",
 }
 
 eleven_out = False

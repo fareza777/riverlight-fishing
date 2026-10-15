@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace CozyFishing.Data
 {
-    public enum ItemType { Rod, Bait, Creel }
+    public enum ItemType { Rod, Bait, Creel, Decor, Outfit }
 
     /// <summary>Something the player can buy and equip: rods (reel stats), bait (rare chance), creel upgrades (capacity).</summary>
     [CreateAssetMenu(menuName = "CozyFishing/Item", fileName = "Item_")]
@@ -20,6 +20,8 @@ namespace CozyFishing.Data
         [Tooltip("Bait: multiplies uncommon/rare bite weights.")] public float rareBonus;
         [Tooltip("Creel: total slots.")] public int capacity;
         public Sprite icon;
+        [Tooltip("Outfit: the hero it fits (FisherM / FisherF).")] public string forCharacter;
+        [Tooltip("Only sold by Felix, the traveling merchant.")] public bool merchantOnly;
 
         public string Name => Loc.Current == Language.Indonesian ? nameID : nameEN;
         public string Desc => Loc.Current == Language.Indonesian ? descID : descEN;

@@ -73,6 +73,7 @@ namespace CozyFishing.EditorTools
             Fireflies(root);
             Jumper(root, schools);
             foreach (var (npc, name, sitter) in plan.villagers) Villager(root, npc, name, sitter, schools);
+            Merchant(root);
         }
 
         // ------------------------------------------------------------------ terrain queries
@@ -345,6 +346,7 @@ namespace CozyFishing.EditorTools
             col.center = new Vector3(0f, 0.8f / s, 0f); col.radius = 0.3f / s; col.height = 1.6f / s;
             var v = go.AddComponent<NpcVillager>();
             v.EditorSetup(npc, displayName, anim, path);
+            v.EditorSetupExtras(NpcImporter.Extras(asset), npc == "dimas" ? 2.4f : 1.05f);
             SetFloat(v, "radius", 2.4f);
 
             if (sitter)
@@ -372,6 +374,53 @@ namespace CozyFishing.EditorTools
                 lr.shadowCastingMode = ShadowCastingMode.Off;
                 v.EditorSetupFishing(rodRoot, tip, bobber, lr, rest);
             }
+        }
+
+        /// <summary>Felix's wagon on a meadow a little way from the dock; TravelingMerchant shows it on visiting days.</summary>
+        static void Merchant(Transform parent)
+        {
+            if (!File.Exists("ArtSource/Meshy/Prop_MerchantCart/Prop_MerchantCart.fbx")) return;
+            if (!Find(p => Meadow(p) && Far(p, 9f) && !Far(p, 22f), out var pos) && !Find(p => Meadow(p) && Far(p, 8f), out pos)) return;
+            var manager = new GameObject("TravelingMerchant").transform;
+            manager.SetParent(parent, false);
+            var visit = new GameObject("Merchant Visit").transform;
+            visit.SetParent(manager, false);
+            var face = dock - pos; face.y = 0f;
+            var rot = Quaternion.LookRotation(face.sqrMagnitude > 0.01f ? face : Vector3.forward);
+
+            var cart = SpawnMeshyProp("Prop_MerchantCart", visit);
+            cart.transform.SetPositionAndRotation(pos, rot);
+            Fit(cart, 2.8f);
+            SitOn(cart, pos.y, 0.05f);
+            var b = Bounds(cart);
+            var box = cart.AddComponent<BoxCollider>();
+            box.center = cart.transform.InverseTransformPoint(b.center);
+            var ls = cart.transform.lossyScale;
+            box.size = new Vector3(b.size.x / ls.x, b.size.y / ls.y, b.size.z / ls.z) * 0.8f;
+
+            Animator felix = null;
+            if (File.Exists(NpcImporter.ModelPath("NPC_Felix")) || NpcImporter.Import("NPC_Felix"))
+            {
+                var npc = Spawn(NpcImporter.ModelPath("NPC_Felix"), visit);
+                npc.name = "NPC_Felix";
+                var npcPos = pos + rot * new Vector3(Mathf.Max(b.extents.x, b.extents.z) * 0.8f + 0.5f, 0f, 0.6f);
+                npc.transform.SetPositionAndRotation(new Vector3(npcPos.x, Height(npcPos), npcPos.z), rot);
+                FitHeight(npc, 1.72f);
+                SitOn(npc, Height(npcPos));
+                if (!npc.TryGetComponent(out felix)) felix = npc.AddComponent<Animator>();
+                felix.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(NpcImporter.ControllerPath("NPC_Felix"));
+                felix.applyRootMotion = false;
+                npc.AddComponent<NpcMira>().EditorSetup(felix);
+                var col = npc.AddComponent<CapsuleCollider>();
+                float s = npc.transform.lossyScale.y;
+                col.center = new Vector3(0f, 0.85f / s, 0f); col.radius = 0.3f / s; col.height = 1.7f / s;
+            }
+            var trade = new GameObject("MerchantStall", typeof(Interaction.MerchantStall)).transform;
+            trade.SetParent(visit, false);
+            trade.position = new Vector3(b.center.x, b.min.y, b.center.z) + rot * Vector3.forward * (Mathf.Max(b.extents.x, b.extents.z) * 0.6f + 0.6f);
+            trade.GetComponent<Interaction.MerchantStall>().EditorSetup(felix);
+            SetFloat(trade.GetComponent<Interaction.MerchantStall>(), "radius", 2.6f);
+            manager.gameObject.AddComponent<TravelingMerchant>().EditorSetup(visit.gameObject);
         }
 
         /// <summary>A dry shore point near one of the fish schools, with open water a few metres in front.</summary>

@@ -25,3 +25,5 @@ MonoBehaviour:
   rareBonus: 0.5
   capacity: 0
   icon: {fileID: 21300000, guid: 443bdbebebda66642a6b6f6a12fbf9af, type: 3}
+  forCharacter: 
+  merchantOnly: 0

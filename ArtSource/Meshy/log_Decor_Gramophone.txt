@@ -1,0 +1,19 @@
+[image] IN_PROGRESS 30%
+[image] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_Gramophone\concept_fcf977_0.png
+[image-to-3d] IN_PROGRESS 1%
+[image-to-3d] IN_PROGRESS 7%
+[image-to-3d] IN_PROGRESS 40%
+[image-to-3d] IN_PROGRESS 49%
+[image-to-3d] IN_PROGRESS 71%
+[image-to-3d] IN_PROGRESS 95%
+[image-to-3d] IN_PROGRESS 99%
+[image-to-3d] SUCCEEDED 100%
+saved ArtSource\Meshy\Decor_Gramophone\Decor_Gramophone.glb
+saved ArtSource\Meshy\Decor_Gramophone\thumb_back.png
+saved ArtSource\Meshy\Decor_Gramophone\thumb_front.png
+saved ArtSource\Meshy\Decor_Gramophone\thumb_left.png
+saved ArtSource\Meshy\Decor_Gramophone\thumb_right.png
+credits: 15
+saved ArtSource\Meshy\Decor_Gramophone\Decor_Gramophone.fbx
+saved ArtSource\Meshy\Decor_Gramophone\Decor_Gramophone_BaseColor.png

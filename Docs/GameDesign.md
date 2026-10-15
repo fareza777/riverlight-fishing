@@ -54,6 +54,19 @@ After the fifth memory the **ending** plays: the player becomes the new keeper o
   Martha and Leo (walk around). Each has three voiced lines (Talk); Mira runs the market.
 - Graphics quality: Low / Medium / High (auto-detected; Settings > Graphics). Some animals are hidden on Low.
 
+## Expansion (v1.2)
+
+- **Dock fishing:** "Fish here" at the end of every dock; the hero stands and casts straight out (standing cast/reel
+  clips from Meshy text-to-motion). Push the stick between casts to stand up.
+- **Cabin decor:** 8 pieces (rug, fern, ship lantern, river painting, grandfather clock, aquarium, gramophone,
+  ship in a bottle) bought at the market appear in their own slots in Grandpa's cabin.
+- **Outfits:** raincoat and summer clothes for Kai and Lena (Meshy retextures on the heroes' UVs); wear them from Bag.
+- **Felix, the traveling merchant:** visits every third day (from chapter 1) with his wagon; sells the Golden Lure,
+  the gramophone, the ship in a bottle and the summer outfits. Three voiced lines.
+- **Animation pack:** heroes do a happy jump after a purchase and look around / stretch when idle; Leo runs and
+  jumps, Martha looks around and cheers, Hugo and Old Ben cheer or clap when they land a fish and doze now and then,
+  Mira cheers when an order is delivered.
+
 ## Rebuilding everything
 
 1. Blender: `exec(open("Tools/blender_fish.py").read()); build_all(export=True)` and `Tools/blender_locations.py` → `build_location(id)`.

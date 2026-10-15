@@ -17,8 +17,14 @@ namespace CozyFishing.UI
 
         public static bool IsOpen => instance != null && instance.group.alpha > 0.5f;
 
-        public static void Open()
+        /// <summary>True while showing Felix's wagon instead of Mira's market.</summary>
+        public static bool Merchant { get; private set; }
+
+        public static void Open() => Open(false);
+
+        public static void Open(bool merchant)
         {
+            Merchant = merchant;
             if (instance == null) { instance = new GameObject("ShopUI").AddComponent<ShopUI>(); instance.Build(); }
             instance.oldScale = Time.timeScale;
             Time.timeScale = 0f;
@@ -60,10 +66,16 @@ namespace CozyFishing.UI
         {
             var gs = GameState.Instance;
             var d = gs.Data;
-            transform.GetComponentsInChildren<Text>(true).First(t => t.name == "Title").text = $"{Loc.T("market")}   <size=40>{UIKit.Coins(d.coins)}</size>";
+            transform.GetComponentsInChildren<Text>(true).First(t => t.name == "Title").text = $"{Loc.T(Merchant ? "merchant_title" : "market")}   <size=40>{UIKit.Coins(d.coins)}</size>";
             foreach (Transform c in page) Destroy(c.gameObject);
             var content = UIKit.ScrollList(page, "Items", 14f, out var scroll);
             UIKit.Anchor((RectTransform)scroll.transform, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+
+            if (Merchant)
+            {
+                Section(content, Loc.T("merchant_stock"), null);
+                return;
+            }
 
             // Sell
             int value = d.creel.Sum(c => GameState.Db.Fish(c.fishId)?.PriceFor(c.sizeCm) ?? 0);
@@ -79,6 +91,8 @@ namespace CozyFishing.UI
             Section(content, Loc.T("rods"), ItemType.Rod);
             Section(content, Loc.T("bait"), ItemType.Bait);
             Section(content, Loc.T("creels"), ItemType.Creel);
+            Section(content, Loc.T("decor"), ItemType.Decor);
+            Section(content, Loc.T("outfits"), ItemType.Outfit);
         }
 
         void Orders(RectTransform content)
@@ -117,29 +131,45 @@ namespace CozyFishing.UI
                         SfxPlayer.Play("coins", 1f, 0f);
                         Toast.Show(Loc.T("delivered", order.reward), 3f);
                         Audio.VoicePlayer.Say("mira_thanks");
+                        FindAnyObjectByType<World.NpcMira>()?.Cheer();
                         Refresh();
                     } : null);
                 b.interactable = ready;
             }
         }
 
-        void Section(RectTransform content, string header, ItemType type)
+        void Section(RectTransform content, string header, ItemType? type)
         {
             var gs = GameState.Instance;
             var h = UIKit.Label(content, "Header", $"<b>{header}</b>", 34, UIKit.Teal, TextAnchor.LowerLeft);
             h.rectTransform.sizeDelta = new Vector2(0, 70);
-            foreach (var item in GameState.Db.items.Where(i => i.type == type && (i.price > 0 || GameState.Instance.Owns(i.id))).OrderBy(i => i.price))
+            string hero = gs.Data.character;
+            var items = GameState.Db.items.Where(i => (i.price > 0 || gs.Owns(i.id)) && i.merchantOnly == Merchant
+                                                      && (type == null || i.type == type)
+                                                      && (i.type != ItemType.Outfit || i.forCharacter == hero)).OrderBy(i => i.price).ToList();
+            if (items.Count == 0) { Object.Destroy(h.gameObject); return; }
+            foreach (var item in items)
             {
-                bool owned = type != ItemType.Bait && gs.Owns(item.id);
-                bool equipped = item.id == gs.Data.rod || item.id == gs.Data.creelItem;
+                bool owned = item.type != ItemType.Bait && gs.Owns(item.id);
+                bool equipped = item.id == gs.Data.rod || item.id == gs.Data.creelItem || item.id == gs.Data.outfit;
                 string action; UnityEngine.Events.UnityAction click = null;
-                if (owned && equipped) action = Loc.T("equipped");
+                if (owned && item.type == ItemType.Decor) action = Loc.T("in_cabin");
+                else if (owned && equipped) action = Loc.T("equipped");
                 else if (owned) { action = Loc.T("equip"); click = () => { gs.Equip(item); Refresh(); }; }
                 else
                 {
                     action = Loc.T("buy");
                     if (gs.Data.coins >= item.price)
-                        click = () => { if (gs.Buy(item)) { SfxPlayer.Play("coins", 0.8f, 0f); Toast.Show(Loc.T("bought", item.Name), 2f); } Refresh(); };
+                        click = () =>
+                        {
+                            if (gs.Buy(item))
+                            {
+                                SfxPlayer.Play("coins", 0.8f, 0f);
+                                Toast.Show(Loc.T(item.type == ItemType.Decor ? "bought_decor" : "bought", item.Name), 2.5f);
+                                Player.PlayerAvatar.CelebrateLocal();
+                            }
+                            Refresh();
+                        };
                 }
                 PauseMenu.ItemRow(content, item, action, click, owned ? null : UIKit.Coins(item.price));
             }

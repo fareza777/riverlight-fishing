@@ -1,0 +1,12 @@
+[animate Idle] IN_PROGRESS 10%
+[animate Idle] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Felix\Animations\NPC_Felix@Idle.fbx
+[animate Wave] IN_PROGRESS 0%
+[animate Wave] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Felix\Animations\NPC_Felix@Wave.fbx
+[animate Talk] IN_PROGRESS 10%
+[animate Talk] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Felix\Animations\NPC_Felix@Talk.fbx
+[animate Cheer] IN_PROGRESS 10%
+[animate Cheer] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Felix\Animations\NPC_Felix@Cheer.fbx

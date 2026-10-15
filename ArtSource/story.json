@@ -272,6 +272,58 @@
     {
       "id": "creel_grand",
       "art": "a grand ornate wicker fishing chest with brass corners and a carved fish on the lid"
+    },
+    {
+      "id": "decor_aquarium",
+      "art": "a small glass fish tank on a wooden stand with pebbles, water plants and two orange fish"
+    },
+    {
+      "id": "decor_rug",
+      "art": "a round braided rag rug in teal, cream and rust colours"
+    },
+    {
+      "id": "decor_lamp",
+      "art": "a hanging brass ship lantern with a warm glow"
+    },
+    {
+      "id": "decor_fern",
+      "art": "a lush green fern in a glazed terracotta pot"
+    },
+    {
+      "id": "decor_painting",
+      "art": "a framed painting of a calm river at sunset with a rowboat"
+    },
+    {
+      "id": "decor_clock",
+      "art": "a tall wooden grandfather clock with a brass pendulum"
+    },
+    {
+      "id": "decor_gramophone",
+      "art": "a vintage gramophone with a large brass horn"
+    },
+    {
+      "id": "decor_shipbottle",
+      "art": "a sailing ship model inside a glass bottle on a little stand"
+    },
+    {
+      "id": "outfit_kai_raincoat",
+      "art": "a folded bright yellow raincoat with green rubber boots"
+    },
+    {
+      "id": "outfit_kai_summer",
+      "art": "a folded sky-blue linen shirt with beige shorts and a straw hat"
+    },
+    {
+      "id": "outfit_lena_raincoat",
+      "art": "a folded coral-red raincoat with a cream knitted scarf and teal boots"
+    },
+    {
+      "id": "outfit_lena_summer",
+      "art": "a folded white and mint striped sailor top with denim overall shorts and a straw sun hat"
+    },
+    {
+      "id": "bait_golden",
+      "art": "a shiny golden fishing lure shaped like a little fish, glittering"
     }
   ]
 }

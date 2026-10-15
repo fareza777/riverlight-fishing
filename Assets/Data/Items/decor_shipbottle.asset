@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d75d45482d6534eaacb154a37bc260, type: 3}
+  m_Name: decor_shipbottle
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.ItemDef
+  id: decor_shipbottle
+  type: 3
+  nameEN: Ship in a Bottle
+  nameID: Kapal dalam Botol
+  descEN: A tiny ship from far-away seas.
+  descID: Kapal mungil dari laut yang jauh.
+  price: 500
+  tier: 0
+  safeBandBonus: 0
+  reelBonus: 0
+  rareBonus: 0
+  capacity: 0
+  icon: {fileID: 21300000, guid: 8689bc1dd50ff6345bb6f7fae8b1c2f8, type: 3}
+  forCharacter: 
+  merchantOnly: 1

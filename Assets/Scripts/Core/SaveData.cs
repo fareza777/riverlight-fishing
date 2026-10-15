@@ -38,6 +38,7 @@ namespace CozyFishing.Core
         public string bait = "";
         public int baitCount;
         public string creelItem = "creel_small";
+        public string outfit = "";                    // "" = the hero's default clothes
         public int totalCaught;
         public int totalEarned;
         public float playSeconds;

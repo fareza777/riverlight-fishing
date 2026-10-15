@@ -1,0 +1,26 @@
+[retexture Raincoat] IN_PROGRESS 0%
+[retexture Raincoat] IN_PROGRESS 19%
+[retexture Raincoat] IN_PROGRESS 49%
+[retexture Raincoat] IN_PROGRESS 69%
+[retexture Raincoat] IN_PROGRESS 99%
+[retexture Raincoat] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Outfits\FisherM_Raincoat_BaseColor.png
+credits: 10
+[retexture Summer] IN_PROGRESS 0%
+[retexture Summer] IN_PROGRESS 49%
+[retexture Summer] IN_PROGRESS 99%
+[retexture Summer] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Outfits\FisherM_Summer_BaseColor.png
+credits: 10
+[retexture Raincoat] IN_PROGRESS 0%
+[retexture Raincoat] IN_PROGRESS 49%
+[retexture Raincoat] IN_PROGRESS 99%
+[retexture Raincoat] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Outfits\FisherF_Raincoat_BaseColor.png
+credits: 10
+[retexture Summer] IN_PROGRESS 0%
+[retexture Summer] IN_PROGRESS 49%
+[retexture Summer] IN_PROGRESS 99%
+[retexture Summer] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Outfits\FisherF_Summer_BaseColor.png
+credits: 10

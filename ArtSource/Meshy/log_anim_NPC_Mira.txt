@@ -1,0 +1,3 @@
+[animate Cheer] IN_PROGRESS 10%
+[animate Cheer] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Mira\Animations\NPC_Mira@Cheer.fbx

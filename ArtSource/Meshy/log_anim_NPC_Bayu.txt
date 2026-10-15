@@ -1,0 +1,7 @@
+[animate SitCheer] IN_PROGRESS 10%
+[animate SitCheer] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@SitCheer.fbx
+[animate SitDoze] IN_PROGRESS 10%
+[animate SitDoze] IN_PROGRESS 31%
+[animate SitDoze] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Bayu\Animations\NPC_Bayu@SitDoze.fbx

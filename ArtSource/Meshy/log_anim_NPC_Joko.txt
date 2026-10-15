@@ -1,0 +1,10 @@
+[animate SitCheer] IN_PROGRESS 10%
+[animate SitCheer] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@SitCheer.fbx
+[animate SitClap] IN_PROGRESS 10%
+[animate SitClap] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@SitClap.fbx
+[animate SitDoze] IN_PROGRESS 10%
+[animate SitDoze] IN_PROGRESS 31%
+[animate SitDoze] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Joko\Animations\NPC_Joko@SitDoze.fbx

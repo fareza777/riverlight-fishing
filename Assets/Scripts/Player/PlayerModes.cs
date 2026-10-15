@@ -31,6 +31,9 @@ namespace CozyFishing.Player
         bool busy;
 
         public bool InBoat { get; private set; }
+        public bool OnShore => shore != null;
+
+        Interaction.ShoreFishingPoint shore;
         public PlayerAvatar Avatar => avatar;
 
         /// <summary>Used by <see cref="CharacterSelector"/> to swap in the chosen hero before play starts.</summary>
@@ -125,8 +128,41 @@ namespace CozyFishing.Player
             busy = false;
         }
 
+        /// <summary>Stand at the end of the dock and fish without the boat.</summary>
+        public void StartShore(Interaction.ShoreFishingPoint point)
+        {
+            if (busy || InBoat || shore != null) return;
+            shore = point;
+            interactor.Enabled = false;
+            walker.Stop();
+            walker.InputLocked = true;
+            walker.Teleport(point.Stand.position, point.Stand.rotation);
+            // Stand still on the deck: no character physics while fishing (it slipped through the planks).
+            walker.Body.enabled = false;
+            avatar.EnterShore(point.Fishing);
+            point.Fishing.SetSpot(point.Spot);
+            point.Fishing.enabled = true;
+            FindAnyObjectByType<HUD>()?.SetFishing(point.Fishing);
+            cameraRig.ZoomTarget = 0.45f;
+        }
+
+        void StopShore()
+        {
+            var f = shore.Fishing;
+            f.enabled = false;
+            avatar.LeaveShore();
+            walker.Teleport(shore.Stand.position, shore.Stand.rotation);
+            walker.Body.enabled = true;
+            walker.InputLocked = false;
+            interactor.Enabled = true;
+            FindAnyObjectByType<HUD>()?.SetFishing(fishing);
+            cameraRig.ZoomTarget = 0f;
+            shore = null;
+        }
+
         void Update()
         {
+            if (shore != null) { UpdateShore(); return; }
             if (!InBoat || busy) return;
 
             // Context button while boating: fishing actions first, then getting off at the dock.
@@ -145,6 +181,24 @@ namespace CozyFishing.Player
             TouchControls.Publish(prompt, walker.transform.position + Vector3.up * 1.9f);
 
             if (canLeave && GameInput.Instance != null && GameInput.Instance.ActionPressed) Disembark();
+        }
+
+        void UpdateShore()
+        {
+            var f = shore.Fishing;
+            f.CastAllowed = true;
+            string prompt = f.State switch
+            {
+                FishingState.Rowing => Loc.T("cast"),
+                FishingState.Charging => Loc.T("release"),
+                FishingState.Bite => Loc.T("hook"),
+                FishingState.Reeling => Loc.T("reel"),
+                FishingState.Landing => Loc.T("continue"),
+                _ => "",
+            };
+            TouchControls.Publish(prompt, walker.transform.position + Vector3.up * 1.9f);
+            // Push the stick to put the rod away and walk off (only between casts).
+            if (f.State == FishingState.Rowing && GameInput.Instance != null && GameInput.Instance.Move.magnitude > 0.5f) StopShore();
         }
 
         // Boat trigger callbacks are forwarded by BoatDockSensor on the boat.

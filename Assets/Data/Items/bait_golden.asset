@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d75d45482d6534eaacb154a37bc260, type: 3}
+  m_Name: bait_golden
+  m_EditorClassIdentifier: Assembly-CSharp::CozyFishing.Data.ItemDef
+  id: bait_golden
+  type: 1
+  nameEN: Golden Lure (x5)
+  nameID: Umpan Emas (x5)
+  descEN: Felix's secret lure. Rare and legendary fish can't resist it.
+  descID: Umpan rahasia Felix. Ikan langka dan legendaris tak bisa menolaknya.
+  price: 300
+  tier: 0
+  safeBandBonus: 0
+  reelBonus: 0
+  rareBonus: 2.5
+  capacity: 0
+  icon: {fileID: 21300000, guid: 9c444329fadba0f41853d57b15fbd225, type: 3}
+  forCharacter: 
+  merchantOnly: 1

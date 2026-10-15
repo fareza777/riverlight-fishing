@@ -25,7 +25,9 @@ namespace CozyFishing.Dev
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Boot()
         {
-            if (!DevArgs.Has("-selftest-tour")) return;
+            bool flag = Application.isEditor && File.Exists("Temp/tour.flag");
+            if (!DevArgs.Has("-selftest-tour") && !flag) return;
+            if (flag) File.Delete("Temp/tour.flag");
             var go = new GameObject("TourSelfTest");
             DontDestroyOnLoad(go);
             go.AddComponent<TourSelfTest>();
@@ -66,6 +68,7 @@ namespace CozyFishing.Dev
                 yield return Wait(1.5f);
                 yield return Shot($"{scene}_day");
                 yield return MeasureFps(scene);
+                if (scene == "River") yield return Expansions();
                 yield return FishOnce(scene);
                 if (scene == "Lake")
                 {
@@ -115,12 +118,16 @@ namespace CozyFishing.Dev
         IEnumerator FishOnce(string scene)
         {
             var modes = FindAnyObjectByType<PlayerModes>();
-            var fishing = FindAnyObjectByType<FishingController>();
+            var fishing = FindAnyObjectByType<Boat.BoatController>().GetComponent<FishingController>();
             string result = "none";
+            fishing.StateChanged += st => Debug.Log($"[TourTest] {scene} state -> {st} spot={fishing.CurrentSpot?.SpotName} t={Time.time:0.0}");
             fishing.Caught += (f, isNew) => result = $"CAUGHT {f.Species.Id} ({f.Species.Location}) {f.SizeCm:0}cm";
             fishing.Lost += r => result = "LOST " + r;
             modes.Board();
-            yield return Wait(1.6f);
+            // Let the boarding hop finish before moving the boat into the spot.
+            float until = Time.unscaledTime + 5f;
+            while (!modes.InBoat && Time.unscaledTime < until) yield return null;
+            yield return Wait(0.8f);
             var spots = FindObjectsByType<FishingSpot>(FindObjectsSortMode.InstanceID);
             var spot = spots[shot % spots.Length];
             var body = fishing.GetComponent<Rigidbody>();
@@ -167,6 +174,102 @@ namespace CozyFishing.Dev
                 frames++;
             }
             Debug.Log($"[TourTest] fps {scene} avg={frames / t:0.0} worstMs={worst * 1000f:0} level={GraphicsQuality.Level} res={Screen.width}x{Screen.height}");
+        }
+
+        /// <summary>Dock fishing, buying decor and an outfit, the decorated cabin, Felix's wagon.</summary>
+        IEnumerator Expansions()
+        {
+            var gs = GameState.Instance;
+            gs.Data.coins += 3000;
+            gs.Data.chapter = Mathf.Max(gs.Data.chapter, 1);
+
+            // Fishing from the end of the dock.
+            var modes = FindAnyObjectByType<PlayerModes>();
+            var point = FindAnyObjectByType<Interaction.ShoreFishingPoint>();
+            if (point != null)
+            {
+                modes.StartShore(point);
+                yield return Wait(1f);
+                yield return Shot("dock_ready");
+                string result = "none";
+                point.Fishing.Caught += (f, isNew) => result = $"CAUGHT {f.Species.Id} {f.SizeCm:0}cm";
+                point.Fishing.Lost += r => result = "LOST " + r;
+                yield return PlayCatch(point.Fishing, "River_dock");
+                Debug.Log($"[TourTest] River dock fishing: {result} heroY={modes.transform.position.y:0.00} standY={point.Stand.position.y:0.00}");
+                if (point.Fishing.State == FishingState.Landing) point.Fishing.ConfirmCatch();
+                yield return Wait(1f);
+                GameInput.Instance.SetTouchMove(new Vector2(0f, -1f));
+                yield return Wait(0.4f);
+                GameInput.Instance.SetTouchMove(Vector2.zero);
+                Debug.Log($"[TourTest] stood up from the dock: onShore={modes.OnShore}");
+            }
+
+            // Shopping: decor for the cabin and an outfit for the hero.
+            foreach (var id in new[] { "decor_rug", "decor_aquarium", "decor_lamp", "decor_clock", "decor_fern", "decor_painting", "outfit_lena_raincoat" })
+                gs.Buy(GameState.Db.Item(id));
+            Debug.Log($"[TourTest] outfit={gs.Data.outfit} owned={gs.Data.owned.Count}");
+            yield return Wait(1f);
+            yield return Shot("outfit_raincoat");
+
+            // Inside the cabin.
+            var door = FindObjectsByType<Interaction.DoorPortal>(FindObjectsSortMode.None);
+            foreach (var d in door)
+            {
+                if (d.Prompt != Loc.T("enter")) continue;
+                d.Interact(FindAnyObjectByType<Interaction.PlayerInteractor>());
+                yield return Wait(2f);
+                yield return Shot("cabin_decor");
+                break;
+            }
+            foreach (var d in FindObjectsByType<Interaction.DoorPortal>(FindObjectsSortMode.None))
+                if (d.Prompt == Loc.T("exit")) { d.Interact(FindAnyObjectByType<Interaction.PlayerInteractor>()); break; }
+            yield return Wait(2f);
+
+            // Felix visits on every third day.
+            gs.Data.day = 3;
+            yield return Wait(3f);
+            var cart = GameObject.Find("Prop_MerchantCart");
+            Debug.Log($"[TourTest] merchant in town={World.TravelingMerchant.InTown} cart visible={(cart != null && cart.activeInHierarchy)}");
+            var walker = FindAnyObjectByType<PlayerController>();
+            if (cart != null)
+            {
+                walker.Teleport(cart.transform.position + cart.transform.forward * 3.5f, Quaternion.LookRotation(-cart.transform.forward));
+                yield return Wait(1.5f);
+                yield return Shot("merchant");
+                FindAnyObjectByType<Interaction.MerchantStall>()?.Interact(FindAnyObjectByType<Interaction.PlayerInteractor>());
+                yield return Wait(1f);
+                yield return Shot("merchant_shop");
+                var shop = FindAnyObjectByType<ShopUI>();
+                if (shop != null) shop.SendMessage("Close");
+            }
+            gs.Equip(GameState.Db.Item("outfit_lena_raincoat"));   // back to the default clothes
+            gs.Data.day = 1;
+        }
+
+        /// <summary>Plays one cast / strike / reel through the touch inputs on the given controller.</summary>
+        IEnumerator PlayCatch(FishingController fishing, string label)
+        {
+            var input = GameInput.Instance;
+            input.SetTouchAction(true);
+            yield return Wait(0.55f);
+            input.SetTouchAction(false);
+            float timeout = Time.time + 25f;
+            while (fishing.State != FishingState.Bite && Time.time < timeout) yield return null;
+            input.SetTouchAction(true);
+            yield return null;
+            input.SetTouchAction(false);
+            bool shotTaken = false;
+            float reelShot = Time.time + 2f;
+            while (fishing.State == FishingState.Reeling)
+            {
+                float mid = (fishing.SafeBand.x + fishing.SafeBand.y) * 0.5f;
+                input.SetTouchAction(!fishing.FishRunning && fishing.Tension < mid);
+                if (!shotTaken && Time.time > reelShot) { shotTaken = true; yield return Shot($"{label}_reel"); }
+                yield return null;
+            }
+            input.SetTouchAction(false);
+            yield return Wait(1.5f);
+            yield return Shot($"{label}_catch");
         }
 
         static void VoicePlayer() => Audio.VoicePlayer.Say("mira_0");

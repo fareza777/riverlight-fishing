@@ -34,8 +34,40 @@ namespace CozyFishing.Player
         Vector3 seatOffset;
         FishingState lastFishing = FishingState.Rowing;
 
+        static readonly int CelebrateId = Animator.StringToHash("Celebrate");
+        static readonly int[] FidgetIds = { Animator.StringToHash("LookAround"), Animator.StringToHash("Idle3") };
+        float idleTime, nextFidget = 8f;
+
         public Animator Animator => animator;
         public bool InBoat { get; private set; }
+        public bool OnShore { get; private set; }
+
+        /// <summary>A little happy jump (shop purchase, a legend from the dock) on whichever hero is active.</summary>
+        public static void CelebrateLocal()
+        {
+            foreach (var a in FindObjectsByType<PlayerAvatar>(FindObjectsSortMode.None))
+                if (a.isActiveAndEnabled && !a.InBoat && HasParam(a.animator, "Celebrate")) a.animator.SetTrigger(CelebrateId);
+        }
+
+        static bool HasParam(Animator a, string name)
+        {
+            foreach (var p in a.parameters) if (p.name == name) return true;
+            return false;
+        }
+
+        /// <summary>Standing on the dock with the rod (no boat): same fishing states, standing clips.</summary>
+        public void EnterShore(FishingController f)
+        {
+            fishing = f; OnShore = true; lastFishing = FishingState.Rowing;
+            animator.SetBool(SeatedId, false);
+        }
+
+        public void LeaveShore()
+        {
+            OnShore = false;
+            animator.SetBool(FishingId, false);
+            fishing = null;
+        }
         public Transform RightHand => animator.GetBoneTransform(HumanBodyBones.RightHand);
 
         /// <summary>Hips height above the seat surface while sitting.</summary>
@@ -71,11 +103,21 @@ namespace CozyFishing.Player
 
         void Update()
         {
-            if (!InBoat)
+            if (!InBoat && !OnShore)
             {
-                animator.SetFloat(SpeedId, walker ? walker.AnimSpeed : 0f);
+                float speed = walker ? walker.AnimSpeed : 0f;
+                animator.SetFloat(SpeedId, speed);
+                // Stand still for a while and the hero looks around or stretches.
+                idleTime = speed < 0.05f ? idleTime + Time.deltaTime : 0f;
+                if (idleTime > nextFidget && HasParam(animator, "LookAround"))
+                {
+                    animator.SetTrigger(FidgetIds[Random.Range(0, FidgetIds.Length)]);
+                    idleTime = 0f;
+                    nextFidget = Random.Range(9f, 16f);
+                }
                 return;
             }
+            if (OnShore) animator.SetFloat(SpeedId, 0f);
 
             var state = fishing ? fishing.State : FishingState.Rowing;
             bool isFishing = state != FishingState.Rowing;
@@ -110,7 +152,7 @@ namespace CozyFishing.Player
         void OnAnimatorIK(int layer)
         {
             // Reach down for the rod lying in the boat while getting ready to fish.
-            if (!InBoat || fishing == null || layer != 0) return;
+            if ((!InBoat && !OnShore) || fishing == null || layer != 0) return;
             float w = fishing.State == FishingState.Readying ? fishing.PickupReach : 0f;
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, w);
             if (w > 0f && fishing.StowedRod != null) animator.SetIKPosition(AvatarIKGoal.RightHand, fishing.StowedRod.position);

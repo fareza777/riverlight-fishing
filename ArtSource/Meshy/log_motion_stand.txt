@@ -1,0 +1,27 @@
+[motion StandCast] IN_PROGRESS 10%
+[motion StandCast] IN_PROGRESS 12%
+[motion StandCast] SUCCEEDED 100%
+[animate StandCast] IN_PROGRESS 1%
+[animate StandCast] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@StandCast.fbx
+[motion StandReel] IN_PROGRESS 10%
+[motion StandReel] IN_PROGRESS 12%
+[motion StandReel] SUCCEEDED 100%
+[animate StandReel] IN_PROGRESS 1%
+[animate StandReel] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@StandReel.fbx
+[motion StandWait] IN_PROGRESS 10%
+[motion StandWait] IN_PROGRESS 12%
+[motion StandWait] SUCCEEDED 100%
+[animate StandWait] IN_PROGRESS 1%
+[animate StandWait] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherM\Animations\FisherM@StandWait.fbx
+[animate StandCast] IN_PROGRESS 1%
+[animate StandCast] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Animations\FisherF@StandCast.fbx
+[animate StandReel] IN_PROGRESS 1%
+[animate StandReel] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Animations\FisherF@StandReel.fbx
+[animate StandWait] IN_PROGRESS 1%
+[animate StandWait] SUCCEEDED 100%
+saved ArtSource\Meshy\FisherF\Animations\FisherF@StandWait.fbx

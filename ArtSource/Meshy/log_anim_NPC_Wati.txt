@@ -1,0 +1,7 @@
+[animate LookAround] IN_PROGRESS 10%
+[animate LookAround] IN_PROGRESS 95%
+[animate LookAround] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@LookAround.fbx
+[animate Cheer] IN_PROGRESS 10%
+[animate Cheer] SUCCEEDED 100%
+saved ArtSource\Meshy\NPC_Wati\Animations\NPC_Wati@Cheer.fbx

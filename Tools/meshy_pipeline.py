@@ -106,7 +106,7 @@ def cmd_image(a: argparse.Namespace) -> None:
 
 def cmd_to3d(a: argparse.Namespace) -> None:
     body = {
-        "ai_model": "latest",
+        "ai_model": a.ai_model,
         "should_remesh": True,
         "topology": "triangle",
         "target_polycount": a.polycount,
@@ -192,6 +192,19 @@ def cmd_fetch(a: argparse.Namespace) -> None:
             download(tex["base_color"], out / f"{a.name}_BaseColor.png")
 
 
+def cmd_retexture(a: argparse.Namespace) -> None:
+    """New texture for an existing model on its original UVs (outfits): only the BaseColor map is kept."""
+    body = {"input_task_id": task_of(a.name, "to3d"), "text_style_prompt": a.prompt, "enable_original_uv": True, "enable_pbr": False}
+    tid = call("POST", "/v1/retexture", body)["result"]
+    task = wait("/v1/retexture", tid, f"retexture {a.outfit}")
+    record(a.name, f"retexture_{a.outfit}", tid)
+    for tex in task.get("texture_urls") or []:
+        if tex.get("base_color"):
+            download(tex["base_color"], ROOT / a.name / "Outfits" / f"{a.name}_{a.outfit}_BaseColor.png")
+            break
+    print(f"credits: {task.get('consumed_credits')}")
+
+
 def cmd_library(a: argparse.Namespace) -> None:
     items = call("GET", f"/v1/animations/library?search={a.search}")
     items = items if isinstance(items, list) else items.get("result", [])
@@ -205,7 +218,7 @@ def main() -> None:
     s = sub.add_parser("image"); s.add_argument("--name", required=True); s.add_argument("--prompt", required=True)
     s.add_argument("--model", default="nano-banana-2"); s.add_argument("--aspect", default="3:4"); s.add_argument("--remove-bg", action="store_true")
     s = sub.add_parser("to3d"); s.add_argument("--name", required=True); s.add_argument("--image-task"); s.add_argument("--image")
-    s.add_argument("--polycount", type=int, default=12000); s.add_argument("--pose", default="a-pose"); s.add_argument("--texture-prompt", default="")
+    s.add_argument("--polycount", type=int, default=12000); s.add_argument("--ai-model", default="latest"); s.add_argument("--pose", default="a-pose"); s.add_argument("--texture-prompt", default="")
     s = sub.add_parser("rig"); s.add_argument("--name", required=True); s.add_argument("--height", type=float, default=1.7)
     s = sub.add_parser("animate"); s.add_argument("--name", required=True); s.add_argument("--clip", required=True)
     s.add_argument("--actions", default=""); s.add_argument("--motion", default="")
@@ -213,8 +226,9 @@ def main() -> None:
     s.add_argument("--prompt", required=True); s.add_argument("--duration", type=float, default=4.0)
     s = sub.add_parser("library"); s.add_argument("--search", default="")
     s = sub.add_parser("fetch"); s.add_argument("--name", required=True)
+    s = sub.add_parser("retexture"); s.add_argument("--name", required=True); s.add_argument("--outfit", required=True); s.add_argument("--prompt", required=True)
     a = p.parse_args()
-    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library, "fetch": cmd_fetch}[a.cmd](a)
+    {"image": cmd_image, "to3d": cmd_to3d, "rig": cmd_rig, "animate": cmd_animate, "motion": cmd_motion, "library": cmd_library, "fetch": cmd_fetch, "retexture": cmd_retexture}[a.cmd](a)
 
 
 if __name__ == "__main__":

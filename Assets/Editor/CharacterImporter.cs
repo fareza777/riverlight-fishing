@@ -16,11 +16,12 @@ namespace CozyFishing.EditorTools
         public static readonly string[] Characters = { "FisherM", "FisherF" };
         const string Root = "Assets/Art/Characters";
 
-        static readonly HashSet<string> Looping = new() { "Idle", "Walk", "Run", "SitIdle", "Row", "SitReel" };
+        static readonly HashSet<string> Looping = new() { "Idle", "Walk", "Run", "SitIdle", "Row", "SitReel", "StandReel", "StandWait" };
 
         // Parameters used by PlayerAvatar.
         public const string Speed = "Speed", Seated = "Seated", Rowing = "Rowing", RowSpeed = "RowSpeed",
-            Fishing = "Fishing", ReelSpeed = "ReelSpeed", CastTime = "CastTime", Cast = "Cast", OpenDoor = "OpenDoor", Cheer = "Cheer", Wave = "Wave";
+            Fishing = "Fishing", ReelSpeed = "ReelSpeed", CastTime = "CastTime", Cast = "Cast", OpenDoor = "OpenDoor", Cheer = "Cheer", Wave = "Wave",
+            Celebrate = "Celebrate";
 
         [MenuItem("CozyFishing/Import Characters")]
         public static void ImportAll()
@@ -144,6 +145,37 @@ namespace CozyFishing.EditorTools
             Exit(cheer, loco, 0.9f, 0.25f);
             Trigger(loco, wave, Wave, 0.1f);
             Exit(wave, loco, 0.9f, 0.25f);
+
+            // Standing fishing from the dock: the cast is scrubbed by CastTime, the reel clip runs at ReelSpeed.
+            if (clips.TryGetValue("StandCast", out var standCastClip) && clips.TryGetValue("StandReel", out var standReelClip))
+            {
+                var standCast = State(sm, "StandCast", standCastClip);
+                standCast.timeParameterActive = true;
+                standCast.timeParameter = CastTime;
+                var standHold = State(sm, "StandHold", standReelClip);
+                standHold.speedParameterActive = true;
+                standHold.speedParameter = ReelSpeed;
+                var toCast = loco.AddTransition(standCast);
+                toCast.hasExitTime = false;
+                toCast.duration = 0.15f;
+                toCast.AddCondition(AnimatorConditionMode.If, 0, Cast);
+                toCast.AddCondition(AnimatorConditionMode.IfNot, 0, Seated);
+                var toStandHold = standCast.AddTransition(standHold);
+                toStandHold.hasExitTime = false;
+                toStandHold.duration = 0.2f;
+                toStandHold.AddCondition(AnimatorConditionMode.Greater, 0.97f, CastTime);
+                Link(standCast, loco, 0.25f, (Fishing, false));
+                Link(standHold, loco, 0.25f, (Fishing, false));
+            }
+            // One-shot extras from the animation pack: a happy jump and two idle fidgets.
+            foreach (var (clipName, trigger) in new[] { ("HappyJump", Celebrate), ("LookAround", "LookAround"), ("Idle3", "Idle3") })
+            {
+                if (!clips.TryGetValue(clipName, out var extraClip)) continue;
+                ac.AddParameter(trigger, AnimatorControllerParameterType.Trigger);
+                var extra = State(sm, clipName, extraClip);
+                Trigger(loco, extra, trigger, 0.15f);
+                Exit(extra, loco, 0.92f, 0.25f);
+            }
 
             // Upper body: rowing stroke over the seated legs. Weight is driven by PlayerAvatar.
             ac.AddLayer(new AnimatorControllerLayer

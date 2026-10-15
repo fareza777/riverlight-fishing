@@ -16,7 +16,7 @@ namespace CozyFishing.Fishing
     /// Reeling is a tension game: hold to reel (tension rises, fish comes closer), release to let line out.
     /// Keep the needle in the safe band; above the band the line snaps, slack for too long and the fish escapes.
     /// </summary>
-    [RequireComponent(typeof(BoatController))]
+    // The boat is optional: the same controller also fishes from the dock (no BoatController on that stand).
     public sealed class FishingController : MonoBehaviour
     {
         [Header("References")]
@@ -56,6 +56,8 @@ namespace CozyFishing.Fishing
         [SerializeField] float[] strikeWindow = { 1.0f, 0.85f, 0.7f, 0.6f };
         [SerializeField] float runWarningSeconds = 0.6f;
         [SerializeField] float overTensionGrace = 0.25f;
+        [Tooltip("Dock fishing: cast straight ahead (the stand faces the water) instead of toward the spot.")]
+        [SerializeField] bool castAhead;
 
         public event Action<FishingState> StateChanged;
         public event Action<CaughtFish, bool> Caught;
@@ -148,7 +150,8 @@ namespace CozyFishing.Fishing
                         if (creel != null && creel.IsFull) { CreelFull?.Invoke(); break; }
                         releasedEarly = false;
                         SfxPlayer.Play("rod_pickup", 0.7f);
-                        AimPoint = CurrentSpot != null ? CurrentSpot.transform.position : transform.position - transform.forward * 5f;
+                        AimPoint = castAhead ? transform.position + transform.forward * 7f
+                            : CurrentSpot != null ? CurrentSpot.transform.position : transform.position - transform.forward * 5f;
                         Enter(FishingState.Readying);
                     }
                     break;
@@ -199,12 +202,12 @@ namespace CozyFishing.Fishing
             State = next;
             stateTime = 0f;
             bool fishing = next != FishingState.Rowing;
-            boat.InputLocked = fishing;
+            if (boat) boat.InputLocked = fishing;
             if (rowing) rowing.Resting = fishing;
             if (cameraRig) cameraRig.ZoomTarget = next is FishingState.Reeling or FishingState.Bite ? 1f : fishing ? 0.45f : 0f;
             // The rod changes hands mid-way through Readying (see Update); otherwise it is in hand while fishing.
             if (next != FishingState.Readying) SetRodVisible(fishing);
-            boat.AimTarget = fishing ? AimPoint : (Vector3?)null;
+            if (boat) boat.AimTarget = fishing ? AimPoint : (Vector3?)null;
             if (next == FishingState.Rowing)
             {
                 Charge = 0f;
@@ -216,7 +219,7 @@ namespace CozyFishing.Fishing
         void BeginCast()
         {
             Vector3 origin = transform.position;
-            Vector3 dir = CurrentSpot != null ? CurrentSpot.transform.position - origin : -transform.forward;
+            Vector3 dir = castAhead ? transform.forward : CurrentSpot != null ? CurrentSpot.transform.position - origin : -transform.forward;
             dir.y = 0f;
             if (dir.sqrMagnitude < 2.25f) dir = -transform.forward;
             dir.Normalize();
@@ -478,6 +481,9 @@ namespace CozyFishing.Fishing
                 SfxPlayer.Play("reel_tick", 0.8f, 0.3f);
             }
         }
+
+        /// <summary>Dock fishing has no boat to drift into a spot: the stand point names its spot directly.</summary>
+        public void SetSpot(FishingSpot spot) => CurrentSpot = spot;
 
         void FloatBobber(float extraY)
         {
