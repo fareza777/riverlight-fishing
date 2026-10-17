@@ -221,7 +221,8 @@ namespace CozyFishing.Fishing
             Vector3 origin = transform.position;
             Vector3 dir = castAhead ? transform.forward : CurrentSpot != null ? CurrentSpot.transform.position - origin : -transform.forward;
             dir.y = 0f;
-            if (dir.sqrMagnitude < 2.25f) dir = -transform.forward;
+            // Sitting right on top of the spot: cast off the stern. (Not for dock casts, whose direction is a unit vector.)
+            if (!castAhead && dir.sqrMagnitude < 2.25f) dir = -transform.forward;
             dir.Normalize();
             float distance = Mathf.Lerp(minCastDistance, maxCastDistance, Charge);
             castStart = rodTip ? rodTip.position : origin + Vector3.up;
@@ -310,7 +311,14 @@ namespace CozyFishing.Fishing
             // During a run the fish takes line: reeling against it spikes the tension.
             float rise = runTime > 0f ? tensionRise * 2.2f : tensionRise;
             float runPull = runTime > 0f ? Mathf.Lerp(0.35f, 0.9f, fight) : 0f;
-            Tension += (reeling ? rise : -tensionFall) * dt + (fishPull + runPull) * dt;
+            // Letting go always eases the line (the drag gives line): the fish's pull then costs progress instead,
+            // so releasing on a red/orange bar reliably saves it. Over the limit the drag slips faster.
+            if (reeling) Tension += (rise + fishPull + runPull) * dt;
+            else
+            {
+                Tension -= tensionFall * (Tension > liveBand.y ? 2.5f : 1f) * dt;
+                Progress -= (fishPull + runPull) * 0.08f * dt;
+            }
             Tension = Mathf.Max(0f, Tension);
 
             // The safe band drifts as the fish changes direction (more for strong fish).
@@ -331,7 +339,8 @@ namespace CozyFishing.Fishing
             else if (!reeling) Progress -= 0.04f * dt;
             Progress = Mathf.Clamp01(Progress);
 
-            slackTime = Tension < band.x * 0.5f ? slackTime + dt : 0f;
+            // A running fish keeps the line taut even when the player lets go, so that is never slack.
+            slackTime = !FishRunning && Tension < band.x * 0.5f ? slackTime + dt : 0f;
             // A legend on a rod that is too weak: the line gives way once the fight gets serious.
             if (hooked != null && hooked.IsLegend && (rod == null || rod.tier < hooked.RequiredRodTier) && Progress > 0.35f)
             {
@@ -342,12 +351,15 @@ namespace CozyFishing.Fishing
 
             if (bobber)
             {
-                Vector3 target = Vector3.Lerp(castTarget, transform.position - transform.forward * 1.2f, Progress);
+                // The fish comes in to the stern of the boat, or to the edge of the dock in front of the angler.
+                Vector3 landing = transform.position + transform.forward * (castAhead ? 2.6f : -1.2f);
+                Vector3 target = Vector3.Lerp(castTarget, landing, Progress);
                 target += new Vector3(Mathf.Sin(Time.time * 3.1f), 0f, Mathf.Cos(Time.time * 2.3f)) * 0.4f * (1f - Progress);
                 bobber.position = Vector3.Lerp(bobber.position, new Vector3(target.x, -0.05f, target.z), dt * 4f);
             }
 
-            overTension = Tension > 1f ? overTension + dt : 0f;
+            // Only reeling over the limit snaps the line; the moment the player lets go it is safe.
+            overTension = reeling && Tension > 1f ? overTension + dt : 0f;
             Tension = Mathf.Min(Tension, 1.15f);
             if (overTension > overTensionGrace) { SfxPlayer.Play("snap", 1f); Fail(Loc.T("snap")); }
             else if (slackTime > slackEscapeSeconds) Fail(Loc.T("slack"));

@@ -262,6 +262,8 @@ namespace CozyFishing.EditorTools
 
             // --- animals and villagers -------------------------------------------------------------------------
             AmbientBuilder.Build(id, look.extent, dockT, cabinT, schools.Cast<Transform>().ToArray());
+            // The edge of the play area: a fence on land, floats on the water (no invisible walls).
+            BoundaryBuilder.Build(look.extent, level);
 
             // --- grass, UI ----------------------------------------------------------------------------------
             BuildGrass(terrain, props, look, player.transform, boat.Root.transform);
