@@ -29,6 +29,8 @@ namespace CozyFishing.Player
 
         bool nearDock;
         bool busy;
+        float walkYaw;
+        const float ShoreCameraYaw = 35f;
 
         public bool InBoat { get; private set; }
         public bool OnShore => shore != null;
@@ -144,6 +146,9 @@ namespace CozyFishing.Player
             point.Fishing.enabled = true;
             FindAnyObjectByType<HUD>()?.SetFishing(point.Fishing);
             cameraRig.ZoomTarget = 0.45f;
+            // Look over the angler's left shoulder at the water: from behind-right the crates hid the rod and the cast.
+            walkYaw = cameraRig.YawTarget;
+            cameraRig.YawTarget = point.Stand.eulerAngles.y + ShoreCameraYaw;
         }
 
         void StopShore()
@@ -157,6 +162,7 @@ namespace CozyFishing.Player
             interactor.Enabled = true;
             FindAnyObjectByType<HUD>()?.SetFishing(fishing);
             cameraRig.ZoomTarget = 0f;
+            cameraRig.YawTarget = walkYaw;
             shore = null;
         }
 

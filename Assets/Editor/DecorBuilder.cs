@@ -23,7 +23,7 @@ namespace CozyFishing.EditorTools
             ("decor_clock", "Decor_Clock", 1.85f, new Vector3(2.12f, 0f, -0.55f), -90f, Mount.Floor),
             ("decor_aquarium", "Decor_Aquarium", 1.0f, new Vector3(-0.3f, 0f, 1.82f), 180f, Mount.Floor),
             ("decor_gramophone", "Decor_Gramophone", 0.55f, new Vector3(-1.72f, 0f, -0.25f), 90f, Mount.OnTop),
-            ("decor_shipbottle", "Decor_ShipBottle", 0.4f, new Vector3(1.25f, 0f, 0.25f), 30f, Mount.OnTop),
+            ("decor_shipbottle", "Decor_ShipBottle", 0.4f, new Vector3(1.15f, 0f, 0.15f), 30f, Mount.OnTop),
         };
 
         public static void Build(Transform interior, List<Light> lamps)
@@ -32,13 +32,14 @@ namespace CozyFishing.EditorTools
             root.SetParent(interior, false);
             var ids = new List<string>(); var pieces = new List<GameObject>();
             Physics.SyncTransforms();
-            foreach (var (id, prop, size, pos, yaw, mount) in Slots)
+            foreach (var (id, prop, size, slot, yaw, mount) in Slots)
             {
                 var go = SpawnMeshyProp(prop, root);
                 if (go == null) continue;
                 go.name = id;
                 Fit(go, size);
                 go.transform.localRotation = Quaternion.Euler(0f, yaw, 0f);
+                var pos = InteriorBuilder.Spaced(slot);
                 go.transform.localPosition = pos;
                 Vector3 world = interior.TransformPoint(pos);
                 float baseY = mount switch
@@ -60,6 +61,8 @@ namespace CozyFishing.EditorTools
                     glow.transform.position = Bounds(go).center;
                     lamps.Add(glow);
                 }
+                // Standing pieces are solid (the rug is walked on); hidden pieces' colliders are off with them.
+                if (mount == Mount.Floor && id != "decor_rug") InteriorBuilder.AddFootprintCollider(go);
                 go.SetActive(false);
                 ids.Add(id); pieces.Add(go);
             }

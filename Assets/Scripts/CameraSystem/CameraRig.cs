@@ -50,6 +50,8 @@ namespace CozyFishing.CameraSystem
 
         /// <summary>0 = exploring, 1 = close-up (casting / reeling).</summary>
         public float ZoomTarget { get; set; }
+        /// <summary>Where the camera turns to (degrees about Y); the player can still swipe it round.</summary>
+        public float YawTarget { get => yawTarget; set => yawTarget = value; }
 
         float baseDistance;
         float basePitch;

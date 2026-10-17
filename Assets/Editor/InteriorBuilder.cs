@@ -16,6 +16,14 @@ namespace CozyFishing.EditorTools
     {
         const string PropsDir = "Assets/Art/Props";
         public static readonly Vector3 Origin = new(200f, 0f, 0f);
+        /// <summary>
+        /// The room shell is stretched this much in x/z (furniture keeps its size, its slots move apart) so there is
+        /// floor to walk around on; the cabin is a cutaway, so the bigger inside never shows from outside.
+        /// </summary>
+        public const float Spread = 1.4f;
+        public static Vector3 Spaced(Vector3 local) => new(local.x * Spread, local.y, local.z * Spread);
+        // Furniture colliders cover this much of each piece's footprint, so the hero can walk up close.
+        const float Footprint = 0.8f;
 
         // name, target size (largest dimension, m), local position, yaw, height offset
         static readonly (string name, float size, Vector3 pos, float yaw)[] Layout =
@@ -46,6 +54,7 @@ namespace CozyFishing.EditorTools
             root.position = Origin;
 
             var room = (GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Art/Models/Interior.fbx"), root);
+            room.transform.localScale = Vector3.Scale(room.transform.localScale, new Vector3(Spread, 1f, Spread));
             foreach (var mf in room.GetComponentsInChildren<MeshFilter>())
             {
                 // Open doorway: the swinging leaf from Blender pokes out of the cutaway, so it is not used.
@@ -59,7 +68,7 @@ namespace CozyFishing.EditorTools
             Object.DestroyImmediate(backdrop.GetComponent<Collider>());
             backdrop.transform.SetParent(root, false);
             backdrop.transform.localPosition = new Vector3(0f, -0.25f, 0f);
-            backdrop.transform.localScale = new Vector3(6f, 1f, 6f);
+            backdrop.transform.localScale = new Vector3(6f * Spread, 1f, 6f * Spread);
             var dark = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
             dark.SetColor("_BaseColor", new Color(0.09f, 0.07f, 0.06f));
             AssetDatabase.CreateAsset(dark, "Assets/Art/Materials/Interior_Backdrop.mat");
@@ -72,42 +81,38 @@ namespace CozyFishing.EditorTools
                 if (go == null) continue;
                 Fit(go, size);
                 go.transform.localRotation = Quaternion.Euler(0f, yaw, 0f);
-                go.transform.localPosition = pos;
+                go.transform.localPosition = Spaced(pos);
                 SitOnFloor(go, root.position.y + pos.y);
-                var b = Bounds(go);
-                var box = go.AddComponent<BoxCollider>();
-                box.center = go.transform.InverseTransformPoint(b.center);
-                var ls = go.transform.lossyScale;
-                box.size = new Vector3(b.size.x / ls.x, b.size.y / ls.y, b.size.z / ls.z);
+                AddFootprintCollider(go);
             }
 
             // Grandpa's journal on the table.
             var journal = GameObject.CreatePrimitive(PrimitiveType.Cube);
             journal.name = "Journal";
             journal.transform.SetParent(root, false);
-            journal.transform.localPosition = new Vector3(0.95f, 0.79f, 0.05f);
+            journal.transform.localPosition = Spaced(new Vector3(0.95f, 0.79f, 0.05f));
             journal.transform.localRotation = Quaternion.Euler(0f, 18f, 0f);
             journal.transform.localScale = new Vector3(0.24f, 0.04f, 0.32f);
             journal.GetComponent<MeshRenderer>().sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Materials/Pal_WoodDark.mat");
 
             // Warm lamps: a ceiling lantern glow and the stove.
-            var lamp = NewLight(root, "RoomLight", new Vector3(0f, 2.3f, 0.2f), 7f, 1.2f, new Color(1f, 0.82f, 0.6f));
-            var stove = NewLight(root, "StoveGlow", new Vector3(1.85f, 0.45f, 1.3f), 3f, 0.8f, new Color(1f, 0.55f, 0.25f));
+            var lamp = NewLight(root, "RoomLight", Spaced(new Vector3(0f, 2.3f, 0.2f)), 7f * Spread, 1.2f, new Color(1f, 0.82f, 0.6f));
+            var stove = NewLight(root, "StoveGlow", Spaced(new Vector3(1.85f, 0.45f, 1.3f)), 3f, 0.8f, new Color(1f, 0.55f, 0.25f));
 
             var spawn = new GameObject("InsideSpawn").transform;
             spawn.SetParent(root, false);
-            spawn.localPosition = new Vector3(0.95f, 0.02f, -1.45f);
+            spawn.localPosition = Spaced(new Vector3(0.95f, 0.02f, -1.45f));
             spawn.localRotation = Quaternion.identity;
 
             var exit = new GameObject("ExitDoor").transform;
             exit.SetParent(root, false);
-            exit.localPosition = new Vector3(0.95f, 0f, -1.95f);
+            exit.localPosition = Spaced(new Vector3(0.95f, 0f, -1.95f));
 
             var zoneGo = new GameObject("InteriorZone");
             zoneGo.transform.SetParent(root, false);
             var zone = zoneGo.AddComponent<CameraZone>();
-            // Nearly fixed framing on the room centre so the whole cabin stays on screen.
-            zone.EditorSetup(new Vector2(Origin.x - 0.35f, Origin.z - 0.1f), new Vector2(Origin.x + 0.35f, Origin.z + 0.35f), 8.6f, 58f, true);
+            // The camera follows the hero around the room (a little closer than outdoors), staying inside the walls.
+            zone.EditorSetup(new Vector2(Origin.x - 1.7f, Origin.z - 1.9f), new Vector2(Origin.x + 1.7f, Origin.z + 1.1f), 5.8f, 64f, true);
 
             return new Result { Root = root, InsideSpawn = spawn, ExitPortal = exit, Zone = zone, Lamps = new[] { lamp, stove } };
         }
@@ -150,6 +155,16 @@ namespace CozyFishing.EditorTools
             var b = rs[0].bounds;
             foreach (var r in rs) b.Encapsulate(r.bounds);
             return b;
+        }
+
+        /// <summary>A solid box over the middle of a piece's footprint, from the floor to its top.</summary>
+        public static void AddFootprintCollider(GameObject go)
+        {
+            var b = Bounds(go);
+            var box = go.AddComponent<BoxCollider>();
+            box.center = go.transform.InverseTransformPoint(b.center);
+            var ls = go.transform.lossyScale;
+            box.size = new Vector3(b.size.x * Footprint / ls.x, b.size.y / ls.y, b.size.z * Footprint / ls.z);
         }
 
         static void Fit(GameObject go, float size)

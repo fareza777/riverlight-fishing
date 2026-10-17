@@ -45,7 +45,7 @@ namespace CozyFishing.Fishing
         [Header("Reel")]
         [SerializeField] float tensionRise = 0.55f;
         [SerializeField] float tensionFall = 0.45f;
-        [SerializeField] float reelSpeed = 0.32f;
+        [SerializeField] float reelSpeed = 0.4f;
         [SerializeField] float slackEscapeSeconds = 2.2f;
         [SerializeField] Vector2 safeBand = new(0.22f, 0.78f);
 
@@ -317,7 +317,7 @@ namespace CozyFishing.Fishing
             else
             {
                 Tension -= tensionFall * (Tension > liveBand.y ? 2.5f : 1f) * dt;
-                Progress -= (fishPull + runPull) * 0.08f * dt;
+                Progress -= (fishPull + runPull) * 0.03f * dt;
             }
             Tension = Mathf.Max(0f, Tension);
 
@@ -332,11 +332,11 @@ namespace CozyFishing.Fishing
             float rodBonus = rod != null ? rod.reelBonus : 0f;
             var band = liveBand;
             bool inBand = Tension >= band.x && Tension <= band.y;
-            if (runTime > 0f) Progress -= 0.07f * dt;
-            else if (reeling && inBand) Progress += reelSpeed * (1f + rodBonus) * Mathf.Lerp(1.15f, 0.5f, fight) * dt;
+            if (runTime > 0f) Progress -= 0.03f * dt;
+            else if (reeling && inBand) Progress += reelSpeed * (1f + rodBonus) * Mathf.Lerp(1.2f, 0.65f, fight) * dt;
             reelClick -= dt;
             if (reeling && reelClick <= 0f) { SfxPlayer.Play("reel_tick", 0.35f, 0.15f); reelClick = 0.12f; }
-            else if (!reeling) Progress -= 0.04f * dt;
+            else if (!reeling) Progress -= 0.02f * dt;
             Progress = Mathf.Clamp01(Progress);
 
             // A running fish keeps the line taut even when the player lets go, so that is never slack.
@@ -475,13 +475,13 @@ namespace CozyFishing.Fishing
             if (runTime > 0f)
             {
                 runTime -= dt;
-                if (runTime <= 0f) runCooldown = UnityEngine.Random.Range(2.5f, 5f) * Mathf.Lerp(1.6f, 0.7f, fight);
+                if (runTime <= 0f) runCooldown = UnityEngine.Random.Range(3.5f, 6f) * Mathf.Lerp(1.6f, 0.7f, fight);
                 return;
             }
             if (runWarning > 0f)
             {
                 runWarning -= dt;
-                if (runWarning <= 0f) runTime = UnityEngine.Random.Range(1f, 2.2f) * Mathf.Lerp(0.8f, 1.2f, fight);
+                if (runWarning <= 0f) runTime = UnityEngine.Random.Range(0.8f, 1.6f) * Mathf.Lerp(0.8f, 1.2f, fight);
                 return;
             }
             if (fight < 0.3f) return;   // small fish never run
