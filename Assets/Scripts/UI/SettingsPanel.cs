@@ -1,5 +1,6 @@
 using System;
 using CozyFishing.Core;
+using CozyFishing.Monetization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -52,6 +53,11 @@ namespace CozyFishing.UI
             var extras = Card(scrollContent, 230f);
             Toggle(extras, 0, Loc.T("vibration"), Settings.Vibration, v => { Settings.Vibration = v; Rebuild(page, inGame); });
             Toggle(extras, 1, Loc.T("show_fps"), FpsCounter.Visible, v => { FpsCounter.Visible = v; Rebuild(page, inGame); });
+
+            var privacy = Card(scrollContent, 150f);
+            UIKit.Button(privacy, Loc.T("ad_privacy"), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(700, 100),
+                () => AdManager.Instance.ShowPrivacyOptions(), UIKit.Style.Secondary);
+            privacy.gameObject.AddComponent<AdPrivacyEntry>().Bind();
 
             if (inGame)
             {

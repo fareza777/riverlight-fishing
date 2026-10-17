@@ -2,6 +2,7 @@ using System.Linq;
 using CozyFishing.Audio;
 using CozyFishing.Core;
 using CozyFishing.Data;
+using CozyFishing.Monetization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,12 @@ namespace CozyFishing.UI
         CanvasGroup group;
         RectTransform page;
         float oldScale = 1f;
+        Button rewardedButton;
+        Text rewardedStatus;
+        AdManager ads;
+
+        void OnEnable() { ads = AdManager.Instance; ads.StateChanged += RefreshAdOffer; }
+        void OnDisable() { if (ads != null) ads.StateChanged -= RefreshAdOffer; }
 
         public static bool IsOpen => instance != null && instance.group.alpha > 0.5f;
 
@@ -35,6 +42,7 @@ namespace CozyFishing.UI
 
         void Close()
         {
+            if (AdManager.IsPresenting) return;
             group.alpha = 0f; group.blocksRaycasts = group.interactable = false;
             Time.timeScale = oldScale <= 0f ? 1f : oldScale;
         }
@@ -87,12 +95,55 @@ namespace CozyFishing.UI
                 d.creel.Count > 0 ? () => { int got = gs.SellCreel(); SfxPlayer.Play("coins", 1f, 0f); Toast.Show(Loc.T("sold", got), 2.5f); Refresh(); } : null);
             sb.interactable = d.creel.Count > 0;
 
+            if (AdManager.Supported) RewardOffer(content);
             Orders(content);
             Section(content, Loc.T("rods"), ItemType.Rod);
             Section(content, Loc.T("bait"), ItemType.Bait);
             Section(content, Loc.T("creels"), ItemType.Creel);
             Section(content, Loc.T("decor"), ItemType.Decor);
             Section(content, Loc.T("outfits"), ItemType.Outfit);
+        }
+
+        void RewardOffer(RectTransform content)
+        {
+            var row = UIKit.Panel(content, "Optional ad reward", Color.white);
+            row.rectTransform.sizeDelta = new Vector2(0, 210);
+            var title = UIKit.Label(row.rectTransform, "Title", "<b>" + Loc.T("ad_reward_title", GameState.AdRewardCoins) + "</b>", 32, UIKit.Teal, TextAnchor.UpperLeft);
+            UIKit.Anchor(title.rectTransform, Vector2.zero, Vector2.one, new Vector2(24, 100), new Vector2(-24, -18));
+            rewardedStatus = UIKit.Label(row.rectTransform, "Status", "", 25, UIKit.InkSoft, TextAnchor.MiddleLeft);
+            UIKit.Anchor(rewardedStatus.rectTransform, Vector2.zero, Vector2.one, new Vector2(24, 18), new Vector2(-350, -90));
+            rewardedButton = UIKit.Button(row.rectTransform, Loc.T("ad_watch"), new Vector2(1, 0), new Vector2(-16, 22), new Vector2(310, 86), WatchReward);
+            rewardedButton.GetComponentInChildren<Text>().fontSize = 28;
+            RefreshAdOffer();
+        }
+
+        void RefreshAdOffer()
+        {
+            if (rewardedButton == null || rewardedStatus == null) return;
+            bool allowed = GameState.Instance.CanClaimAdReward;
+            var ads = AdManager.Instance;
+            rewardedButton.interactable = allowed && ads.RewardedReady;
+            rewardedStatus.text = Loc.T(!allowed ? "ad_daily_limit" : ads.RewardedCoolingDown ? "ad_wait"
+                : ads.RewardedReady ? "ad_reward_hint" : "ad_unavailable");
+        }
+
+        void WatchReward()
+        {
+            var gs = GameState.Instance;
+            if (!gs.CanClaimAdReward) { RefreshAdOffer(); return; }
+            bool earned = false;
+            if (!AdManager.Instance.TryShowRewarded(() => earned = gs.ClaimAdReward(), () =>
+            {
+                if (this == null) return;
+                if (earned)
+                {
+                    SfxPlayer.Play("coins", 0.8f, 0f);
+                    Toast.Show(Loc.T("ad_reward_received", GameState.AdRewardCoins), 3f);
+                }
+                else Toast.Show(Loc.T("ad_not_completed"), 2.5f);
+                Refresh();
+            })) Toast.Show(Loc.T("ad_unavailable"), 2.5f);
+            RefreshAdOffer();
         }
 
         void Orders(RectTransform content)

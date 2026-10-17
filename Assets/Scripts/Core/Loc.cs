@@ -55,6 +55,15 @@ namespace CozyFishing.Core
 
         static readonly Dictionary<string, (string id, string en)> table = new()
         {
+            ["ad_reward_title"] = ("Bonus opsional · {0} koin", "Optional bonus · {0} coins"),
+            ["ad_watch"] = ("Tonton iklan", "Watch an ad"),
+            ["ad_reward_hint"] = ("Tonton sampai selesai. Maks. 3× per hari dalam game.", "Finish the video. Up to 3 per game day."),
+            ["ad_daily_limit"] = ("Bonus hari ini habis. Kembali besok dalam game.", "Daily limit reached. Return next game day."),
+            ["ad_wait"] = ("Istirahat sebentar sebelum video berikutnya.", "Take a short break before the next video."),
+            ["ad_unavailable"] = ("Iklan belum tersedia. Coba lagi nanti.", "Ad unavailable. Please try again later."),
+            ["ad_reward_received"] = ("Bonus +{0} koin diterima!", "Bonus +{0} coins received!"),
+            ["ad_not_completed"] = ("Video belum selesai; bonus belum diterima.", "Video unfinished; no bonus claimed."),
+            ["ad_privacy"] = ("Pilihan privasi iklan", "Ad privacy choices"),
             ["board"] = ("Naik perahu", "Board"),
             ["leave"] = ("Turun", "Get off"),
             ["enter"] = ("Masuk", "Enter"),

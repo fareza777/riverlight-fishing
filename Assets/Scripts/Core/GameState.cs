@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using CozyFishing.Data;
 using CozyFishing.Fishing;
+using CozyFishing.Monetization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -39,6 +40,19 @@ namespace CozyFishing.Core
         public event Action Changed;
         public event Action<int> ChapterChanged;
         public event Action<FishSpecies, float, bool> FishCaught;
+        bool travelPending;
+        public const int AdRewardCoins = 50;
+        public bool CanClaimAdReward => (Data.adRewards ??= new DailyAdRewards()).CanClaim(Data.day);
+
+        public bool ClaimAdReward()
+        {
+            if (!(Data.adRewards ??= new DailyAdRewards()).TryClaim(Data.day)) return false;
+            Data.coins += AdRewardCoins;
+            // Ad bonuses do not advance fishing-sale/story milestones.
+            Save();
+            Changed?.Invoke();
+            return true;
+        }
 
         void Awake()
         {
@@ -208,10 +222,19 @@ namespace CozyFishing.Core
         // ------------------------------------------------------------------ travel
         public void Travel(LocationDef loc)
         {
-            if (loc == null) return;
-            Data.location = loc.id;
-            Save();
-            ScreenFader.Transition(() => SceneManager.LoadScene(loc.sceneName), 0.5f, 0.2f);
+            if (loc == null || loc.id == Data.location || !LocationUnlocked(loc)
+                || travelPending || ScreenFader.Busy || AdManager.IsPresenting) return;
+            travelPending = true;
+            AdManager.Instance.AtTravelBreak(() =>
+            {
+                Data.location = loc.id;
+                Save();
+                ScreenFader.Transition(() =>
+                {
+                    try { SceneManager.LoadScene(loc.sceneName); }
+                    finally { travelPending = false; }
+                }, 0.5f, 0.2f);
+            });
         }
 
         public void ContinueGame()

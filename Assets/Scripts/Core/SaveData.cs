@@ -45,5 +45,6 @@ namespace CozyFishing.Core
         public List<MiraOrder> orders = new();
         public int ordersDay;
         public List<string> claimed = new();          // collection rewards already paid ("lake_6", "all")
+        public Monetization.DailyAdRewards adRewards = new();
     }
 }

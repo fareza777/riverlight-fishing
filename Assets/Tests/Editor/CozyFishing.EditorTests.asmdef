@@ -1,0 +1,7 @@
+{
+  "name": "CozyFishing.EditorTests",
+  "references": [],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}
