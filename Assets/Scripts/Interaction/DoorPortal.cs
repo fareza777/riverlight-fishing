@@ -27,6 +27,13 @@ namespace CozyFishing.Interaction
             ScreenFader.Transition(() =>
             {
                 walker.Teleport(destination.position, destination.rotation);
+                walker.Stop();
+                // The door is behind us now: back to standing, or the rest of the door clip plays out as a slide.
+                if (avatar != null)
+                {
+                    avatar.Animator.ResetTrigger("OpenDoor");
+                    avatar.Animator.Play("Locomotion", 0, 0f);
+                }
                 var rig = FindAnyObjectByType<CameraRig>();
                 if (rig != null)
                 {

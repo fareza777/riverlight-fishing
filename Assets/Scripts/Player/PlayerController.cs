@@ -57,8 +57,9 @@ namespace CozyFishing.Player
             Vector3 ahead = transform.position + velocity.normalized * (body.radius + 0.35f);
             // A sphere (not a ray) so the small gaps between dock planks don't read as open water.
             // Floating things (the moored boat) are not ground: stepping onto them dropped the player into the water.
+            // Only low terrain is water: floors built at water height (the cabin interior) are ground.
             if (velocity.sqrMagnitude > 0.01f && Physics.SphereCast(ahead + Vector3.up * 2f, 0.15f, Vector3.down, out var hit, 6f, ~0, QueryTriggerInteraction.Ignore)
-                && (hit.point.y < waterLevel + 0.08f || (hit.rigidbody != null && !hit.rigidbody.isKinematic)))
+                && ((hit.point.y < waterLevel + 0.08f && IsTerrain(hit.collider)) || (hit.rigidbody != null && !hit.rigidbody.isKinematic)))
                 velocity = Vector3.zero;
 
             // Don't walk off the edge of the map.
@@ -72,6 +73,16 @@ namespace CozyFishing.Player
             float speed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
             float anim = speed <= walkSpeed ? speed / walkSpeed : 1f + (speed - walkSpeed) / (runSpeed - walkSpeed);
             AnimSpeed = Mathf.Lerp(AnimSpeed, anim, 1f - Mathf.Exp(-12f * dt));
+        }
+
+        Collider lastGround;
+        bool lastGroundIsTerrain;
+
+        bool IsTerrain(Collider c)
+        {
+            // Cached: reading Object.name allocates, and this runs every frame while walking.
+            if (c != lastGround) { lastGround = c; lastGroundIsTerrain = c.name.StartsWith("Terrain"); }
+            return lastGroundIsTerrain;
         }
 
         public void Teleport(Vector3 position, Quaternion rotation)

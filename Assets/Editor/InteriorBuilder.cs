@@ -161,10 +161,12 @@ namespace CozyFishing.EditorTools
         public static void AddFootprintCollider(GameObject go)
         {
             var b = Bounds(go);
+            // At least head height, so low pieces (chest, chairs) can't be stepped up onto.
+            float h = Mathf.Max(b.size.y, 2f);
             var box = go.AddComponent<BoxCollider>();
-            box.center = go.transform.InverseTransformPoint(b.center);
+            box.center = go.transform.InverseTransformPoint(new Vector3(b.center.x, b.min.y + h * 0.5f, b.center.z));
             var ls = go.transform.lossyScale;
-            box.size = new Vector3(b.size.x * Footprint / ls.x, b.size.y / ls.y, b.size.z * Footprint / ls.z);
+            box.size = new Vector3(b.size.x * Footprint / ls.x, h / ls.y, b.size.z * Footprint / ls.z);
         }
 
         static void Fit(GameObject go, float size)

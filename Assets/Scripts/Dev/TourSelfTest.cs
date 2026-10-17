@@ -219,11 +219,16 @@ namespace CozyFishing.Dev
                 d.Interact(FindAnyObjectByType<Interaction.PlayerInteractor>());
                 yield return Wait(2f);
                 yield return Shot("cabin_decor");
+                yield return WalkCheck("cabin", new Vector2(0f, 0.7f), 1.2f);
+                yield return WalkCheck("cabin", new Vector2(-0.7f, 0f), 1.2f);
                 break;
             }
             foreach (var d in FindObjectsByType<Interaction.DoorPortal>(FindObjectsSortMode.None))
                 if (d.Prompt == Loc.T("exit")) { d.Interact(FindAnyObjectByType<Interaction.PlayerInteractor>()); break; }
-            yield return Wait(2f);
+            yield return Wait(1.2f);
+            var anim = FindAnyObjectByType<PlayerModes>().Avatar.Animator;
+            Debug.Log($"[TourTest] after exit: locomotion={anim.GetCurrentAnimatorStateInfo(0).IsName("Locomotion")}");
+            yield return WalkCheck("porch", new Vector2(0f, -0.7f), 0.8f);
 
             // Felix visits on every third day.
             gs.Data.day = 3;
@@ -244,6 +249,19 @@ namespace CozyFishing.Dev
             }
             gs.Equip(GameState.Db.Item("outfit_lena_raincoat"));   // back to the default clothes
             gs.Data.day = 1;
+        }
+
+        /// <summary>Pushes the stick for a moment and logs how far the hero actually went.</summary>
+        IEnumerator WalkCheck(string where, Vector2 stick, float seconds)
+        {
+            var walker = FindAnyObjectByType<PlayerController>();
+            Vector3 from = walker.transform.position;
+            GameInput.Instance.SetTouchMove(stick);
+            yield return Wait(seconds);
+            GameInput.Instance.SetTouchMove(Vector2.zero);
+            yield return Wait(0.3f);
+            Vector3 d = walker.transform.position - from; d.y = 0f;
+            Debug.Log($"[TourTest] walk {where} {stick}: moved {d.magnitude:0.00} m");
         }
 
         /// <summary>Plays one cast / strike / reel through the touch inputs on the given controller.</summary>
