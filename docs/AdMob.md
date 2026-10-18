@@ -17,15 +17,15 @@ Each format caches one ad and refreshes it after 50 minutes. Failed requests ret
 
 | Android ID | Value |
 | --- | --- |
-| App | `ca-app-pub-3940256099942544~3347511713` |
-| Interstitial | `ca-app-pub-3940256099942544/1033173712` |
-| Rewarded | `ca-app-pub-3940256099942544/5224354917` |
+| App | `ca-app-pub-6279186647593327~7193908316` |
+| Interstitial | `ca-app-pub-6279186647593327/2624107914` |
+| Rewarded | `ca-app-pub-6279186647593327/3803573628` |
 
 The App ID is in `Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset`. Unit IDs and the explicit test-mode flag are in `Assets/Scripts/Monetization/AdMobConfig.cs`. Test mode skips publisher consent messages because Google's sample App ID has no publisher-owned UMP configuration.
 
 ## Before using live ads
 
-Replace the App ID and both unit IDs with the publisher's own Android IDs, and change `UseGoogleTestAds` to `false`. Configure the app's privacy messages in AdMob. Live mode updates UMP consent at launch, gates SDK initialization and ad requests on `CanRequestAds()`, and exposes “Ad privacy choices” in Settings when UMP requires it. Changing consent discards cached ads and rejects requests started under the previous decision. Configure audience settings to match the published app and use registered test devices when validating live IDs.
+Production IDs are configured in the project and `UseGoogleTestAds` is `false`. The app-ads.txt file is published at `https://fareza777.github.io/riverlight-fishing/app-ads.txt`. Configure the app's privacy messages in AdMob. Live mode updates UMP consent at launch, gates SDK initialization and ad requests on `CanRequestAds()`, and exposes “Ad privacy choices” in Settings when UMP requires it. Changing consent discards cached ads and rejects requests started under the previous decision. Configure audience settings to match the published app and use registered test devices when validating live IDs.
 
 Account-level mediation, ad-unit frequency caps, eCPM floors, and privacy messages must be configured in the publisher's AdMob account. There is no account connection in this repository; the changes here cover the app integration.
 
