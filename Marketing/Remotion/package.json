@@ -1,0 +1,42 @@
+{
+  "name": "riverlight-campaign",
+  "version": "1.0.0",
+  "description": "Riverlight English Play Store campaign and launch trailers",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "@remotion/fonts": "4.0.536",
+    "@remotion/media": "4.0.536",
+    "@remotion/transitions": "4.0.536",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.536",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "sharp": "0.35.5",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render:assets": "node scripts/render-campaign.mjs stills",
+    "render:samples": "node scripts/render-campaign.mjs samples",
+    "render:videos": "node scripts/render-campaign.mjs videos",
+    "verify": "node scripts/verify-campaign.mjs"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

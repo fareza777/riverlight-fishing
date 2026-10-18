@@ -59,6 +59,16 @@ namespace CozyFishing.UI
                 () => AdManager.Instance.ShowPrivacyOptions(), UIKit.Style.Secondary);
             privacy.gameObject.AddComponent<AdPrivacyEntry>().Bind();
 
+            var removeAds = Card(scrollContent, 220f);
+            var removeAdsButton = UIKit.Button(removeAds,
+                RemoveAdsPurchase.IsOwned ? Loc.T("remove_ads_owned") : Loc.T("remove_ads_price"),
+                new Vector2(0.5f, 1), new Vector2(0, -24), new Vector2(700, 100),
+                () => RemoveAdsPurchase.Instance.BuyRemoveAds(),
+                RemoveAdsPurchase.IsOwned ? UIKit.Style.Secondary : UIKit.Style.Primary);
+            removeAdsButton.GetComponentInChildren<Text>().fontSize = 30;
+            var removeAdsHint = UIKit.Label(removeAds, "RemoveAdsHint", Loc.T("remove_ads_hint"), 23, UIKit.InkSoft, TextAnchor.MiddleCenter);
+            UIKit.Anchor(removeAdsHint.rectTransform, new Vector2(0, 1), new Vector2(1, 1), new Vector2(Pad, -196), new Vector2(-Pad, -132));
+
             if (inGame)
             {
                 var quit = UIKit.Button(page, Loc.T("save_quit"), new Vector2(0.5f, 0), new Vector2(0, 110), new Vector2(560, 104), () =>

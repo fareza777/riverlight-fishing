@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
@@ -52,6 +53,7 @@ namespace CozyFishing.EditorTools
             PlayerSettings.bundleVersion = "1.0.0";
             PlayerSettings.Android.bundleVersionCode = 1;
             PlayerSettings.SetApplicationIdentifier(UnityEditor.Build.NamedBuildTarget.Android, "com.cozyfishing.riverlight");
+            ConfigureUploadSigning();
             PlayerSettings.SetScriptingBackend(UnityEditor.Build.NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -87,6 +89,21 @@ namespace CozyFishing.EditorTools
             });
             Debug.Log($"[BuildScript] Android {report.summary.result} size={report.summary.totalSize} errors={report.summary.totalErrors}");
             if (Application.isBatchMode) EditorApplication.Exit(report.summary.result == BuildResult.Succeeded ? 0 : 1);
+        }
+
+        /// <summary>Reads local-only signing values from the build environment; secrets never enter the project.</summary>
+        static void ConfigureUploadSigning()
+        {
+            string keystore = Environment.GetEnvironmentVariable("RIVERLIGHT_KEYSTORE");
+            string password = Environment.GetEnvironmentVariable("RIVERLIGHT_KEYSTORE_PASSWORD");
+            string alias = Environment.GetEnvironmentVariable("RIVERLIGHT_KEY_ALIAS");
+            if (string.IsNullOrWhiteSpace(keystore) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(alias))
+                return;
+            PlayerSettings.Android.useCustomKeystore = true;
+            PlayerSettings.Android.keystoreName = keystore;
+            PlayerSettings.Android.keystorePass = password;
+            PlayerSettings.Android.keyaliasName = alias;
+            PlayerSettings.Android.keyaliasPass = password;
         }
     }
 }

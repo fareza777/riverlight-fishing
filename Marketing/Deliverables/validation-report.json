@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-10-18T01:01:32.978Z",
+  "passed": true,
+  "images": [
+    {
+      "file": "PlayStore/app-icon-512.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "bytes": 768496,
+      "sha256": "aa64d8174e259cb972a6f4877f4d9e6c4d42b7aef162e2dd4921cde1a173d6c5"
+    },
+    {
+      "file": "Masters/app-icon-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 2875243,
+      "sha256": "d9fb74140b909eb6e057818d8ef847e2a5799ed98010dc2113b41dc3840b2c3e"
+    },
+    {
+      "file": "PlayStore/feature-graphic-1024x500.png",
+      "width": 1024,
+      "height": 500,
+      "mode": "RGB",
+      "bytes": 1175974,
+      "sha256": "4b3b3df0c72f54c424ae58e64b7c237bfcb631b291aedb910480ed3f722706fe"
+    },
+    {
+      "file": "Masters/banner-2048x1000.png",
+      "width": 2048,
+      "height": 1000,
+      "mode": "RGB",
+      "bytes": 4323652,
+      "sha256": "21315e9b0c7e5267ce683a770a442d4c6272a6c3e2b7f45fa168a53bac02dbec"
+    },
+    {
+      "file": "PlayStore/Screenshots/01-find-your-quiet.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1700377,
+      "sha256": "5ced8b8a4b5e4c72828a16c4759eab13a07b210a81f48b57079a586456a5c706"
+    },
+    {
+      "file": "PlayStore/Screenshots/02-feel-every-bite.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1634958,
+      "sha256": "b247f7cbedbafd028d05b72a2ae67f36c57e33d592891d082e318895f917df6c"
+    },
+    {
+      "file": "PlayStore/Screenshots/03-48-reasons.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1342429,
+      "sha256": "c4ab48121f7f9da04baca6d9cdbeb37f4b725212f4fe0e25cb41c8bd94fe5ad9"
+    },
+    {
+      "file": "PlayStore/Screenshots/04-four-waters.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1747626,
+      "sha256": "2a87c89bb89bba1e5ab3f90196f61c252b8196ce3a4de50535773a0173c3cb75"
+    },
+    {
+      "file": "PlayStore/Screenshots/05-chase-the-night.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1190087,
+      "sha256": "8b684d2f6c059a3b7bfbabb49d3fd0981287a0e1e132d936dd491be891cfe275"
+    },
+    {
+      "file": "PlayStore/Screenshots/06-his-last-adventure.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1562686,
+      "sha256": "a23e4a44a351421b783fb995a689fe416ae36886ea706216de2fba43fa8213be"
+    },
+    {
+      "file": "PlayStore/Screenshots/07-your-haven.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1327110,
+      "sha256": "26a49cba5cd4179f1aed0fd9dfe7e18575f365e3f04e3b642256357cfb445024"
+    },
+    {
+      "file": "PlayStore/Screenshots/08-your-next-story.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1129351,
+      "sha256": "ea7332761c12f186171ebe3b18a6bebea1e7c0f85d7c8f3e60d3063d54442085"
+    },
+    {
+      "file": "Previews/screenshot-overview.png",
+      "width": 1464,
+      "height": 1272,
+      "mode": "RGB",
+      "bytes": 1725071,
+      "sha256": "a8c2274e6aac75b6f580a6cf4f1da1af5fc0bd10b79f765fc98446397224bfb7"
+    },
+    {
+      "file": "Video/trailer-thumbnail-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB",
+      "bytes": 4213292,
+      "sha256": "8f12549a09bfc79fc81e3924e2c0f281c58d14aba5f0f6752437e5918896dd50"
+    }
+  ],
+  "videos": [
+    {
+      "file": "Video/riverlight-trailer-1920x1080.mp4",
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 30.016,
+      "fps": 30,
+      "decodedFrames": 900,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "colorRange": "tv",
+      "audioCodec": "aac",
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "bytes": 16524239,
+      "sha256": "a3ba14e9791b9594551a705540d5a61ef71f45b2c067d110798c39ce38b4b723"
+    },
+    {
+      "file": "Video/riverlight-promo-1080x1920.mp4",
+      "width": 1080,
+      "height": 1920,
+      "durationSeconds": 30.016,
+      "fps": 30,
+      "decodedFrames": 900,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "colorRange": "tv",
+      "audioCodec": "aac",
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "bytes": 20544061,
+      "sha256": "a0b9f88dcc26390a7bbdc54bb8b2084073c4413c295245a4a6e453d3b793d36a"
+    }
+  ],
+  "originalSaveRestored": true
+}

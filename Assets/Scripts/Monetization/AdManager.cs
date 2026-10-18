@@ -39,7 +39,8 @@ namespace CozyFishing.Monetization
         GameObject inputBlocker;
         volatile bool disposed;
 
-        bool MayRequestAds => AdMobConfig.UseGoogleTestAds || ConsentInformation.CanRequestAds();
+        bool MayRequestAds => RemoveAdsPurchase.AdsAllowed
+            && (AdMobConfig.UseGoogleTestAds || ConsentInformation.CanRequestAds());
         public bool PrivacyOptionsRequired => Supported && !AdMobConfig.UseGoogleTestAds
             && ConsentInformation.PrivacyOptionsRequirementStatus == PrivacyOptionsRequirementStatus.Required;
         public bool RewardedCoolingDown => sessionSeconds - policy.LastClosedTime < 60;
@@ -47,6 +48,19 @@ namespace CozyFishing.Monetization
             && !RewardedCoolingDown && rewarded != null && Fresh(rewardedAt) && rewarded.CanShowAd();
         static double Now => Time.realtimeSinceStartupAsDouble;
         static bool Fresh(double loadedAt) => Now - loadedAt < AdMobConfig.CacheLifetimeSeconds;
+
+        /// <summary>Called after a lifetime Remove Ads purchase so cached ads disappear immediately.</summary>
+        public void NotifyEntitlementChanged()
+        {
+            interstitial?.Destroy();
+            rewarded?.Destroy();
+            interstitial = null;
+            rewarded = null;
+            loadingInterstitial = false;
+            loadingRewarded = false;
+            lastRewardedReady = false;
+            StateChanged?.Invoke();
+        }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static void Boot() { if (Supported) _ = Instance; }
